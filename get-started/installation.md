@@ -68,6 +68,8 @@ scipy<=1.5.4
 
 seaborn
 
+polars
+
 matplotlib
 {% endtab %}
 
