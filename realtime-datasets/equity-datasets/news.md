@@ -1,26 +1,26 @@
 ---
 description: >-
-  Here we develop three tables to develop a final score of corporate risk to US
-  equities. More than 100+ institutional trading variables.
+  A financial factor dataset for in-depth company analysis and investment
+  strategies.
 ---
 
 # 🚦 Factor Signals
 
 {% hint style="info" %}
-Data is updated quarterly as data arrives after market close US-EST time.&#x20;
+Data is updated weekly as data arrives after market close US-EST time.
 {% endhint %}
 
-`Tutorials` are the best documentation — <mark style="color:blue;">`Financial Ratio Analysis`</mark>
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Factor Signals Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/tutorials/Factor%20Model.ipynb)
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>News Scrapers</td></tr><tr><td><strong>Models Used</strong></td><td>Fuzzy Matching</td></tr><tr><td><strong>Model Outputs</strong></td><td>Sentiment Scores</td></tr></tbody></table>
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Filings, Financial Data</td></tr><tr><td><strong>Models Used</strong></td><td>OLS Regression</td></tr><tr><td><strong>Model Outputs</strong></td><td>Factors, Coefficients, Standard Errors</td></tr></tbody></table>
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.&#x20;
+Diversified selection of ratios for factor development or bottum-up equity selection strategies.
 
 ***
 
 ### Financial Factors Data Documentation
 
-This section covers the usage of various financial factors datasets. Each dataset can be accessed using the `get_data` function from our data library.
+This section covers the usage of various financial factors datasets. Each dataset can be accessed using the `sov.data` function from our data library.
 
 #### Comprehensive Factors
 
@@ -92,15 +92,11 @@ df_ticker_factors_accounting = sov.data("factors/accounting", tickers=[ "GOOGL"]
 
 This documentation provides a clear guide on how to access each dataset, and can be easily extended or modified as needed for additional datasets or details.
 
-
-
 ## Data Dictionary
 
-### &#x20;Financial Factors Dataset
+### Financial Factors Dataset
 
 <table><thead><tr><th width="286">Name</th><th>Description</th></tr></thead><tbody><tr><td><code>ticker</code></td><td>The unique identifier for a publicly traded company's stock.</td></tr><tr><td><code>date</code></td><td>The specific date for which the data is recorded.</td></tr><tr><td><code>profitability</code></td><td>A measure of a company's efficiency in generating profits.</td></tr><tr><td><code>value</code></td><td>Indicates the company's market value, often reflecting its perceived worth.</td></tr><tr><td><code>solvency</code></td><td>Reflects the company's ability to meet its long-term financial obligations.</td></tr><tr><td><code>cash_flow</code></td><td>Represents the amount of cash being transferred into and out of a business.</td></tr><tr><td><code>illiquidity</code></td><td>Measures the difficulty of converting assets into cash quickly without significant loss in value.</td></tr><tr><td><code>momentum_long_term</code></td><td>Indicates long-term trends in the company's stock price movements.</td></tr><tr><td><code>momentum_medium_term</code></td><td>Represents medium-term trends in stock price movements.</td></tr><tr><td><code>short_term_reversal</code></td><td>Reflects short-term price reversals in the stock market.</td></tr><tr><td><code>price_volatility</code></td><td>Measures the degree of variation in a company's stock price over time.</td></tr><tr><td><code>dividend_yield</code></td><td>The dividend per share, divided by the price per share, showing how much a company pays out in dividends each year relative to its stock price.</td></tr><tr><td><code>earnings_consistency</code></td><td>Indicates the stability and predictability of a company's earnings over time.</td></tr><tr><td><code>small_size</code></td><td>A factor indicating the company's size, with smaller companies potentially offering higher returns (albeit with higher risk).</td></tr><tr><td><code>low_growth</code></td><td>Reflects the company's lower-than-average growth prospects.</td></tr><tr><td><code>low_equity_issuance</code></td><td>Indicates a lower level of issuing new shares, which can be a sign of financial strength or limited growth prospects.</td></tr><tr><td><code>bounce_dip</code></td><td>Measures the tendency of a stock to recover quickly after a significant drop.</td></tr><tr><td><code>accrual_growth</code></td><td>Represents the growth rate in accruals, which are earnings not yet realized in cash.</td></tr><tr><td><code>low_depreciation_growth</code></td><td>Indicates lower growth in depreciation expenses, which might suggest more stable capital expenditures.</td></tr><tr><td><code>current_liquidity</code></td><td>A measure of a company's ability to pay off its short-term liabilities with its short-term assets.</td></tr><tr><td><code>low_rnd</code></td><td>Reflects lower expenditures on research and development, which could indicate less investment in future growth.</td></tr><tr><td><code>momentum</code></td><td>Overall momentum factor, representing the general trend in the stock price movements.</td></tr><tr><td><code>market_risk</code></td><td>Indicates the risk of an investment in a particular market relative to the entire market.</td></tr><tr><td><code>business_risk</code></td><td>Reflects the inherent risk associated with the specific business activities of a company.</td></tr><tr><td><code>political_risk</code></td><td>Measures the potential for losses due to political instability or changes in a country's political environment.</td></tr><tr><td><code>inflation_fluctuation</code></td><td>Indicates how sensitive the company is to fluctuations in inflation rates.</td></tr><tr><td><code>inflation_persistence</code></td><td>Measures the company's exposure to persistent inflation trends.</td></tr><tr><td><code>returns</code></td><td>Represents the financial returns generated by the company over a specified period.</td></tr></tbody></table>
-
-
 
 ### ModelMetrics Dataset
 
@@ -113,8 +109,6 @@ In addition to the primary financial metrics and model metrics, our data suite i
 * **T-Statistics**: This dataset contains the t-statistic for each coefficient, a key metric for determining the statistical significance of each financial factor. It helps in evaluating the robustness of the coefficients' impact in the model.
 
 These datasets form a comprehensive toolkit for financial analysis, enabling detailed regression analysis and statistical evaluation of financial factors.
-
-
 
 ## Factor Analysis Datasets
 
@@ -141,11 +135,5 @@ Our suite of Factor Analysis datasets offers a rich and comprehensive resource f
 * **Statistical Model Validation**: Investors can validate their financial models using model metrics and statistical datasets (Standard Errors and T-Statistics), ensuring robustness and reliability in their analysis.
 
 ###
-
-
-
-
-
-
 
 ***

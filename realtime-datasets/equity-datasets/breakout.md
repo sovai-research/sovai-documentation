@@ -10,13 +10,13 @@ description: >-
 Daily predictions arrive between 11 pm - 4 am before market open in the US for 13,000+ stocks.
 {% endhint %}
 
-`Tutorials` are the best documentation — <mark style="color:blue;">`Price Breakout Prediction`</mark>
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Price Breakout Prediction`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/tutorials/Breakout%20Prediction.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Historical Stock Prices, Trading Volumes, Technical Indicators, Order Book.</td></tr><tr><td>Models Used</td><td>Classification Algorithms, Regression Models, Conformal Predictors</td></tr><tr><td>Model Outputs</td><td>Price Movement Predictions, Probability Scores, Confidence Intervals</td></tr></tbody></table>
 
-This document provides guidance on utilizing the Breakout Prediction SDK to identify potential breakout stocks over the next 30-60 days for US Equities.&#x20;
+This document provides guidance on utilizing the Breakout Prediction SDK to identify potential breakout stocks over the next 30-60 days for US Equities.
 
-The accuracy is around 65% and ROC-AUC of 68%, it is one of the strongest price breakout models on the market.&#x20;
+The accuracy is around 65% and ROC-AUC of 68%, it is one of the strongest price breakout models on the market.
 
 ## Data Access
 
@@ -86,8 +86,6 @@ sov.plot("breakout", chart_type="accuracy", df=df_msft)
 
 ## **Description**
 
-
-
 ***
 
 ### Prediction Model for Price Increases
@@ -125,4 +123,3 @@ Several machine learning models are trained using the prepared dataset:
 #### Model Usage
 
 The model can be applied to new data to generate predictions for the likelihood of price increases. It utilizes the trained classifiers and regressors to provide both point estimates and confidence intervals for these predictions.
-

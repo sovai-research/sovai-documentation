@@ -7,14 +7,14 @@ description: >-
 # 🗣️ Insider Flow Prediction
 
 {% hint style="info" %}
-Data is updated weekly as data arrives after market close US-EST time.&#x20;
+Data is updated weekly as data arrives after market close US-EST time.
 {% endhint %}
 
 `Tutorials` are the best documentation — <mark style="color:blue;">`Financial Ratio Analysis`</mark>
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Form 3, 4, 5, Schedule 13D and Schedule 13G, Form 144, Market Data</td></tr><tr><td><strong>Models Used</strong></td><td>Machine Learning (Gradient Boost)</td></tr><tr><td><strong>Model Outputs</strong></td><td>Percentile Outputs (Relative)</td></tr></tbody></table>
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Insider Filings, Market Data</td></tr><tr><td><strong>Models Used</strong></td><td>Machine Learning (Gradient Boost)</td></tr><tr><td><strong>Model Outputs</strong></td><td>Percentile Outputs (Relative)</td></tr></tbody></table>
 
-Diversified selection of features for factor development or bottum-up equity selection strategies.&#x20;
+Diversified selection of features for factor development or bottum-up equity selection strategies.
 
 ## Data Access
 
@@ -51,7 +51,7 @@ import sovai as sov
 sov.plot("insider", chart_type="percentile", ticker="AAPL")
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Insider Flow Prediction
 
@@ -60,7 +60,7 @@ import sovai as sov
 sov.plot("insider", chart_type="prediction")
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Grouped Plot
 
@@ -192,11 +192,5 @@ This dataset provides a comprehensive analysis of insider trading behaviors, str
    * `holding_period_pert`: Perturbation or change in the holding period of insiders.
    * `sale_to_purchase_ratio_pert`: Change in the sale-to-purchase ratio of insiders.
    * `flow_prediction`: Predicted transaction flow from insider trading patterns.
-
-
-
-
-
-
 
 ***

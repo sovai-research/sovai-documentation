@@ -14,7 +14,7 @@ Monthly corporate bankruptcy predictions arrive the **2nd of every month**_._
 
 <table data-view="cards" data-full-width="false"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Bankruptcies, Delistings, Market Data, Financial Statements</td></tr><tr><td><strong>Models Used</strong></td><td>CNN, LightGBM, RocketModel, AutoEncoder</td></tr><tr><td><strong>Model Outputs</strong></td><td>Calibrated Probabilities, Shapley Values</td></tr></tbody></table>
 
-The model predicts the likelihood of bankruptcies in the next 6-months for US publicly listed companies using advanced machine learning models.&#x20;
+The model predicts the likelihood of bankruptcies in the next 6-months for US publicly listed companies using advanced machine learning models.
 
 With an accuracy of around 89% and ROC-AUC of 85%, these models represent a large improvement over traditional methods of bankruptcy prediction for equity selection.
 
@@ -52,7 +52,7 @@ import sovai as sov
 df_bankrupt = sov.data('bankruptcy/daily', tickers=["MSFT","TSLA","META"])
 ```
 
-The daily probabilities are experimental, and have a very short history of just a couple of months.&#x20;
+The daily probabilities are experimental, and have a very short history of just a couple of months.
 
 ### Feature Importance (Shapleys)
 
@@ -61,7 +61,7 @@ import sovai as sov
 df_importance = sov.data('bankruptcy/shapleys', tickers=["MSFT","TSLA","META"])
 ```
 
-Feature Importance (Shapley Values) calculates the contribution of each input variable (features) such as Debt,  Assets, and Revenue to predict bankruptcy risk.
+Feature Importance (Shapley Values) calculates the contribution of each input variable (features) such as Debt, Assets, and Revenue to predict bankruptcy risk.
 
 <figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
@@ -82,9 +82,9 @@ import sovai as sov
 sov.report("bankruptcy", report_type="ranking")
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Filter the outputs based on the top by **Sector**, **Marketcap**, and **Revenue** and bankruptcy risk. You can also change <mark style="color:blue;">`ranking`</mark> to <mark style="color:blue;">`change`</mark> to investigate the month on month change.&#x20;
+Filter the outputs based on the top by **Sector**, **Marketcap**, and **Revenue** and bankruptcy risk. You can also change <mark style="color:blue;">`ranking`</mark> to <mark style="color:blue;">`change`</mark> to investigate the month on month change.
 
 ```python
 sov.report("bankruptcy", report_type="sector-change")
@@ -99,9 +99,7 @@ import sovai as sov
 sov.plot('bankruptcy', chart_type='compare')
 ```
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Compare bankruptcy probabilities across different tickers.</p></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Compare bankruptcy probabilities across different tickers.</p></figcaption></figure>
 
 ### Timed Feature Importance
 
@@ -157,7 +155,7 @@ sov.plot("bankruptcy", chart_type="facet", tickers=["DDD"])
 
 <figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Global  Performance
+## Global Performance
 
 ### **Confusion Matrix**
 
@@ -228,17 +226,13 @@ Leverage advanced computational tools for deeper analysis:
 
     Perform principal component analysis for dimensionality reduction.
 
-
-
-**For more advanced applications, see the tutotrial.**&#x20;
+**For more advanced applications, see the tutotrial.**
 
 ***
 
 ## **Description**
 
 The model attempts to predict the likelihood of bankruptcies in the next 6-months. The likelihood that companies would go bankrupt in the next 6-months is very low. The change of this value over time can also be very revealing. See for example: `sov.report("bankruptcy", report_type="sector-change")`
-
-
 
 ### **Advanced Modeling Techniques**:
 
@@ -247,8 +241,6 @@ The model attempts to predict the likelihood of bankruptcies in the next 6-month
 * **The Rocket Model**: Specializes in time series data, using random convolutional kernels for effective classification and forecasting.
 * **The Encoder Model**: Combines LightGBM with CNN autoencoders, enhancing feature engineering for more precise predictions.
 * **The Fundamental Model**: Focuses solely on fundamental data via LightGBM, without extra architectural layers, for straightforward financial analysis.
-
-
 
 ### Potential Use-cases
 
