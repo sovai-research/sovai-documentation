@@ -1,7 +1,8 @@
 ---
 description: >-
-  Here we develop three tables to develop a final score of corporate risk to US
-  equities. More than 100+ institutional trading variables.
+  The dataset provides a comprehensive analysis of institutional investment
+  behaviors, strategies, and portfolio dynamics assist professional investors in
+  making informed decisions.
 ---
 
 # 🏦 Institutional Trading

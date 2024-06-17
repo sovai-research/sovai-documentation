@@ -29,7 +29,7 @@ import sovai as sov
 df_bankrupt = sov.data('bankruptcy', tickers=["MSFT","TSLA","META"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Specific Dates**
 
@@ -108,7 +108,7 @@ import sovai as sov
 df = sov.plot("bankruptcy", chart_type="shapley", tickers=["TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Examine how feature importance values evolve over time.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>Examine how feature importance values evolve over time.</p></figcaption></figure>
 
 ### Total Feature Importance
 
