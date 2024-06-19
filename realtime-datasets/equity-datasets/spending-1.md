@@ -1,63 +1,97 @@
 ---
 description: >-
-  Here we develop three tables to develop a final score of corporate risk to US
-  equities.
+  The government spending data provides comprehensive information about
+  government contracts, transactions, product specifications, entity details,
+  locations, competition, and compensation.
 ---
 
 # 🏗️ Government Contracts
 
 {% hint style="info" %}
-Data arrives late Friday night 11 pm - 12 am after market close US-EST time.&#x20;
+Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
 {% endhint %}
 
 `Tutorials` are the best documentation — <mark style="color:blue;">`Financial Ratio Analysis`</mark>
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Exchange Data. </td></tr><tr><td><strong>Models Used</strong></td><td>Transformations, Simple Maths</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Ratios</td></tr></tbody></table>
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Exchange Data.</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Regex, Entity Recognition</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Contracts</td></tr></tbody></table>
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.&#x20;
+Diversified selection of ratios for factor development or bottum-up equity selection strategies.
 
 ## Data Access
 
-#### Accounting Risk
+#### Contracts Data
 
-**Accounting Table**: This table offers a snapshot of a company’s financial status based on standard accounting metrics. It is crucial for investors to assess a company's profitability, liquidity, and solvency.
+Data about contract award details, potential total value, federal action obligations, performance duration, and recipient details.
 
 ```python
 from sovai import sov
-df_actg_risk = sov.data("corprisk/accounting")
+df_contracts = sov.data("spending/contracts", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
-#### Financial Event Risk
+#### Transactions Data:
 
-**Events Table**: Contains data on significant corporate events that could impact a company's financial status or investor perception. This includes mergers, acquisitions, executive changes, regulatory shifts, and other material events.
+The data includes information about individual transactions related to contracts, such as federal action obligations, transaction descriptions, and last modified dates.
 
 ```python
 from sovai import sov
-df_events_risk = sov.data("corprisk/events")
+df_transactions = sov.data("spending/transactions", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
-#### Misstatement Risk
+#### Product Specifications
 
-**Misstatement Table**: This table highlights the potential risks of financial misstatements in a company’s reporting. A higher score in this table indicates a greater risk or occurrence of financial misstatements, which can be a red flag for investors.
+Data about the products or services associated with contracts, such as product or service code descriptions, NAICS codes and descriptions, country of origin, and sustainability information.
 
 ```python
 from sovai import sov
-df_miss_risk = sov.data("corprisk/misstatement")
+df_product = sov.data("spending/product", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
-#### Aggregated Risks
+#### Entity Specification
 
-Accounting, Event, and Misstatement Risks combined together:
+Data about the entities involved in contracts, such as recipient unique identifiers, recipient names, parent company details, and matching information with other datasets like Bloomberg.
 
 ```python
 from sovai import sov
-df_miss_risk = sov.data("corprisk/risks")
+df_entities = sov.data("spending/entities", tickers=["MSFT","TSLA"])
+```
+
+<figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+
+#### Location Data
+
+Data about the geographical locations associated with contracts, such as recipient country, address, city, county, state, and zip code, as well as the primary place of performance details.
+
+```python
+from sovai import sov
+df_location = sov.data("spending/location", tickers=["MSFT","TSLA"])
+```
+
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+#### Competition Data:
+
+Data related to the competition aspect of contracts, such as the extent of competition, number of offers received, and solicitation procedures.
+
+```python
+from sovai import sov
+df_competition = sov.data("spending/competition", tickers=["MSFT","TSLA"])
+```
+
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+#### Compensation Date
+
+Data about the compensation of highly compensated officers in recipient organization, only published voluntarily by a few companies.
+
+```python
+from sovai import sov
+df_compensation = sov.data("spending/compensation")
 ```
 
 <figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
@@ -67,8 +101,6 @@ df_miss_risk = sov.data("corprisk/risks")
 ### Government Contracts
 
 <table><thead><tr><th width="258">Column Name</th><th width="268">Description</th><th>Example</th></tr></thead><tbody><tr><td>ticker</td><td>Stock ticker symbol identifying the company.</td><td>TSLA</td></tr><tr><td>date</td><td>Date of the record.</td><td>2023-10-02</td></tr><tr><td>contract_award_unique_key</td><td>Unique key identifying the prime award.</td><td>CONT_AWD_SPE7LX24F0359_9700_SPE7LX22D0144_9700</td></tr><tr><td>potential_total_value_of_award</td><td>Total amount that could be obligated on a contract if all options are exercised.</td><td>8526.629883</td></tr><tr><td>total_federal_action_obligation</td><td>Total value of federal obligations for the contract.</td><td>8526.629883</td></tr><tr><td>obligation_value_difference</td><td>Difference between the total federal action obligation and the potential total value of the award.</td><td>0.0</td></tr><tr><td>performance_duration</td><td>Duration of the contract's performance period in days.</td><td>30.0</td></tr><tr><td>awards_past_year</td><td>Count of awards per recipient name in the past year.</td><td>7.0</td></tr><tr><td>transactions_per_award</td><td>Count of unique transactions per award.</td><td>1.0</td></tr><tr><td>prime_award_base_transaction_description</td><td>Description of the transaction or award at the prime award level.</td><td>8510186794!BATTERY POWER SUPPLY</td></tr><tr><td>period_of_performance_start_date</td><td>Agreed start date for the contract's requirements.</td><td>2023-10-02</td></tr><tr><td>period_of_performance_current_end_date</td><td>Scheduled completion date for the contract.</td><td>2023-11-01</td></tr><tr><td>period_of_performance_potential_end_date</td><td>Date when awardee effort is completed if all potential options were exercised.</td><td>2023-11-01</td></tr><tr><td>extension_days_available</td><td>Number of days available for extension.</td><td>0.0</td></tr><tr><td>time_to_start_performance</td><td>Number of days between the action date and the period of performance start date.</td><td>0.0</td></tr><tr><td>modification_number</td><td>Identifier of an action indicating the specific change to the initial award.</td><td>0</td></tr><tr><td>last_modified_date</td><td>The date capturing the change or modification.</td><td>2023-10-02</td></tr><tr><td>recipient_name</td><td>The name of the awardee or recipient associated with the unique identifier.</td><td>TESLA INDUSTRIES, INC.</td></tr><tr><td>recipient_uei</td><td>Unique Entity Identifier of the recipient organization.</td><td>WK5RYJL58YY9</td></tr></tbody></table>
-
-
 
 ### Government Transactions
 
@@ -90,8 +122,6 @@ df_miss_risk = sov.data("corprisk/risks")
 | epa\_designated\_product                  | Description explaining the EPA-Designated Product Field.                                                                                                  | NOT REQUIRED                                                   |
 | recovered\_materials\_sustainability      | Description explaining the Recovered Materials/Sustainability Field.                                                                                      | NO CLAUSES INCLUDED AND NO SUSTAINABILITY INCLUDED             |
 
-
-
 ### Entity Specification
 
 | Column Name             | Description                                                                                                                                | Example                |
@@ -105,9 +135,7 @@ df_miss_risk = sov.data("corprisk/risks")
 | similarity              | A score representing the similarity between the 'names' field and a corresponding entity in another dataset, used for data matching.       | 0.9562                 |
 | bloomberg\_share\_id    | Bloomberg Share ID, a unique identifier for a share class at the Bloomberg level, obtained through data matching with Bloomberg's dataset. | BBG001SQKGD7           |
 
-For the misstatements, all of the variables have been changed into negative indicators, so that when the company overreports the financial health and corrects it later on, that is a negative sign.&#x20;
-
-
+For the misstatements, all of the variables have been changed into negative indicators, so that when the company overreports the financial health and corrects it later on, that is a negative sign.
 
 ### Location Dictionary
 
@@ -131,8 +159,6 @@ For the misstatements, all of the variables have been changed into negative indi
 | primary\_place\_of\_performance\_zip\_4        | ZIP code identifying where the predominant performance of the award will be accomplished.                                                              | 197204180                                  |
 | same\_country                                  | Is the place of performance the same as the location of the recepient                                                                                  | 1                                          |
 | same\_state                                    | Is the place of performance the same as the location of the recepient                                                                                  | 1                                          |
-
-
 
 ### Competition Dictionary
 
@@ -175,11 +201,5 @@ Understanding these tables is essential for investors:
 * **Risk Assessment**: By analyzing the Misstatement and its industry-adjusted tables, investors can gauge the risk associated with a company's financial reporting.
 * **Comparative Analysis**: The industry-adjusted tables enable investors to compare companies within the same sector on a like-for-like basis, making the analysis more relevant and accurate.
 * **Informed Decision-Making**: Comprehensive data covering raw financials and industry-adjusted scores empowers investors to make well-informed investment decisions.
-
-
-
-
-
-
 
 ***

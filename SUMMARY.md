@@ -27,7 +27,7 @@
   * [🏁 Wikipedia Views](realtime-datasets/equity-datasets/wiki.md)
 * [Economic Datasets](realtime-datasets/economic-datasets/README.md)
   * [🏳️ Turing Risk Index](realtime-datasets/economic-datasets/breakout.md)
-  * [🔃 Asset Rotation](realtime-datasets/economic-datasets/news.md)
+  * [🏳️ Asset Rotation](realtime-datasets/economic-datasets/breakout-1.md)
   * [📰 Core Economic Data](realtime-datasets/economic-datasets/news-1.md)
   * [📰 ETF Flows](realtime-datasets/economic-datasets/news-2.md)
 * [Sectorial Datasets](realtime-datasets/sectorial-datasets/README.md)

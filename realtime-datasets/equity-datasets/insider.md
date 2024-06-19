@@ -51,7 +51,7 @@ import sovai as sov
 sov.plot("insider", chart_type="percentile", ticker="AAPL")
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Insider Flow Prediction
 
@@ -60,7 +60,7 @@ import sovai as sov
 sov.plot("insider", chart_type="prediction")
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Grouped Plot
 
