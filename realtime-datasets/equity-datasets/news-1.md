@@ -1,8 +1,8 @@
 ---
-description: This section covers the usage of various short selling datasets.
+description: Liquidity datasets for company analysis and investment strategies.
 ---
 
-# 🥋 Short Selling
+# 🥏 Liquidity Data
 
 {% hint style="info" %}
 Data is updated weekly as data arrives after market close US-EST time.
@@ -10,26 +10,29 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Factor Signals Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/tutorials/Factor%20Model.ipynb)
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Financial Intermediaries, NASDAQ, NYSE, CME</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing Techniques</td></tr><tr><td><strong>Model Outputs</strong></td><td>Predictions, Volume</td></tr></tbody></table>
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Financial Intermediaries</td></tr><tr><td><strong>Models Used</strong></td><td>Aggregate Calculations</td></tr><tr><td><strong>Model Outputs</strong></td><td>Price Improvement, Market Opportunity</td></tr></tbody></table>
+
+## Liquidity Datasets Documentation
+
+Two datasets that can help with understanding the liquidity dynamics for equities.&#x20;
 
 ***
 
-### Over-shorted Dataset
+### Price Improvement Dataset
 
-The Over-Shorted dataset provides information on short interest and potentially over-shorted stocks, offering insights into short selling activity and related metrics.
+The Price Improvement dataset provides information on price improvements for various stocks, offering insights into trading execution quality.
 
 ```python
-import sov as sov
-df_over_shorted = sov.data("short/over_shorted")
+import sovai as sov
+df_improve = sov.data("liquidity/price_improvement")
 ```
 
-### Short Volume Dataset
+### Market Opportunity Dataset
 
-The Short Volume dataset offers information on the short selling volume for specified stocks, including breakdowns by different types of market participants.
+The Market Opportunity dataset offers information on market making opportunities and liquidity provision for different stocks.
 
 ```python
-import sov as sov
-df_short_volume = sov.data("short/volume")
+df_market = sov.data("liquidity/market_opportunity")
 ```
 
 ### Accessing Specific Tickers
@@ -37,47 +40,60 @@ df_short_volume = sov.data("short/volume")
 You can also retrieve data for specific tickers across these datasets. For example:
 
 ```python
-df_ticker_over_shorted = sov.data("short/over_shorted", tickers=["AAPL", "MSFT"])
-df_ticker_short_volume = sov.data("short/volume", tickers=["AAPL", "MSFT"])
+df_ticker_imp = sov.data("liquidity/price_improvement", tickers=["AAPL", "MSFT"])
+df_ticker_opp = sov.data("liquidity/market_opportunity", tickers=["AAPL", "MSFT"])
 ```
+
+
 
 ### Data Dictionary
 
-#### Over-Shorted Dataset
+#### Price Improvement Dataset
 
-* `ticker`: Stock symbol
-* `date`: Date of the data point
-* `over_shorted`: Measure of how over-shorted a stock is
-* `over_shorted_chg`: Change in the over-shorted measure
-* `short_interest`: Number of shares sold short
-* `number_of_shares`: Total number of outstanding shares
-* `short_percentage`: Percentage of float sold short
-* `short_prediction`: Predicted short interest
-* `days_to_cover`: Number of days to cover short positions
-* `market_cap`: Market capitalization of the company
-* `total_revenue`: Total revenue of the company
-* `volume`: Trading volume
+| Column Name                    | Description                         |
+| ------------------------------ | ----------------------------------- |
+| ticker                         | Stock symbol                        |
+| date                           | Date of the data point              |
+| total\_price\_improvement      | Total price improvement amount      |
+| shares                         | Number of shares traded             |
+| price\_improvement\_per\_share | Average price improvement per share |
+| average\_price\_improvement    | Average price improvement           |
 
-#### Short Volume Dataset
+#### Market Opportunity Dataset
 
-* `ticker`: Stock symbol
-* `date`: Date of the data point
-* `short_volume`: Volume of shares sold short
-* `total_volume`: Total trading volume
-* `short_volume_ratio_exchange`: Ratio of short volume to total volume on the exchange
-* `retail_short_ratio`: Ratio of short volume from retail traders
-* `institutional_short_ratio`: Ratio of short volume from institutional traders
-* `market_maker_short_ratio`: Ratio of short volume from market makers
+| Column Name              | Description                                    |
+| ------------------------ | ---------------------------------------------- |
+| ticker                   | Stock symbol                                   |
+| date                     | Date of the data point                         |
+| missed\_liquidity        | Volume of missed liquidity opportunities       |
+| exhausted\_liquidity     | Volume of exhausted liquidity                  |
+| routed\_liquidity        | Volume of routed liquidity                     |
+| volume\_opportunity      | Total volume opportunity                       |
+| average\_daily\_vol      | Average daily trading volume                   |
+| rolling\_daily\_vol      | Rolling average of daily trading volume        |
+| buy\_pressure\_log       | Logarithmic measure of buying pressure         |
+| buy\_pressure\_pct       | Percentage measure of buying pressure          |
+| missed\_liquid\_pct      | Percentage of missed liquidity                 |
+| exhausted\_liquid\_pct   | Percentage of exhausted liquidity              |
+| vol\_uncaptured          | Percentage of uncaptured volume                |
+| retail\_pressure         | Measure of retail trading pressure             |
+| institutional\_pressure  | Measure of institutional trading pressure      |
+| algorithmic\_pressure    | Measure of algorithmic trading pressure        |
+| retail\_institute\_ratio | Ratio of retail to institutional pressure      |
+| algo\_institute\_ratio   | Ratio of algorithmic to institutional pressure |
+| retail\_algo\_ratio      | Ratio of retail to algorithmic pressure        |
 
 ### Potential Use Cases
 
-* Short Squeeze Analysis: Identify potentially over-shorted stocks that might be candidates for a short squeeze.
-* Risk Assessment: Evaluate the short interest in a stock as part of overall risk assessment.
-* Market Sentiment Analysis: Use short volume data to gauge market sentiment towards specific stocks.
-* Trading Strategy Development: Incorporate short selling data into quantitative trading strategies.
-* Liquidity Analysis: Assess the liquidity of a stock by analyzing the days to cover metric.
-* Sector Trends: Identify trends in short selling activity across different sectors or industries.
+* Execution Quality Analysis: Evaluate the execution quality of trades using price improvement data.
+* Market Making Strategies: Develop market making strategies based on liquidity provision opportunities.
+* Liquidity Analysis: Assess the liquidity of a stock by analyzing various liquidity metrics.
+* Trading Strategy Development: Incorporate liquidity data into quantitative trading strategies.
+* Market Microstructure Analysis: Study market microstructure using detailed liquidity and price improvement data.
+* Performance Benchmarking: Compare execution quality across different brokers or trading venues.
+* Risk Management: Assess liquidity risk and potential transaction costs for large orders.
+* Regulatory Compliance: Monitor best execution practices and demonstrate compliance with regulatory requirements.
 
+These datasets form a comprehensive toolkit for liquidity analysis, enabling detailed examination of price improvements, liquidity provision, and related metrics across different market participants.
 
-
-These datasets form a comprehensive toolkit for short selling analysis, enabling detailed examination of short interest, volume, and related metrics across different equities.
+***

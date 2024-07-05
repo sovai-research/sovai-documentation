@@ -1,10 +1,8 @@
 ---
-description: >-
-  A financial factor dataset for in-depth company analysis and investment
-  strategies.
+description: This section covers the usage of various short selling datasets.
 ---
 
-# 🎙️ Lobbying Data
+# 🥋 Short Selling
 
 {% hint style="info" %}
 Data is updated weekly as data arrives after market close US-EST time.
@@ -12,89 +10,74 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Factor Signals Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/tutorials/Factor%20Model.ipynb)
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Lobbying Filings</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Scraping</td></tr><tr><td><strong>Model Outputs</strong></td><td>Lobbying Data</td></tr></tbody></table>
-
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Financial Intermediaries, NASDAQ, NYSE, CME</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing Techniques</td></tr><tr><td><strong>Model Outputs</strong></td><td>Predictions, Volume</td></tr></tbody></table>
 
 ***
 
-## Lobbying Dataset&#x20;
+### Over-shorted Dataset
 
-This section covers the usage of the lobbying dataset. The dataset can be accessed using the sov.data function from our data library.
+The Over-Shorted dataset provides information on short interest and potentially over-shorted stocks, offering insights into short selling activity and related metrics.
 
-### Lobbying Dataset
+```python
+import sov as sov
+df_over_shorted = sov.data("short/over_shorted")
+```
 
-The Lobbying dataset provides detailed information on lobbying activities, including client information, spending, and lobbying issues for various companies.
+### Short Volume Dataset
 
-<pre class="language-python"><code class="lang-python"><strong>import sovai as sov
-</strong><strong>df_lobbying = sov.data("lobbying/public")
-</strong></code></pre>
+The Short Volume dataset offers information on the short selling volume for specified stocks, including breakdowns by different types of market participants.
+
+```python
+import sov as sov
+df_short_volume = sov.data("short/volume")
+```
 
 ### Accessing Specific Tickers
 
-You can also retrieve data for specific tickers. For example:
+You can also retrieve data for specific tickers across these datasets. For example:
 
 ```python
-df_ticker_lobbying = sov.data("lobbying/public", tickers=["WFC", "EXPGY"])
+df_ticker_over_shorted = sov.data("short/over_shorted", tickers=["AAPL", "MSFT"])
+df_ticker_short_volume = sov.data("short/volume", tickers=["AAPL", "MSFT"])
 ```
-
-This documentation provides a clear guide on how to access the dataset, and can be easily extended or modified as needed for additional details.
 
 ### Data Dictionary
 
-| Column Name                       | Description                                                             |
-| --------------------------------- | ----------------------------------------------------------------------- |
-| client                            | Name of the client company                                              |
-| client\_description               | Description of the client's business                                    |
-| spend                             | Amount spent on lobbying                                                |
-| transaction\_type                 | Type of transaction (e.g., lobbying\_income, direct\_lobbying\_expense) |
-| filing\_type                      | Type of filing                                                          |
-| lobby\_description                | Description of lobbying activities                                      |
-| issue\_codes                      | Codes representing the issues lobbied on                                |
-| government\_entity\_details       | Government entities involved                                            |
-| quarter                           | Quarter of the lobbying activity                                        |
-| effective\_date                   | Start date of the lobbying activity                                     |
-| termination\_date                 | End date of the lobbying activity (if applicable)                       |
-| client\_state                     | State of the client                                                     |
-| client\_country                   | Country of the client                                                   |
-| client\_id                        | Unique identifier for the client                                        |
-| government\_lobby                 | Indicator for government lobbying                                       |
-| performing\_own\_lobbying         | Indicator if the client is performing their own lobbying                |
-| registrant\_dt\_updated           | Date the registrant information was updated                             |
-| registrant\_name                  | Name of the lobbying registrant                                         |
-| registrant\_address               | Address of the lobbying registrant                                      |
-| registrant\_id                    | Unique identifier for the registrant                                    |
-| registrant\_description           | Description of the registrant                                           |
-| registrant\_contact\_name         | Contact name for the registrant                                         |
-| registrant\_house\_registrant\_id | House ID for the registrant                                             |
-| registrant\_contact\_telephone    | Contact telephone for the registrant                                    |
-| lobbyist\_full\_names             | Names of the lobbyists involved                                         |
-| lobbyist\_ids                     | Unique identifiers for the lobbyists                                    |
-| previous\_goverment\_positions    | Previous government positions held by lobbyists                         |
-| lobbyist\_new\_statuses           | New status indicators for lobbyists                                     |
-| client\_url                       | URL for client information                                              |
-| registrant\_url                   | URL for registrant information                                          |
-| filing\_url                       | URL for the filing                                                      |
-| filing\_id                        | Unique identifier for the filing                                        |
-| unique\_id                        | Unique identifier for the record                                        |
-| match                             | Matched client name                                                     |
-| date\_time                        | Date and time of the record                                             |
-| ticker                            | Stock ticker symbol of the client company                               |
-| date                              | Date of the lobbying activity                                           |
+#### Over-Shorted Dataset
+
+* `ticker`: Stock symbol
+* `date`: Date of the data point
+* `over_shorted`: Measure of how over-shorted a stock is
+* `over_shorted_chg`: Change in the over-shorted measure
+* `short_interest`: Number of shares sold short
+* `number_of_shares`: Total number of outstanding shares
+* `short_percentage`: Percentage of float sold short
+* `short_prediction`: Predicted short interest
+* `days_to_cover`: Number of days to cover short positions
+* `market_cap`: Market capitalization of the company
+* `total_revenue`: Total revenue of the company
+* `volume`: Trading volume
+
+#### Short Volume Dataset
+
+* `ticker`: Stock symbol
+* `date`: Date of the data point
+* `short_volume`: Volume of shares sold short
+* `total_volume`: Total trading volume
+* `short_volume_ratio_exchange`: Ratio of short volume to total volume on the exchange
+* `retail_short_ratio`: Ratio of short volume from retail traders
+* `institutional_short_ratio`: Ratio of short volume from institutional traders
+* `market_maker_short_ratio`: Ratio of short volume from market makers
 
 ### Potential Use Cases
 
-1. Corporate Influence Analysis: Examine how companies allocate resources to influence policy-making.
-2. Sector Trends: Identify trends in lobbying activities across different sectors or industries.
-3. Regulatory Impact Assessment: Analyze the relationship between lobbying efforts and regulatory outcomes.
-4. ESG Research: Incorporate lobbying data into Environmental, Social, and Governance (ESG) assessments.
-5. Political Risk Analysis: Evaluate potential political risks for companies based on their lobbying activities.
-6. Corporate Strategy Insights: Gain insights into companies' strategic priorities by analyzing their lobbying focus areas.
-7. Competitive Intelligence: Compare lobbying activities among competitors in the same industry.
-8. Public Policy Research: Study the influence of corporate lobbying on public policy development.
-9. Investor Due Diligence: Provide additional context for investor research and due diligence processes.
-10. Transparency Reporting: Support corporate transparency initiatives by analyzing and reporting on lobbying activities.&#x20;
+* Short Squeeze Analysis: Identify potentially over-shorted stocks that might be candidates for a short squeeze.
+* Risk Assessment: Evaluate the short interest in a stock as part of overall risk assessment.
+* Market Sentiment Analysis: Use short volume data to gauge market sentiment towards specific stocks.
+* Trading Strategy Development: Incorporate short selling data into quantitative trading strategies.
+* Liquidity Analysis: Assess the liquidity of a stock by analyzing the days to cover metric.
+* Sector Trends: Identify trends in short selling activity across different sectors or industries.
 
-This dataset forms a comprehensive resource for analyzing corporate lobbying activities, enabling detailed examination of spending patterns, issue focus, and potential policy influences across different companies and sectors.
 
-***
+
+These datasets form a comprehensive toolkit for short selling analysis, enabling detailed examination of short interest, volume, and related metrics across different equities.

@@ -1,8 +1,10 @@
 ---
-description: Liquidity datasets for company analysis and investment strategies.
+description: >-
+  A financial factor dataset for in-depth company analysis and investment
+  strategies.
 ---
 
-# 🥏 Liquidity Data
+# 🎙️ Lobbying Data
 
 {% hint style="info" %}
 Data is updated weekly as data arrives after market close US-EST time.
@@ -10,90 +12,89 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Factor Signals Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/tutorials/Factor%20Model.ipynb)
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Financial Intermediaries</td></tr><tr><td><strong>Models Used</strong></td><td>Aggregate Calculations</td></tr><tr><td><strong>Model Outputs</strong></td><td>Price Improvement, Market Opportunity</td></tr></tbody></table>
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Lobbying Filings</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Scraping</td></tr><tr><td><strong>Model Outputs</strong></td><td>Lobbying Data</td></tr></tbody></table>
 
-## Liquidity Datasets Documentation
-
-Two datasets that can help with understanding the liquidity dynamics for equities.&#x20;
+Diversified selection of ratios for factor development or bottum-up equity selection strategies.
 
 ***
 
-### Price Improvement Dataset
+## Lobbying Dataset&#x20;
 
-The Price Improvement dataset provides information on price improvements for various stocks, offering insights into trading execution quality.
+This section covers the usage of the lobbying dataset. The dataset can be accessed using the sov.data function from our data library.
 
-```python
-import sovai as sov
-df_improve = sov.data("liquidity/price_improvement")
-```
+### Lobbying Dataset
 
-### Market Opportunity Dataset
+The Lobbying dataset provides detailed information on lobbying activities, including client information, spending, and lobbying issues for various companies.
 
-The Market Opportunity dataset offers information on market making opportunities and liquidity provision for different stocks.
-
-```python
-df_market = sov.data("liquidity/market_opportunity")
-```
+<pre class="language-python"><code class="lang-python"><strong>import sovai as sov
+</strong><strong>df_lobbying = sov.data("lobbying/public")
+</strong></code></pre>
 
 ### Accessing Specific Tickers
 
-You can also retrieve data for specific tickers across these datasets. For example:
+You can also retrieve data for specific tickers. For example:
 
 ```python
-df_ticker_imp = sov.data("liquidity/price_improvement", tickers=["AAPL", "MSFT"])
-df_ticker_opp = sov.data("liquidity/market_opportunity", tickers=["AAPL", "MSFT"])
+df_ticker_lobbying = sov.data("lobbying/public", tickers=["WFC", "EXPGY"])
 ```
 
-
+This documentation provides a clear guide on how to access the dataset, and can be easily extended or modified as needed for additional details.
 
 ### Data Dictionary
 
-#### Price Improvement Dataset
-
-| Column Name                    | Description                         |
-| ------------------------------ | ----------------------------------- |
-| ticker                         | Stock symbol                        |
-| date                           | Date of the data point              |
-| total\_price\_improvement      | Total price improvement amount      |
-| shares                         | Number of shares traded             |
-| price\_improvement\_per\_share | Average price improvement per share |
-| average\_price\_improvement    | Average price improvement           |
-
-#### Market Opportunity Dataset
-
-| Column Name              | Description                                    |
-| ------------------------ | ---------------------------------------------- |
-| ticker                   | Stock symbol                                   |
-| date                     | Date of the data point                         |
-| missed\_liquidity        | Volume of missed liquidity opportunities       |
-| exhausted\_liquidity     | Volume of exhausted liquidity                  |
-| routed\_liquidity        | Volume of routed liquidity                     |
-| volume\_opportunity      | Total volume opportunity                       |
-| average\_daily\_vol      | Average daily trading volume                   |
-| rolling\_daily\_vol      | Rolling average of daily trading volume        |
-| buy\_pressure\_log       | Logarithmic measure of buying pressure         |
-| buy\_pressure\_pct       | Percentage measure of buying pressure          |
-| missed\_liquid\_pct      | Percentage of missed liquidity                 |
-| exhausted\_liquid\_pct   | Percentage of exhausted liquidity              |
-| vol\_uncaptured          | Percentage of uncaptured volume                |
-| retail\_pressure         | Measure of retail trading pressure             |
-| institutional\_pressure  | Measure of institutional trading pressure      |
-| algorithmic\_pressure    | Measure of algorithmic trading pressure        |
-| retail\_institute\_ratio | Ratio of retail to institutional pressure      |
-| algo\_institute\_ratio   | Ratio of algorithmic to institutional pressure |
-| retail\_algo\_ratio      | Ratio of retail to algorithmic pressure        |
+| Column Name                       | Description                                                             |
+| --------------------------------- | ----------------------------------------------------------------------- |
+| client                            | Name of the client company                                              |
+| client\_description               | Description of the client's business                                    |
+| spend                             | Amount spent on lobbying                                                |
+| transaction\_type                 | Type of transaction (e.g., lobbying\_income, direct\_lobbying\_expense) |
+| filing\_type                      | Type of filing                                                          |
+| lobby\_description                | Description of lobbying activities                                      |
+| issue\_codes                      | Codes representing the issues lobbied on                                |
+| government\_entity\_details       | Government entities involved                                            |
+| quarter                           | Quarter of the lobbying activity                                        |
+| effective\_date                   | Start date of the lobbying activity                                     |
+| termination\_date                 | End date of the lobbying activity (if applicable)                       |
+| client\_state                     | State of the client                                                     |
+| client\_country                   | Country of the client                                                   |
+| client\_id                        | Unique identifier for the client                                        |
+| government\_lobby                 | Indicator for government lobbying                                       |
+| performing\_own\_lobbying         | Indicator if the client is performing their own lobbying                |
+| registrant\_dt\_updated           | Date the registrant information was updated                             |
+| registrant\_name                  | Name of the lobbying registrant                                         |
+| registrant\_address               | Address of the lobbying registrant                                      |
+| registrant\_id                    | Unique identifier for the registrant                                    |
+| registrant\_description           | Description of the registrant                                           |
+| registrant\_contact\_name         | Contact name for the registrant                                         |
+| registrant\_house\_registrant\_id | House ID for the registrant                                             |
+| registrant\_contact\_telephone    | Contact telephone for the registrant                                    |
+| lobbyist\_full\_names             | Names of the lobbyists involved                                         |
+| lobbyist\_ids                     | Unique identifiers for the lobbyists                                    |
+| previous\_goverment\_positions    | Previous government positions held by lobbyists                         |
+| lobbyist\_new\_statuses           | New status indicators for lobbyists                                     |
+| client\_url                       | URL for client information                                              |
+| registrant\_url                   | URL for registrant information                                          |
+| filing\_url                       | URL for the filing                                                      |
+| filing\_id                        | Unique identifier for the filing                                        |
+| unique\_id                        | Unique identifier for the record                                        |
+| match                             | Matched client name                                                     |
+| date\_time                        | Date and time of the record                                             |
+| ticker                            | Stock ticker symbol of the client company                               |
+| date                              | Date of the lobbying activity                                           |
 
 ### Potential Use Cases
 
-* Execution Quality Analysis: Evaluate the execution quality of trades using price improvement data.
-* Market Making Strategies: Develop market making strategies based on liquidity provision opportunities.
-* Liquidity Analysis: Assess the liquidity of a stock by analyzing various liquidity metrics.
-* Trading Strategy Development: Incorporate liquidity data into quantitative trading strategies.
-* Market Microstructure Analysis: Study market microstructure using detailed liquidity and price improvement data.
-* Performance Benchmarking: Compare execution quality across different brokers or trading venues.
-* Risk Management: Assess liquidity risk and potential transaction costs for large orders.
-* Regulatory Compliance: Monitor best execution practices and demonstrate compliance with regulatory requirements.
+1. Corporate Influence Analysis: Examine how companies allocate resources to influence policy-making.
+2. Sector Trends: Identify trends in lobbying activities across different sectors or industries.
+3. Regulatory Impact Assessment: Analyze the relationship between lobbying efforts and regulatory outcomes.
+4. ESG Research: Incorporate lobbying data into Environmental, Social, and Governance (ESG) assessments.
+5. Political Risk Analysis: Evaluate potential political risks for companies based on their lobbying activities.
+6. Corporate Strategy Insights: Gain insights into companies' strategic priorities by analyzing their lobbying focus areas.
+7. Competitive Intelligence: Compare lobbying activities among competitors in the same industry.
+8. Public Policy Research: Study the influence of corporate lobbying on public policy development.
+9. Investor Due Diligence: Provide additional context for investor research and due diligence processes.
+10. Transparency Reporting: Support corporate transparency initiatives by analyzing and reporting on lobbying activities.&#x20;
 
-These datasets form a comprehensive toolkit for liquidity analysis, enabling detailed examination of price improvements, liquidity provision, and related metrics across different market participants.
+This dataset forms a comprehensive resource for analyzing corporate lobbying activities, enabling detailed examination of spending patterns, issue focus, and potential policy influences across different companies and sectors.
 
 ***
