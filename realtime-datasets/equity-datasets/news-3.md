@@ -43,31 +43,37 @@ df_ticker_short_volume = sov.data("short/volume", tickers=["AAPL", "MSFT"])
 
 ### Data Dictionary
 
-#### Over-Shorted Dataset
+**Over-Shorted Dataset:**
 
-* `ticker`: Stock symbol
-* `date`: Date of the data point
-* `over_shorted`: Measure of how over-shorted a stock is
-* `over_shorted_chg`: Change in the over-shorted measure
-* `short_interest`: Number of shares sold short
-* `number_of_shares`: Total number of outstanding shares
-* `short_percentage`: Percentage of float sold short
-* `short_prediction`: Predicted short interest
-* `days_to_cover`: Number of days to cover short positions
-* `market_cap`: Market capitalization of the company
-* `total_revenue`: Total revenue of the company
-* `volume`: Trading volume
+| Column Name        | Description                             |
+| ------------------ | --------------------------------------- |
+| ticker             | Stock symbol                            |
+| date               | Date of the data point                  |
+| over\_shorted      | Measure of how over-shorted a stock is  |
+| over\_shorted\_chg | Change in the over-shorted measure      |
+| short\_interest    | Number of shares sold short             |
+| number\_of\_shares | Total number of outstanding shares      |
+| short\_percentage  | Percentage of float sold short          |
+| short\_prediction  | Predicted short interest                |
+| days\_to\_cover    | Number of days to cover short positions |
+| market\_cap        | Market capitalization of the company    |
+| total\_revenue     | Total revenue of the company            |
+| volume             | Trading volume                          |
 
-#### Short Volume Dataset
 
-* `ticker`: Stock symbol
-* `date`: Date of the data point
-* `short_volume`: Volume of shares sold short
-* `total_volume`: Total trading volume
-* `short_volume_ratio_exchange`: Ratio of short volume to total volume on the exchange
-* `retail_short_ratio`: Ratio of short volume from retail traders
-* `institutional_short_ratio`: Ratio of short volume from institutional traders
-* `market_maker_short_ratio`: Ratio of short volume from market makers
+
+**Short Volume Dataset:**
+
+| Column Name                    | Description                                           |
+| ------------------------------ | ----------------------------------------------------- |
+| ticker                         | Stock symbol                                          |
+| date                           | Date of the data point                                |
+| short\_volume                  | Volume of shares sold short                           |
+| total\_volume                  | Total trading volume                                  |
+| short\_volume\_ratio\_exchange | Ratio of short volume to total volume on the exchange |
+| retail\_short\_ratio           | Ratio of short volume from retail traders             |
+| institutional\_short\_ratio    | Ratio of short volume from institutional traders      |
+| market\_maker\_short\_ratio    | Ratio of short volume from market makers              |
 
 ### Potential Use Cases
 
