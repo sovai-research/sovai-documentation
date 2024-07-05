@@ -1,66 +1,83 @@
 ---
-description: >-
-  Here we develop three tables to develop a final score of corporate risk to US
-  equities. More than 100+ institutional trading variables.
+description: This section covers the usage of various short selling datasets.
 ---
 
-# 📰 News Sentiment
+# 🥋 Short Selling
 
 {% hint style="info" %}
-Data is updated quarterly as data arrives after market close US-EST time.&#x20;
+Data is updated weekly as data arrives after market close US-EST time.
 {% endhint %}
 
-`Tutorials` are the best documentation — <mark style="color:blue;">`Financial Ratio Analysis`</mark>
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Factor Signals Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/tutorials/Factor%20Model.ipynb)
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>News Scrapers</td></tr><tr><td><strong>Models Used</strong></td><td>Fuzzy Matching</td></tr><tr><td><strong>Model Outputs</strong></td><td>Sentiment Scores</td></tr></tbody></table>
-
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.&#x20;
-
-## Data Access
-
-#### Institutional Trading Data
-
-This data is around 1GB if you download the entire dataset.
-
-```python
-from sovai import sov
-df_news = sov.data("news/daily")
-```
-
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
-
-#### Filtered Dataset
-
-```python
-from sovai import sov
-df_news = sov.data("news/daily", start_date="2017-03-30", tickers=["MSFT","TSLA"])
-```
-
-
-
-## Data Dictionary
-
-<table><thead><tr><th width="170">Feature Name</th><th width="364">Description</th><th width="100">Type</th><th>Example</th></tr></thead><tbody><tr><td>match_quality</td><td>Quality score of the match between the article and the entity, indicating the relevance and accuracy of the match.</td><td>float</td><td>99.75</td></tr><tr><td>within_article</td><td>Number of mentions of the entity within the article, indicating the focus on the entity in the article's content.</td><td>int</td><td>2</td></tr><tr><td>relevance</td><td>The average salience of the entity across the articles, indicating the importance or prominence of the entity.</td><td>float</td><td>0.022049</td></tr><tr><td>magnitude</td><td>A measure of the intensity or strength of the sentiment expressed in the article.</td><td>float</td><td>18.203125</td></tr><tr><td>sentiment</td><td>A score representing the overall sentiment (positive or negative) of the article.</td><td>float</td><td>0.054504</td></tr><tr><td>article_count</td><td>The total number of articles associated with the entity, indicating the level of media attention or coverage.</td><td>int</td><td>1666</td></tr><tr><td>associated_people</td><td>Count of unique people mentioned in the context of the entity, reflecting its association with various individuals.</td><td>int</td><td>143</td></tr><tr><td>associated_companies</td><td>Count of unique companies mentioned in relation to the entity, indicating its business connections.</td><td>int</td><td>287</td></tr><tr><td>tone</td><td>The overall tone of the article, derived from a textual analysis of its content.</td><td>float</td><td>0.237061</td></tr><tr><td>positive</td><td>The score quantifying the positive sentiments expressed in the article.</td><td>float</td><td>2.828125</td></tr><tr><td>negative</td><td>The score quantifying the negative sentiments expressed in the article.</td><td>float</td><td>2.591797</td></tr><tr><td>polarity</td><td>The degree of polarity in the sentiment, indicating the extent of opinionated content.</td><td>float</td><td>5.421875</td></tr><tr><td>activeness</td><td>A measure of the dynamism in the language used, possibly indicating the urgency of the article.</td><td>float</td><td>22.031250</td></tr><tr><td>pronouns</td><td>The count of pronouns used in the article, indicative of the narrative style or subject focus.</td><td>float</td><td>0.995117</td></tr><tr><td>word_count</td><td>The total number of words in the article, giving an indication of its length or detail.</td><td>int</td><td>1084</td></tr></tbody></table>
-
-## News Sentiment
-
-This dataset provides a comprehensive analysis of various entities (such as companies and individuals) based on their media coverage and associated articles. It's designed to assist investors in understanding the market sentiment, media focus, and the overall perception of entities in which they might be interested. The data is extracted and processed from a wide range of articles, ensuring a broad and in-depth view of each entity.
-
-### Data Usage
-
-This dataset is an invaluable resource for investors seeking to gauge public perception, media sentiment, and the prominence of entities in the news. It can be used for:
-
-* Sentiment analysis to understand the market mood.
-* Identifying trends in media coverage related to specific entities.
-* Assessing the impact of news on stock performance.
-* Conducting peer comparison based on media presence and sentiment.
-
-###
-
-
-
-
-
-
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Financial Intermediaries, NASDAQ, NYSE, CME</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing Techniques</td></tr><tr><td><strong>Model Outputs</strong></td><td>Predictions, Volume</td></tr></tbody></table>
 
 ***
+
+### Over-shorted Dataset
+
+The Over-Shorted dataset provides information on short interest and potentially over-shorted stocks, offering insights into short selling activity and related metrics.
+
+```python
+import sov as sov
+df_over_shorted = sov.data("short/over_shorted")
+```
+
+### Short Volume Dataset
+
+The Short Volume dataset offers information on the short selling volume for specified stocks, including breakdowns by different types of market participants.
+
+```python
+import sov as sov
+df_short_volume = sov.data("short/volume")
+```
+
+### Accessing Specific Tickers
+
+You can also retrieve data for specific tickers across these datasets. For example:
+
+```python
+df_ticker_over_shorted = sov.data("short/over_shorted", tickers=["AAPL", "MSFT"])
+df_ticker_short_volume = sov.data("short/volume", tickers=["AAPL", "MSFT"])
+```
+
+### Data Dictionary
+
+#### Over-Shorted Dataset
+
+* `ticker`: Stock symbol
+* `date`: Date of the data point
+* `over_shorted`: Measure of how over-shorted a stock is
+* `over_shorted_chg`: Change in the over-shorted measure
+* `short_interest`: Number of shares sold short
+* `number_of_shares`: Total number of outstanding shares
+* `short_percentage`: Percentage of float sold short
+* `short_prediction`: Predicted short interest
+* `days_to_cover`: Number of days to cover short positions
+* `market_cap`: Market capitalization of the company
+* `total_revenue`: Total revenue of the company
+* `volume`: Trading volume
+
+#### Short Volume Dataset
+
+* `ticker`: Stock symbol
+* `date`: Date of the data point
+* `short_volume`: Volume of shares sold short
+* `total_volume`: Total trading volume
+* `short_volume_ratio_exchange`: Ratio of short volume to total volume on the exchange
+* `retail_short_ratio`: Ratio of short volume from retail traders
+* `institutional_short_ratio`: Ratio of short volume from institutional traders
+* `market_maker_short_ratio`: Ratio of short volume from market makers
+
+### Potential Use Cases
+
+* Short Squeeze Analysis: Identify potentially over-shorted stocks that might be candidates for a short squeeze.
+* Risk Assessment: Evaluate the short interest in a stock as part of overall risk assessment.
+* Market Sentiment Analysis: Use short volume data to gauge market sentiment towards specific stocks.
+* Trading Strategy Development: Incorporate short selling data into quantitative trading strategies.
+* Liquidity Analysis: Assess the liquidity of a stock by analyzing the days to cover metric.
+* Sector Trends: Identify trends in short selling activity across different sectors or industries.
+
+
+
+These datasets form a comprehensive toolkit for short selling analysis, enabling detailed examination of short interest, volume, and related metrics across different equities.

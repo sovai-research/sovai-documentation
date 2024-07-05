@@ -31,10 +31,10 @@ To use Sovai's python module you can install `SovAI`.
 pip install sovai
 ```
 
-Please note that this only works for [<mark style="color:purple;">`paying subscribers`</mark>](https://sov.ai/home)!&#x20;
+**Works only for** [<mark style="color:purple;">**`paying subscribers`**</mark>](https://sov.ai/home)
 
 {% hint style="success" %}
-**The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](./#tutorials)&#x20;
+**The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](./#tutorials)
 {% endhint %}
 
 ### Provided Datasets
@@ -60,22 +60,19 @@ The following people are currently core contributors to SovAI's development and 
 If you want to contribute to the project please reach out
 
 {% hint style="info" %}
-**Contribute!** If you would like to contribute to this project please get in touch [here](https://github.com/sovai-research/sovai-subscribe/issues).&#x20;
+**Contribute!** If you would like to contribute to this project please get in touch [here](https://github.com/sovai-research/sovai-subscribe/issues).
 {% endhint %}
 
 ## Get Help
 
-* The fastest way to get help is to email us for support.&#x20;
+* The fastest way to get help is to email us for support.
 * We also have a pretty active [Linkedin](https://www.linkedin.com/company/sovai/) page.
-* Check our [Frequently Asked Questions](broken-reference) (FAQs) page.
-
-
+* Check our [Frequently Asked Questions](broken-reference/) (FAQs) page.
 
 ## Support us
 
-#### :star:Star **Sovai** on GitHub <a href="#star-fastapi-in-github" id="star-fastapi-in-github"></a>
+#### _The most user-friendly machine learning library for quantamental investment managers."_
 
-For future use, star our [GitHub repository](https://sov.ai/#pricing) (click the star button on the top right corner)
+#### :star: Star **Sovai** on GitHub <a href="#star-fastapi-in-github" id="star-fastapi-in-github"></a>
 
-### <mark style="background-color:orange;">“The most user-friendly</mark> <mark style="background-color:orange;"></mark><mark style="background-color:orange;">**machine learning**</mark><mark style="background-color:orange;">** **</mark><mark style="background-color:orange;">**library**</mark> <mark style="background-color:orange;"></mark><mark style="background-color:orange;">for investment managers.”</mark>
-
+:tada: For future use, star our [GitHub repository](https://sov.ai/#pricing) (click the star button on the top right corner)
