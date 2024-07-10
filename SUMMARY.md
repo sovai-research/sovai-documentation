@@ -47,9 +47,9 @@
 
 ## Advanced Studies
 
-* [🏰 Portfolio Optimization](advanced-studies/institutional.md)
+* [📬 Pairwise Distance](advanced-studies/cheat-sheet.md)
+* [🏰 Anomaly Detection](advanced-studies/institutional.md)
 * [🗣️ Causal Analysis](advanced-studies/institutional-1.md)
-* [📬 Nowcasting](advanced-studies/cheat-sheet.md)
 
 ## IMPORTANT LINKS
 

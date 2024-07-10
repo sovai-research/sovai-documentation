@@ -4,7 +4,7 @@ description: >-
   Equities.
 ---
 
-# 🎢 Price Breakout Prediction
+# 🎢 Price Breakout
 
 {% hint style="info" %}
 Daily predictions arrive between 11 pm - 4 am before market open in the US for 13,000+ stocks.
@@ -56,7 +56,7 @@ df_msft = sov.data("breakout", tickers=["MSFT"])
 df_breakout.plot_line(tickers=["TSLA", "META", "NFLX"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Breakout Predictions
 

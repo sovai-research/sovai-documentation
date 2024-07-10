@@ -4,7 +4,7 @@ description: >-
   equities.
 ---
 
-# ⭕ Corporate Risk Indicators
+# ⭕ Risk Indicators
 
 {% hint style="info" %}
 Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
@@ -69,7 +69,7 @@ from sovai import sov
 sov.plot("corprisk/risks",chart_type="line")
 ```
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionaries
 
