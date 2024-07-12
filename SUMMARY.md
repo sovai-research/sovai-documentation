@@ -49,7 +49,7 @@
 
 * [📬 Pairwise Distance](advanced-studies/cheat-sheet.md)
 * [🏰 Anomaly Detection](advanced-studies/institutional.md)
-* [🗣️ Causal Analysis](advanced-studies/institutional-1.md)
+* [🗣️ Clustering Panels](advanced-studies/institutional-1.md)
 
 ## IMPORTANT LINKS
 
