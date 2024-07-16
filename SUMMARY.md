@@ -39,17 +39,17 @@
   * [🧏 CFPB Complaints](realtime-datasets/sectorial-datasets/cfpb-complaints.md)
   * [💶 Request Datasets](realtime-datasets/sectorial-datasets/request-datasets.md)
 
-## Core Software
-
-* [🏰 Vizualisations](core-software/institutional.md)
-* [🗣️ Reports](core-software/institutional-1.md)
-* [📬 Computations](core-software/cheat-sheet.md)
-
 ## Advanced Studies
 
 * [📬 Pairwise Distance](advanced-studies/cheat-sheet.md)
 * [🏰 Anomaly Detection](advanced-studies/institutional.md)
 * [🗣️ Clustering Panels](advanced-studies/institutional-1.md)
+
+## Asset Managment
+
+* [🏰 Screens and Filters](asset-managment/institutional.md)
+* [🗣️ Weight Optimization](asset-managment/institutional-1.md)
+* [📬 Risk Management](asset-managment/cheat-sheet.md)
 
 ## IMPORTANT LINKS
 
