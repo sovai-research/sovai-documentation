@@ -48,7 +48,7 @@
 ## Asset Managment
 
 * [🏰 Screens and Filters](asset-managment/institutional.md)
-* [🤹‍♂️ Alpha Testing](asset-managment/alpha-testing.md)
+* [🤹‍♂️ Signal Evaluation](asset-managment/signal-evaluation.md)
 * [🗣️ Weight Optimization](asset-managment/institutional-1.md)
 
 ## IMPORTANT LINKS
