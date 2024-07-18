@@ -48,6 +48,7 @@
 ## Asset Managment
 
 * [🏰 Screens and Filters](asset-managment/institutional.md)
+* [🤹‍♂️ Trading Strategies](asset-managment/trading-strategies.md)
 * [🗣️ Weight Optimization](asset-managment/institutional-1.md)
 * [📬 Risk Management](asset-managment/cheat-sheet.md)
 
