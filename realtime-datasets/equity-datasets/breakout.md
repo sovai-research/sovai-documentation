@@ -38,7 +38,7 @@ Access today's highest breakout stock predictions:
 df_breakout.get_latest()
 ```
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Retrieve Specific Ticker Data
 
@@ -56,7 +56,7 @@ df_msft = sov.data("breakout", tickers=["MSFT"])
 df_breakout.plot_line(tickers=["TSLA", "META", "NFLX"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Breakout Predictions
 
@@ -66,7 +66,7 @@ Visualize breakout predictions using the SDK's plotting capabilities:
 sov.plot("breakout", chart_type="predictions", df=df_msft)
 ```
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Prediction Accuracy
 
@@ -76,7 +76,7 @@ Assess the accuracy of breakout predictions:
 sov.plot("breakout", chart_type="accuracy", df=df_msft)
 ```
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

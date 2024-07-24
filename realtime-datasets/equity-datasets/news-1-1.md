@@ -7,14 +7,14 @@ description: >-
 # 📰 News Sentiment
 
 {% hint style="info" %}
-Data is updated quarterly as data arrives after market close US-EST time.&#x20;
+Data is updated quarterly as data arrives after market close US-EST time.
 {% endhint %}
 
 `Tutorials` are the best documentation — <mark style="color:blue;">`Financial Ratio Analysis`</mark>
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>News Scrapers</td></tr><tr><td><strong>Models Used</strong></td><td>Fuzzy Matching</td></tr><tr><td><strong>Model Outputs</strong></td><td>Sentiment Scores</td></tr></tbody></table>
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.&#x20;
+Diversified selection of ratios for factor development or bottum-up equity selection strategies.
 
 ## Data Access
 
@@ -27,7 +27,7 @@ from sovai import sov
 df_news = sov.data("news/daily")
 ```
 
-<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Filtered Dataset
 
@@ -35,8 +35,6 @@ df_news = sov.data("news/daily")
 from sovai import sov
 df_news = sov.data("news/daily", start_date="2017-03-30", tickers=["MSFT","TSLA"])
 ```
-
-
 
 ## Data Dictionary
 
@@ -56,11 +54,5 @@ This dataset is an invaluable resource for investors seeking to gauge public per
 * Conducting peer comparison based on media presence and sentiment.
 
 ###
-
-
-
-
-
-
 
 ***

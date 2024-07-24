@@ -72,7 +72,7 @@ from sovai import sov
 df_location = sov.data("spending/location", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Competition Data:
 
@@ -83,7 +83,7 @@ from sovai import sov
 df_competition = sov.data("spending/competition", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Compensation Date
 
@@ -94,7 +94,7 @@ from sovai import sov
 df_compensation = sov.data("spending/compensation")
 ```
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionaries
 

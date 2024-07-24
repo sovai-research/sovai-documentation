@@ -27,7 +27,7 @@ from sovai import sov
 df_actg_risk = sov.data("corprisk/accounting")
 ```
 
-<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Financial Event Risk
 
@@ -38,7 +38,7 @@ from sovai import sov
 df_events_risk = sov.data("corprisk/events")
 ```
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Misstatement Risk
 
@@ -49,7 +49,7 @@ from sovai import sov
 df_miss_risk = sov.data("corprisk/misstatement")
 ```
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Aggregated Risks
 
@@ -60,7 +60,7 @@ from sovai import sov
 df_miss_risk = sov.data("corprisk/risks")
 ```
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Reports
 
@@ -69,7 +69,7 @@ from sovai import sov
 sov.plot("corprisk/risks",chart_type="line")
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionaries
 
