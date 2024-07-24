@@ -1,16 +1,16 @@
 ---
-description: Forthcoming, March 2025
+description: >-
+  This module allows users to apply various filters and screens to a
+  comprehensive dataset of financial and market factors.
 ---
 
 # 🏰 Screens and Filters
-
-Certainly! Here's the well-formatted documentation for the Screens and Filters module of the sovai software:
 
 ## Screens and Filters Module
 
 ### Overview
 
-The Screens and Filters module is a versatile component of the sovai software suite, designed to help investors and analysts identify novel investment opportunities using a wide range of features as filtering and selection criteria. This module allows users to apply various filters and screens to a comprehensive dataset of financial and market factors.
+The Screens and Filters module is a versatile component of the sovai software suite, designed to help investors and analysts identify novel investment opportunities using a wide range of features as filtering and selection criteria.&#x20;
 
 ### Key Features
 

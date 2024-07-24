@@ -20,8 +20,7 @@ description: >-
 
 To use the Signal Evaluator, you first need to prepare your signal data. The module expects a DataFrame containing your signal values. Once you have your data ready, you can initialize the Signal Evaluator as follows:
 
-```python
-import sovai as sov
+<pre class="language-python"><code class="lang-python">import sovai as sov
 
 # Authenticate
 sov.token_auth(token="your_authentication_token")
@@ -30,8 +29,8 @@ sov.token_auth(token="your_authentication_token")
 df_signal = sov.data("your_signal_data_source")
 
 # Initialize the Signal Evaluator
-evaluator = df_signal.signal_evaluator()
-```
+<a data-footnote-ref href="#user-content-fn-1">evaluator</a> = df_signal.signal_evaluator()
+</code></pre>
 
 ## Available Analyses and Visualizations
 
@@ -39,9 +38,8 @@ evaluator = df_signal.signal_evaluator()
 
 This visualization helps in understanding the overall effectiveness of the signal and its risk-adjusted performance over time.
 
-```python
-evaluator.performance_plot
-```
+<pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-2">evaluator</a>.performance_plot
+</code></pre>
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -55,9 +53,8 @@ This plot provides a comprehensive view of the signal's performance over time. I
 
 This helps in understanding how different levels of the signal correspond to future returns, providing insights into the signal's predictive power across its range.
 
-```python
-evaluator.signal_decile_plot
-```
+<pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-3">evaluator</a>.signal_decile_plot
+</code></pre>
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -68,9 +65,8 @@ This plot breaks down the signal's performance by strength, showing:
 
 ### Stress Test Plot
 
-```python
-evaluator.stress_plot
-```
+<pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-4">evaluator</a>.stress_plot
+</code></pre>
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -82,9 +78,8 @@ This visualization shows how the signal performs during various historical marke
 
 ### Drawdown Plot
 
-```python
-evaluator.drawdown_plot
-```
+<pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-5">evaluator</a>.drawdown_plot
+</code></pre>
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -98,9 +93,8 @@ This plot visualizes the drawdowns of the strategy over time, helping to underst
 
 This plot helps in understanding the risk profile of the strategy and the likelihood of extreme returns.
 
-```python
-evaluator.distribution_plot
-```
+<pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-6">evaluator</a>.distribution_plot
+</code></pre>
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -113,9 +107,8 @@ This histogram shows the distribution of strategy returns, typically including:
 
 ### &#x20;Returns Heatmap
 
-```python
-evaluator.returns_heatmap_plot
-```
+<pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-7">evaluator</a>.returns_heatmap_plot
+</code></pre>
 
 <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
@@ -127,9 +120,8 @@ This heatmap displays strategy returns across different months and years, useful
 
 ### Signal Autocorrelation Plot
 
-```python
-evaluator.signal_correlation_plot
-```
+<pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-8">evaluator</a>.signal_correlation_plot
+</code></pre>
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
@@ -141,9 +133,8 @@ This plot shows the autocorrelation of the signal over time, providing insights 
 
 ### Portfolio Turnover Plot
 
-```python
-evaluator.turnover_plot
-```
+<pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-9">evaluator</a>.turnover_plot
+</code></pre>
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -155,9 +146,8 @@ This visualization depicts portfolio turnover over time, separated into long and
 
 ### Performance Statistics Table
 
-```python
-evaluator.performance_table
-```
+<pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-10">evaluator</a>.performance_table
+</code></pre>
 
 <figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
@@ -174,9 +164,8 @@ This comprehensive table presents key performance statistics, including:
 
 #### 10. Drawdown Analysis Table
 
-```python
-evaluator.drawdown_table
-```
+<pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-11">evaluator</a>.drawdown_table
+</code></pre>
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
@@ -199,3 +188,26 @@ The Signal Evaluator also provides access to several core attributes for further
 7. `evaluator.portfolio_returns`: Aggregate portfolio returns
 8. `evaluator.cumulative_returns`: Cumulative performance of the portfolio
 
+
+
+[^1]: Class Module
+
+[^2]: <mark style="color:blue;">class module</mark>
+
+[^3]: class module
+
+[^4]: class module
+
+[^5]: class module
+
+[^6]: class module
+
+[^7]: class module
+
+[^8]: class module
+
+[^9]: class module
+
+[^10]: class module
+
+[^11]: class module
