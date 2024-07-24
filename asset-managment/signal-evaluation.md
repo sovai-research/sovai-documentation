@@ -14,10 +14,7 @@ description: >-
 * Stress testing capabilities
 * Drawdown analysis
 * Return distribution analysis
-* Seasonal performance visualization
 * Signal persistence evaluation
-* Portfolio turnover assessment
-* Detailed statistical reporting
 
 ### Usage
 
@@ -36,9 +33,11 @@ df_signal = sov.data("your_signal_data_source")
 evaluator = df_signal.signal_evaluator()
 ```
 
-### Available Analyses and Visualizations
+## Available Analyses and Visualizations
 
-#### 1. Performance Plot
+### Performance Plot
+
+This visualization helps in understanding the overall effectiveness of the signal and its risk-adjusted performance over time.
 
 ```python
 evaluator.performance_plot
@@ -52,9 +51,9 @@ This plot provides a comprehensive view of the signal's performance over time. I
 * A 95% confidence interval based on random simulations
 * A rolling Sharpe ratio on a secondary y-axis
 
-This visualization helps in understanding the overall effectiveness of the signal and its risk-adjusted performance over time.
+### Signal Decile Plot
 
-#### 2. Signal Decile Plot
+This helps in understanding how different levels of the signal correspond to future returns, providing insights into the signal's predictive power across its range.
 
 ```python
 evaluator.signal_decile_plot
@@ -67,9 +66,7 @@ This plot breaks down the signal's performance by strength, showing:
 * Cumulative returns for each signal decile
 * Average Sharpe ratios for each decile
 
-This helps in understanding how different levels of the signal correspond to future returns, providing insights into the signal's predictive power across its range.
-
-#### 3. Stress Test Plot
+### Stress Test Plot
 
 ```python
 evaluator.stress_plot
@@ -83,7 +80,7 @@ This visualization shows how the signal performs during various historical marke
 * Potential for drawdowns during extreme market conditions
 * Comparative performance against benchmark during stress periods
 
-#### 4. Drawdown Plot
+### Drawdown Plot
 
 ```python
 evaluator.drawdown_plot
@@ -97,7 +94,9 @@ This plot visualizes the drawdowns of the strategy over time, helping to underst
 * Frequency of drawdowns
 * Recovery periods
 
-#### 5. Return Distribution Plot
+### Return Distribution Plot
+
+This plot helps in understanding the risk profile of the strategy and the likelihood of extreme returns.
 
 ```python
 evaluator.distribution_plot
@@ -112,9 +111,7 @@ This histogram shows the distribution of strategy returns, typically including:
 * Skewness and kurtosis
 * Various risk metrics (e.g., VaR, CVaR)
 
-This plot helps in understanding the risk profile of the strategy and the likelihood of extreme returns.
-
-#### 6. Returns Heatmap
+### &#x20;Returns Heatmap
 
 ```python
 evaluator.returns_heatmap_plot
@@ -128,7 +125,7 @@ This heatmap displays strategy returns across different months and years, useful
 * Consistency of returns over time
 * Years or months of outperformance/underperformance
 
-#### 7. Signal Autocorrelation Plot
+### Signal Autocorrelation Plot
 
 ```python
 evaluator.signal_correlation_plot
@@ -142,7 +139,7 @@ This plot shows the autocorrelation of the signal over time, providing insights 
 * Potential for mean reversion
 * Optimal holding periods
 
-#### 8. Portfolio Turnover Plot
+### Portfolio Turnover Plot
 
 ```python
 evaluator.turnover_plot
@@ -156,13 +153,15 @@ This visualization depicts portfolio turnover over time, separated into long and
 * Strategy stability
 * Potential capacity constraints
 
-#### 9. Performance Statistics Table
+### Performance Statistics Table
 
 ```python
 evaluator.performance_table
 ```
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 This comprehensive table presents key performance statistics, including:
 
