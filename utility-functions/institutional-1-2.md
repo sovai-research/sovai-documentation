@@ -1,87 +1,51 @@
 ---
 description: >-
-  The feature extractor module generates features that can be categorized into
-  several types based on the nature of the calculations.
+  This module provides functionality for nowcasting financial data using a
+  Multi-Frequency Long-term and Event-based forecasting method.
 ---
 
-# 🔩 Feature Neutralization
+# 🔲 Nowcasting Series
 
-## Feature Neutralization[¶](http://localhost:8888/lab/tree/notebooks/computational/Feature%20Neutralization.ipynb#Feature-Neutralization) <a href="#feature-neutralization" id="feature-neutralization"></a>
+## Nowcasting Module&#x20;
 
-All these methods return the same number of columns as the input DataFrame. They transform the data while maintaining the original dimensionality, which is crucial for many financial applications where each feature represents a specific economic or financial metric.
+This module demonstrates how to use the `sovai` library for nowcasting financial data, particularly focusing on accounting data for mega-cap stocks.
 
-1. Orthogonalization might be preferred when you want to remove correlations but keep the overall structure of the data. `orthogonalize_features`
-2. Neutralization might be used when you want to focus on the unique aspects of each feature, removing common market factors. `neutralize_features`
+### Setup
 
-#### Data Loading and Preparation
+First, import and authenticate with the `sovai` library:
 
-First, we load the necessary library and authenticate. Then we load the accounting data for mega-cap stocks from 2018 onwards.
+### Nowcasting
 
-```python
-import sovai as sov
+#### For a Specific Stock
 
-sov.token_auth(token="your_token_here")
-
-# Load weekly accounting data
-df_accounting = sov.data("accounting/weekly")
-
-# Select mega-cap stocks from 2018 onwards
-df_mega = df_accounting.select_stocks("mega").date_range("2018-01-01")
-```
-
-#### Orthogonalization
-
-Orthogonalization transforms a set of features into a new set of uncorrelated (perpendicular) features while preserving the original information content. We demonstrate two methods: Gram-Schmidt and QR decomposition.
-
-1. Gram-Schmidt method:
+To perform nowcasting for a particular stock (e.g., AAPL) and a specific accounting metric (e.g., accounts receivable):
 
 ```python
-# Apply Gram-Schmidt orthogonalization
-df_orthogonalized_gs = df_mega.orthogonalize_features(method='gram_schmidt')
+df_accounting.query("ticker == 'AAPL'").nowcast("data", "accounts_receivable")
 ```
 
-<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
+#### For All Stocks
 
-2. QR method:
+To perform nowcasting for all stocks in the dataset:
 
 ```python
-# Apply QR orthogonalization
-df_orthogonalized_qr = df_mega.orthogonalize_features(method='qr')
+df_accounting.nowcast("data", "accounts_receivable")
 ```
 
-#### Neutralization
+### Visualization
 
-Neutralization reduces the influence of common factors across features, typically by removing one or more principal components, leaving only the unique aspects of each feature. We demonstrate three methods: PCA, SVD, and Iterative Regression.
-
-1. PCA method:
+To create a plot of the nowcasted data:
 
 ```python
-# Apply PCA neutralization
-df_neutralized_pca = df_mega.neutralize_features(method='pca')
+df_accounting.nowcast("plot")
 ```
 
-2. SVD method:
+<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
-```python
-# Apply SVD neutralization
-df_neutralized_svd = df_mega.neutralize_features(method='svd')
-```
+### Notes
 
-### Orthogonalization Methods:&#x20;
+* The `sovai` library provides methods for data retrieval, stock selection, and nowcasting.
+* The `nowcast` method can be used with "data" parameter to return nowcasted data, or "plot" to generate a visualization.
+* Make sure you have the necessary permissions and a valid token to access the `sovai` library and its data.
 
-* Gram-Schmidt orthogonalization:
-  * Transforms the original features into a set of orthogonal features.
-  * Each new feature is uncorrelated with all previous features.
-  * Preserves the original information content but in a different coordinate system.
-* QR decomposition:
-  * Similar to Gram-Schmidt, it produces orthogonal features.
-  * It's a more numerically stable method for orthogonalization.
-
-### Neutralization Methods:&#x20;
-
-* PCA neutralization:
-  * Transforms the data into principal components and keeps only the last component.
-  * This effectively removes the main sources of variation in the data.
-* SVD (Singular Value Decomposition) neutralization:
-  * Similar to PCA, but uses SVD to decompose the data.
-  * Keeps only the component associated with the smallest singular value.
+This notebook demonstrates a streamlined approach to nowcasting financial data using the `sovai` library, allowing for quick analysis of accounting metrics for mega-cap stocks.

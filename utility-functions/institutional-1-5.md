@@ -1,78 +1,81 @@
 ---
 description: >-
-  Implements multiple reduction techniques including PCA, SVD, Factor Analysis,
-  Gaussian Random Projection, and UMAP.
+  The feature importance module in the sovai library offers multiple
+  unsupervised algorithms to quantify the significance of each feature in
+  financial datasets.
 ---
 
-# 🔲 Dimensionality Reduction
+# 🔩 Feature Importance
 
-### Reduction Techniques
+### Feature Importance Methods
 
-The module supports the following dimensionality reduction methods:
+The module supports several methods for calculating feature importance:
 
-* PCA (Principal Component Analysis)
-* Factor Analysis
-* Gaussian Random Projection
-* UMAP (Uniform Manifold Approximation and Projection)
-
-### Usage Examples.
-
-#### Authenticate and load data
+#### Random Projection
 
 ```python
-import sovai as sov
-sov.token_auth(token="your_token_here")
-df_mega = sov.data("accounting/weekly").select_stocks("mega").date_range("2018-01-01") 
+df_mega.importance("random_projection")
 ```
 
-#### 1. Basic Usage with PCA
+<figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+
+Reflects how much each feature contributes to the variance in the randomly projected space.
+
+#### Random Fourier Features
 
 ```python
-# Reduce dimensions using PCA
-result = df_mega.reduce_dimensions(method="pca", n_components=10)
-print(result.head())
+df_mega.importance("fourier")
 ```
 
-#### 2. Using Gaussian Random Projection
+Indicates how strongly each feature influences the approximation of non-linear relationships in the Fourier-transformed space.
+
+#### Independent Component Analysis (ICA)
 
 ```python
-# Reduce dimensions using Gaussian Random Projection
-result = df_mega.reduce_dimensions(method="gaussian_random_projection", n_components=10)
-print(result.head())
+df_mega.importance("ica")
 ```
 
-#### 3. UMAP with Verbose Output
+Based on the magnitude of each feature's contribution to the extracted independent components, representing underlying independent signals in the data.
+
+#### Truncated Singular Value Decomposition (SVD)
 
 ```python
-# Reduce dimensions using UMAP with verbose output
-result = df_mega.reduce_dimensions(method="umap", verbose=True, n_components=10)
-print(result.head())
+df_mega.importance("svd")
 ```
 
-#### 4. Factor Analysis
+Determined by each feature's influence on the principal singular vectors, which represent directions of maximum variance in the data.
+
+#### Sparse Random Projection
 
 ```python
-# Reduce dimensions using Factor Analysis with verbose output
-result = df_mega.reduce_dimensions(method="factor_analysis", verbose=True, n_components=10)
-print(result.head())
+df_mega.importance("sparse_projection")
 ```
 
-### Advanced Usage
+Based on how much each feature contributes to the variance in the sparsely projected space, similar to standard Random Projection but with improved computational efficiency.
 
-The underlying `dimensionality_reduction` function offers more control over the reduction process:
+#### Clustered SHAP Ensemble
 
 ```python
-from dimensionality_reduction import dimensionality_reduction
-
-# Assuming df is your input DataFrame
-result = dimensionality_reduction(df, method='pca', explained_variance=0.95, verbose=True)
-print(result.head())
+df_mega.importance("shapley")
 ```
 
-This advanced usage allows for specifying the amount of variance to be explained if `n_components` is not provided.
+Iteratively applies clustering, uses XGBoost to predict cluster membership, calculates SHAP values, and averages results across multiple runs to determine feature importance in identifying natural data structures.
 
-### Performance Considerations
+### Global Feature Importance
 
-* The dimensionality reduction process can be computationally intensive, especially for large datasets or when using methods like UMAP.
-* PCA and Truncated SVD are generally faster than UMAP for large datasets.
-* Consider using a smaller number of components or a subset of your data if performance is a concern.
+To calculate global feature importance across all methods:
+
+```python
+df_mega.feature_importance()
+```
+
+### Feature Selection
+
+Example of selecting top features based on importance scores:
+
+```python
+feature_importance = df_mega.importance("sparse_projection")
+df_select = df_mega[feature_importance["feature"].head(25)]
+```
+
+<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>

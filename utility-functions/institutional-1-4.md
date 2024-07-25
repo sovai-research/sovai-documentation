@@ -1,91 +1,87 @@
 ---
 description: >-
-  The feature selection module in the sovai library provides various methods to
-  identify and select the most important features from financial datasets.
+  The feature extractor module generates features that can be categorized into
+  several types based on the nature of the calculations.
 ---
 
-# 🔩 Feature Selection
+# 🔩 Feature Neutralization
 
-### Feature Selection Methods
+## Feature Neutralization[¶](http://localhost:8888/lab/tree/notebooks/computational/Feature%20Neutralization.ipynb#Feature-Neutralization) <a href="#feature-neutralization" id="feature-neutralization"></a>
 
-The module supports several methods for feature selection, each based on different algorithms for determining feature importance. All methods use the `select_features` function with the following syntax:
+All these methods return the same number of columns as the input DataFrame. They transform the data while maintaining the original dimensionality, which is crucial for many financial applications where each feature represents a specific economic or financial metric.
 
-```python
-df_mega.select_features(method, n_components=10)
-```
+1. Orthogonalization might be preferred when you want to remove correlations but keep the overall structure of the data. `orthogonalize_features`
+2. Neutralization might be used when you want to focus on the unique aspects of each feature, removing common market factors. `neutralize_features`
 
-Where `method` is one of the following:
+#### Data Loading and Preparation
 
-#### Random Projection
-
-```python
-df_mega.select_features("random_projection", n_components=10)
-```
-
-Selects features based on their contribution to variance in the randomly projected space.
-
-#### Random Fourier Features
+First, we load the necessary library and authenticate. Then we load the accounting data for mega-cap stocks from 2018 onwards.
 
 ```python
-df_mega.select_features("fourier", n_components=10)
+import sovai as sov
+
+sov.token_auth(token="your_token_here")
+
+# Load weekly accounting data
+df_accounting = sov.data("accounting/weekly")
+
+# Select mega-cap stocks from 2018 onwards
+df_mega = df_accounting.select_stocks("mega").date_range("2018-01-01")
 ```
 
-Chooses features based on their influence on non-linear relationships in the Fourier-transformed space.
+#### Orthogonalization
 
-#### Independent Component Analysis (ICA)
+Orthogonalization transforms a set of features into a new set of uncorrelated (perpendicular) features while preserving the original information content. We demonstrate two methods: Gram-Schmidt and QR decomposition.
+
+1. Gram-Schmidt method:
 
 ```python
-df_mega.select_features("ica", n_components=10)
+# Apply Gram-Schmidt orthogonalization
+df_orthogonalized_gs = df_mega.orthogonalize_features(method='gram_schmidt')
 ```
 
-Selects features based on their contribution to extracted independent components, representing underlying independent signals in the data.
+<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
 
-#### Truncated Singular Value Decomposition (SVD)
+2. QR method:
 
 ```python
-df_mega.select_features("svd", n_components=10)
+# Apply QR orthogonalization
+df_orthogonalized_qr = df_mega.orthogonalize_features(method='qr')
 ```
 
-Chooses features based on their influence on principal singular vectors, which represent directions of maximum variance in the data.
+#### Neutralization
 
-#### Sparse Random Projection
+Neutralization reduces the influence of common factors across features, typically by removing one or more principal components, leaving only the unique aspects of each feature. We demonstrate three methods: PCA, SVD, and Iterative Regression.
+
+1. PCA method:
 
 ```python
-df_mega.select_features("sparse_projection", n_components=10)
+# Apply PCA neutralization
+df_neutralized_pca = df_mega.neutralize_features(method='pca')
 ```
 
-Selects features based on their contribution to variance in the sparsely projected space, offering improved computational efficiency over standard Random Projection.
-
-#### Clustered SHAP Ensemble
+2. SVD method:
 
 ```python
-df_mega.select_features("shapley", n_components=10)
+# Apply SVD neutralization
+df_neutralized_svd = df_mega.neutralize_features(method='svd')
 ```
 
-Selects features using a method that iteratively applies clustering, uses XGBoost to predict cluster membership, calculates SHAP values, and averages results across multiple runs.
+### Orthogonalization Methods:&#x20;
 
-### Variability-based Selection
+* Gram-Schmidt orthogonalization:
+  * Transforms the original features into a set of orthogonal features.
+  * Each new feature is uncorrelated with all previous features.
+  * Preserves the original information content but in a different coordinate system.
+* QR decomposition:
+  * Similar to Gram-Schmidt, it produces orthogonal features.
+  * It's a more numerically stable method for orthogonalization.
 
-For all the models you can also select the number of components based on the total importance explained. When `variability` is specified:
+### Neutralization Methods:&#x20;
 
-```python
-df_mega.select_features("random_projection", variability=0.80)
-```
-
-### Parameters
-
-* `method`: String specifying the feature selection method (options listed above).
-* `n_components`: Integer specifying the number of features to select (default is 10).
-* If `variability` is provided, it must be a float between 0 and 1.
-
-### Return Value
-
-Each method returns a DataFrame containing the selected features and their corresponding data.
-
-### Usage Notes
-
-1. The `n_components` parameter allows you to control the number of features selected. Adjust this based on your specific needs and the total number of features in your dataset.
-2. Different methods may yield different sets of selected features. It's often beneficial to compare results from multiple methods to gain a comprehensive understanding of feature importance.
-3. The computational time may vary between methods. Some methods (like Sparse Random Projection) are designed for improved efficiency and may be preferable for larger datasets.
-4. Always ensure you have sufficient historical data for reliable feature selection, especially when using methods that rely on capturing underlying data structures or relationships.
-5. The selected features represent those deemed most important by each method. However, domain knowledge should also be considered when making final feature selection decisions for your specific application.
+* PCA neutralization:
+  * Transforms the data into principal components and keeps only the last component.
+  * This effectively removes the main sources of variation in the data.
+* SVD (Singular Value Decomposition) neutralization:
+  * Similar to PCA, but uses SVD to decompose the data.
+  * Keeps only the component associated with the smallest singular value.

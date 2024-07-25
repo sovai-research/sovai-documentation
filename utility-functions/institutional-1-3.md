@@ -1,81 +1,137 @@
 ---
 description: >-
-  The feature importance module in the sovai library offers multiple
-  unsupervised algorithms to quantify the significance of each feature in
-  financial datasets.
+  The feature extractor module generates features that can be categorized into
+  several types based on the nature of the calculations.
 ---
 
-# 🔩 Feature Importance
+# 🛹 Feature Extractor
 
-### Feature Importance Methods
+## Feature Extraction Module
 
-The module supports several methods for calculating feature importance:
+This module provides powerful feature extraction capabilities for time series data, particularly focused on financial and accounting metrics. It leverages the `sovai` library for data retrieval and a custom `feature_extractor` function for generating a wide range of statistical and time series features.
 
-#### Random Projection
+### Feature Categories
 
-```python
-df_mega.importance("random_projection")
-```
+The `feature_extractor` generates features that fall into several categories:
 
-<figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+* Statistical Features
+* Entropy and Complexity Features
+* Frequency and Streak Features
+* Energy and Magnitude Features
+* Distributional Features
+* Position Features
 
-Reflects how much each feature contributes to the variance in the randomly projected space.
-
-#### Random Fourier Features
-
-```python
-df_mega.importance("fourier")
-```
-
-Indicates how strongly each feature influences the approximation of non-linear relationships in the Fourier-transformed space.
-
-#### Independent Component Analysis (ICA)
+### Usage Examples
 
 ```python
-df_mega.importance("ica")
+import sovai as sov
+
+# Authenticate and load data
+sov.token_auth(token="your_token_here")
+df_mega = sov.data("accounting/weekly").select_stocks("mega").date_range("2018-01-01")
 ```
 
-Based on the magnitude of each feature's contribution to the extracted independent components, representing underlying independent signals in the data.
-
-#### Truncated Singular Value Decomposition (SVD)
+#### 1. Basic Usage with Default Parameters
 
 ```python
-df_mega.importance("svd")
+# Extract features with default parameters
+result = df_mega.extract_features(every="all")
+print(result.head())
 ```
 
-Determined by each feature's influence on the principal singular vectors, which represent directions of maximum variance in the data.
+<figure><img src="../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
 
-#### Sparse Random Projection
+#### 2. Weekly Rolling Features
 
 ```python
-df_mega.importance("sparse_projection")
+# Extract features with a 12-week lookback, calculated weekly
+result = df_mega.extract_features(lookback=12, every='week')
+print(result.head())
 ```
 
-Based on how much each feature contributes to the variance in the sparsely projected space, similar to standard Random Projection but with improved computational efficiency.
-
-#### Clustered SHAP Ensemble
+#### 3. Custom Feature List
 
 ```python
-df_mega.importance("shapley")
+# Extract specific features with custom parameters
+custom_features = ["operating_working_capital", "cash_short_term"]
+result = df_mega.extract_features(lookback=12, every='week', features=custom_features)
+print(result.head())
 ```
 
-Iteratively applies clustering, uses XGBoost to predict cluster membership, calculates SHAP values, and averages results across multiple runs to determine feature importance in identifying natural data structures.
-
-### Global Feature Importance
-
-To calculate global feature importance across all methods:
+#### 4. Monthly Rolling Features
 
 ```python
-df_mega.feature_importance()
+# Use monthly rolling features with a 2-month lookback
+result = df_mega.extract_features(lookback='2mo', every='month')
+print(result.head())
 ```
 
-### Feature Selection
+### Advanced Usage
 
-Example of selecting top features based on importance scores:
+The underlying `feature_extractor` function offers more granular control over the feature extraction process. It can be used directly for more advanced use cases:
 
 ```python
-feature_importance = df_mega.importance("sparse_projection")
-df_select = df_mega[feature_importance["feature"].head(25)]
+import polars as pl
+from feature_extractor import feature_extractor
+
+# Assuming df is your input DataFrame
+result = feature_extractor(df, entity_col='ticker', date_col='date', 
+                           lookback='1mo', every='week', verbose=True)
+print(result.head())
 ```
 
-<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+This advanced usage allows for more customization, including specifying entity and date columns, adjusting lookback periods, and enabling verbose output for debugging.
+
+#### Statistical Features
+
+* **Mean and Variance Related:**
+  * `mean_abs_change`
+  * `variation_coefficient`
+  * `mean_change`
+  * `mean_second_derivative_central`
+
+#### Entropy and Complexity Features
+
+* **Entropy:**
+  * `binned_entropy`
+* **Complexity:**
+  * `lempel_ziv_complexity`
+
+#### Frequency and Streak Features
+
+* **Frequency:**
+  * `number_crossings`
+  * `number_peaks`
+* **Streak:**
+  * `longest_streak_above_mean`
+  * `longest_losing_streak`
+  * `longest_winning_streak`
+
+#### Energy and Magnitude Features
+
+* **Energy:**
+  * `absolute_energy`
+* **Magnitude:**
+  * `absolute_maximum`
+  * `absolute_sum_of_changes`
+  * `max_abs_change`
+
+#### Statistical and Distributional Features
+
+* **Statistical:**
+  * `root_mean_square`
+  * `ratio_beyond_r_sigma`
+* **Distributional:**
+  * `benford_correlation`
+  * `percent_reoccurring_points`
+  * `percent_reoccurring_values`
+
+#### Position Features
+
+* **Positions:**
+  * `first_location_of_maximum`
+  * `first_location_of_minimum`
+  * `last_location_of_maximum`
+  * `last_location_of_minimum`
+
+These categories help organize the wide range of features generated, which capture different aspects of the time series data, making them useful for various analytical and predictive tasks.
