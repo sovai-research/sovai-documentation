@@ -4,6 +4,8 @@ description: Official tutorials created by the developers of Sovai.
 
 # ⭐ Tutorials
 
+{% @github-files/github-code-block url="https://github.com/sovai-research/sovai-public/blob/main/notebooks/tutorials/Accounting%20Data.ipynb" %}
+
 ## Official (WIP)
 
 Here is the markdown table with links to the Google Colab and GitHub notebooks for each tutorial:
@@ -29,8 +31,6 @@ Here is the markdown table with links to the Google Colab and GitHub notebooks f
 | News                                  | ["news"](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/tutorials/News.ipynb)                                             | ["news"](https://github.com/sovai-research/sovai-public/blob/main/notebooks/tutorials/News.ipynb)                                             |
 | Pricing and Market Data               | ["pricing-and-market-data"](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/tutorials/Pricing%20and%20Market%20Data.ipynb) | ["pricing-and-market-data"](https://github.com/sovai-research/sovai-public/blob/main/notebooks/tutorials/Pricing%20and%20Market%20Data.ipynb) |
 | Website Traffic                       | ["website-traffic"](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/tutorials/Website%20Traffic.ipynb)                     | ["website-traffic"](https://github.com/sovai-research/sovai-public/blob/main/notebooks/tutorials/Website%20Traffic.ipynb)                     |
-
-
 
 {% hint style="info" %}
 Please get in touch if you would like to request new tutorials or if you would like to receive updates.
