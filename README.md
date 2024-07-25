@@ -23,6 +23,12 @@ layout:
 
 # Python for Asset Management
 
+**Only works if you purchase an API key i.e, only for** [<mark style="color:purple;">**`paying subscribers`**</mark>](https://sov.ai/home)
+
+<pre class="language-python"><code class="lang-python">import sovai as sov
+<strong>sov.token_auth(token="add_your_subscriber_token_here")
+</strong></code></pre>
+
 ## Installation
 
 To use Sovai's python module you can install `SovAI`.
@@ -30,8 +36,6 @@ To use Sovai's python module you can install `SovAI`.
 ```
 pip install sovai
 ```
-
-**Works only for** [<mark style="color:purple;">**`paying subscribers`**</mark>](https://sov.ai/home)
 
 {% hint style="success" %}
 **The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](./#tutorials)

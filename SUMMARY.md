@@ -71,3 +71,4 @@
 * [👮 Forum and Issues](https://forum.ml-quant.com/)
 * [🙋 Web Application](https://sov.ai/app)
 * [📤 LinkedIn](https://www.linkedin.com/company/sovai/)
+* [🟢 Buy Subscription](https://sov.ai/subscribe)
