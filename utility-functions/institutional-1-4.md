@@ -1,78 +1,91 @@
 ---
 description: >-
-  Implements multiple reduction techniques including PCA, SVD, Factor Analysis,
-  Gaussian Random Projection, and UMAP.
+  The feature selection module in the sovai library provides various methods to
+  identify and select the most important features from financial datasets.
 ---
 
-# 🔲 Dimensionality Reduction
+# 🔩 Feature Selection
 
-### Reduction Techniques
+### Feature Selection Methods
 
-The module supports the following dimensionality reduction methods:
-
-* PCA (Principal Component Analysis)
-* Factor Analysis
-* Gaussian Random Projection
-* UMAP (Uniform Manifold Approximation and Projection)
-
-### Usage Examples.
-
-#### Authenticate and load data
+The module supports several methods for feature selection, each based on different algorithms for determining feature importance. All methods use the `select_features` function with the following syntax:
 
 ```python
-import sovai as sov
-sov.token_auth(token="your_token_here")
-df_mega = sov.data("accounting/weekly").select_stocks("mega").date_range("2018-01-01") 
+df_mega.select_features(method, n_components=10)
 ```
 
-#### 1. Basic Usage with PCA
+Where `method` is one of the following:
+
+#### Random Projection
 
 ```python
-# Reduce dimensions using PCA
-result = df_mega.reduce_dimensions(method="pca", n_components=10)
-print(result.head())
+df_mega.select_features("random_projection", n_components=10)
 ```
 
-#### 2. Using Gaussian Random Projection
+Selects features based on their contribution to variance in the randomly projected space.
+
+#### Random Fourier Features
 
 ```python
-# Reduce dimensions using Gaussian Random Projection
-result = df_mega.reduce_dimensions(method="gaussian_random_projection", n_components=10)
-print(result.head())
+df_mega.select_features("fourier", n_components=10)
 ```
 
-#### 3. UMAP with Verbose Output
+Chooses features based on their influence on non-linear relationships in the Fourier-transformed space.
+
+#### Independent Component Analysis (ICA)
 
 ```python
-# Reduce dimensions using UMAP with verbose output
-result = df_mega.reduce_dimensions(method="umap", verbose=True, n_components=10)
-print(result.head())
+df_mega.select_features("ica", n_components=10)
 ```
 
-#### 4. Factor Analysis
+Selects features based on their contribution to extracted independent components, representing underlying independent signals in the data.
+
+#### Truncated Singular Value Decomposition (SVD)
 
 ```python
-# Reduce dimensions using Factor Analysis with verbose output
-result = df_mega.reduce_dimensions(method="factor_analysis", verbose=True, n_components=10)
-print(result.head())
+df_mega.select_features("svd", n_components=10)
 ```
 
-### Advanced Usage
+Chooses features based on their influence on principal singular vectors, which represent directions of maximum variance in the data.
 
-The underlying `dimensionality_reduction` function offers more control over the reduction process:
+#### Sparse Random Projection
 
 ```python
-from dimensionality_reduction import dimensionality_reduction
-
-# Assuming df is your input DataFrame
-result = dimensionality_reduction(df, method='pca', explained_variance=0.95, verbose=True)
-print(result.head())
+df_mega.select_features("sparse_projection", n_components=10)
 ```
 
-This advanced usage allows for specifying the amount of variance to be explained if `n_components` is not provided.
+Selects features based on their contribution to variance in the sparsely projected space, offering improved computational efficiency over standard Random Projection.
 
-### Performance Considerations
+#### Clustered SHAP Ensemble
 
-* The dimensionality reduction process can be computationally intensive, especially for large datasets or when using methods like UMAP.
-* PCA and Truncated SVD are generally faster than UMAP for large datasets.
-* Consider using a smaller number of components or a subset of your data if performance is a concern.
+```python
+df_mega.select_features("shapley", n_components=10)
+```
+
+Selects features using a method that iteratively applies clustering, uses XGBoost to predict cluster membership, calculates SHAP values, and averages results across multiple runs.
+
+### Variability-based Selection
+
+For all the models you can also select the number of components based on the total importance explained. When `variability` is specified:
+
+```python
+df_mega.select_features("random_projection", variability=0.80)
+```
+
+### Parameters
+
+* `method`: String specifying the feature selection method (options listed above).
+* `n_components`: Integer specifying the number of features to select (default is 10).
+* If `variability` is provided, it must be a float between 0 and 1.
+
+### Return Value
+
+Each method returns a DataFrame containing the selected features and their corresponding data.
+
+### Usage Notes
+
+1. The `n_components` parameter allows you to control the number of features selected. Adjust this based on your specific needs and the total number of features in your dataset.
+2. Different methods may yield different sets of selected features. It's often beneficial to compare results from multiple methods to gain a comprehensive understanding of feature importance.
+3. The computational time may vary between methods. Some methods (like Sparse Random Projection) are designed for improved efficiency and may be preferable for larger datasets.
+4. Always ensure you have sufficient historical data for reliable feature selection, especially when using methods that rely on capturing underlying data structures or relationships.
+5. The selected features represent those deemed most important by each method. However, domain knowledge should also be considered when making final feature selection decisions for your specific application.

@@ -1,7 +1,8 @@
 ---
 description: >-
-  The feature extractor module generates features that can be categorized into
-  several types based on the nature of the calculations.
+  The feature importance module in the sovai library offers multiple
+  unsupervised algorithms to quantify the significance of each feature in
+  financial datasets.
 ---
 
 # 🔩 Feature Importance

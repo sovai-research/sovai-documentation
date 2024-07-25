@@ -1,60 +1,78 @@
 ---
 description: >-
-  This module provides powerful tools for analyzing financial time series data,
-  offering insights that can be valuable for financial analysis, investment
-  decision-making, and economic research.
+  Implements multiple reduction techniques including PCA, SVD, Factor Analysis,
+  Gaussian Random Projection, and UMAP.
 ---
 
-# 🔲 Time Decomposition
+# 🔲 Dimensionality Reduction
 
-### Decomposition Techniques
+### Reduction Techniques
 
-The module primarily uses the Multiple Seasonal-Trend decomposition using LOESS method, which allows for:
+The module supports the following dimensionality reduction methods:
 
-* Trend extraction
-* Multiple seasonal component extraction (e.g., weekly, monthly, quarterly)
-* Remainder (residual) calculation
+* PCA (Principal Component Analysis)
+* Factor Analysis
+* Gaussian Random Projection
+* UMAP (Uniform Manifold Approximation and Projection)
 
-### Reactive Trend Analysis
+### Usage Examples.
 
-This feature categorizes the trend in real-time as:
-
-* Increasing
-* Decreasing
-* Sideways
-
-### Usage Examples
+#### Authenticate and load data
 
 ```python
 import sovai as sov
-
-# Authenticate and load data
 sov.token_auth(token="your_token_here")
-
-df_accounting = sov.data("accounting/weekly").select_stocks("mega")
+df_mega = sov.data("accounting/weekly").select_stocks("mega").date_range("2018-01-01") 
 ```
 
-### Time Decomposition and Statistrics
-
-<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+#### 1. Basic Usage with PCA
 
 ```python
-# Perform time decomposition
-df_time = df_accounting.time_decomposition(method="data", ticker="AAPL", feature="total_revenue")
-# Access overall statistics
+# Reduce dimensions using PCA
+result = df_mega.reduce_dimensions(method="pca", n_components=10)
+print(result.head())
 ```
 
-```
-print(df_time.attrs["stats"])
-```
-
-#### ![](<../.gitbook/assets/image (78).png>)
-
-### Interactive Dashboard
+#### 2. Using Gaussian Random Projection
 
 ```python
-# Generate decomposition plot
-df_accounting.time_decomposition(method="plot", ticker="AAPL", feature="total_revenue")
+# Reduce dimensions using Gaussian Random Projection
+result = df_mega.reduce_dimensions(method="gaussian_random_projection", n_components=10)
+print(result.head())
 ```
 
-<figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+#### 3. UMAP with Verbose Output
+
+```python
+# Reduce dimensions using UMAP with verbose output
+result = df_mega.reduce_dimensions(method="umap", verbose=True, n_components=10)
+print(result.head())
+```
+
+#### 4. Factor Analysis
+
+```python
+# Reduce dimensions using Factor Analysis with verbose output
+result = df_mega.reduce_dimensions(method="factor_analysis", verbose=True, n_components=10)
+print(result.head())
+```
+
+### Advanced Usage
+
+The underlying `dimensionality_reduction` function offers more control over the reduction process:
+
+```python
+from dimensionality_reduction import dimensionality_reduction
+
+# Assuming df is your input DataFrame
+result = dimensionality_reduction(df, method='pca', explained_variance=0.95, verbose=True)
+print(result.head())
+```
+
+This advanced usage allows for specifying the amount of variance to be explained if `n_components` is not provided.
+
+### Performance Considerations
+
+* The dimensionality reduction process can be computationally intensive, especially for large datasets or when using methods like UMAP.
+* PCA and Truncated SVD are generally faster than UMAP for large datasets.
+* Consider using a smaller number of components or a subset of your data if performance is a concern.

@@ -53,8 +53,9 @@
 * [🛹 Feature Extractor](utility-functions/institutional-1-1.md)
 * [🔩 Feature Neutralization](utility-functions/institutional-1-2.md)
 * [🔩 Feature Importance](utility-functions/institutional-1-3.md)
-* [🔲 Dimensionality Reduction](utility-functions/institutional-1-4.md)
-* [🔲 Time Decomposition](utility-functions/institutional-1-5.md)
+* [🔩 Feature Selection](utility-functions/institutional-1-4.md)
+* [🔲 Dimensionality Reduction](utility-functions/institutional-1-5.md)
+* [🔲 Time Decomposition](utility-functions/institutional-1-6.md)
 
 ## IMPORTANT LINKS
 
