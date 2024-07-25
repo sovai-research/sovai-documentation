@@ -63,6 +63,8 @@ Perform clustering on all features:
 df_cluster = df.cluster()
 ```
 
+<figure><img src="../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+
 #### 6.2 Feature-Specific Clustering
 
 Cluster based on specific features:
@@ -80,6 +82,8 @@ Get a quick summary of the last 6-months data:
 df.cluster("summary")
 ```
 
+<figure><img src="../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+
 ### 7. Visualization Methods
 
 #### 7.1 Line Plot
@@ -90,6 +94,8 @@ Visualize cluster centroids and distances:
 df.cluster("line_plot")
 ```
 
+<figure><img src="../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
+
 #### 7.2 Scatter Plot
 
 Create a scatter plot of clustered data:
@@ -98,6 +104,8 @@ Create a scatter plot of clustered data:
 df.cluster("scatter_plot")
 ```
 
+<figure><img src="../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+
 #### 7.3 Animation Plot
 
 Generate an animated plot of cluster evolution:
@@ -105,6 +113,8 @@ Generate an animated plot of cluster evolution:
 ```python
 df.cluster("animation_plot")
 ```
+
+<figure><img src="../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
 
 ### 8. Advanced Analysis
 
@@ -116,15 +126,7 @@ Calculate distances between ticker-cluster combinations:
 df_dist = df_cluster.drop(columns=["labels"]).distance(orient="time-series")
 ```
 
-#### 8.2 Cluster Stability Analysis
-
-Analyze the stability of companies within clusters:
-
-```python
-transformed_df = transform_df(df_cluster)
-stable_companies = transformed_df.std().sort_values(ascending=False).tail(10)
-unstable_companies = transformed_df.std().sort_values(ascending=False).head(10)
-```
+<figure><img src="../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
 
 ### 9. Examples
 
