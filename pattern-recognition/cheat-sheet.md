@@ -4,7 +4,7 @@ description: >-
   cross-section, time-series, and panel orientations.
 ---
 
-# 📬 Pairwise Distance
+# 🐾 Pairwise Distance
 
 ## Pairwise Distance Statistics Module
 
@@ -36,7 +36,7 @@ df_slice = df_factors.select_stocks("mega").date_range("2020-01-01")
 dist_matrix = df_slice.distance()
 ```
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 ### Distance Calculation Methods
 
@@ -175,7 +175,7 @@ dist_matrix_tucker = df_slice.distance(orient="panel", on="date")
 
 These functions calculate distances between different dates based on the market conditions or stock behaviors on those dates.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Sorting and Analyzing Date Distances
 

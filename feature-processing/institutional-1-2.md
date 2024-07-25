@@ -4,7 +4,7 @@ description: >-
   identify and select the most important features from financial datasets.
 ---
 
-# 🔩 Feature Selection
+# 🥍 Select Features
 
 ### Feature Selection Methods
 

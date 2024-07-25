@@ -5,7 +5,7 @@ description: >-
   decision-making, and economic research.
 ---
 
-# 🔲 Time Decomposition
+# 🃏 TS Decomposition
 
 ### Decomposition Techniques
 
@@ -36,7 +36,7 @@ df_accounting = sov.data("accounting/weekly").select_stocks("mega")
 
 ### Time Decomposition and Statistrics
 
-<figure><img src="../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
 ```python
 # Perform time decomposition
@@ -48,7 +48,7 @@ df_time = df_accounting.time_decomposition(method="data", ticker="AAPL", feature
 print(df_time.attrs["stats"])
 ```
 
-#### ![](<../../.gitbook/assets/image (78).png>)
+#### ![](<../.gitbook/assets/image (78).png>)
 
 ### Interactive Dashboard
 
@@ -57,4 +57,4 @@ print(df_time.attrs["stats"])
 df_accounting.time_decomposition(method="plot", ticker="AAPL", feature="total_revenue")
 ```
 
-<figure><img src="../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>

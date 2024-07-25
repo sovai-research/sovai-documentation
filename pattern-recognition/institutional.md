@@ -36,7 +36,7 @@ df_last_3_years = df_last_3_years.percentile()
 <pre class="language-python"><code class="lang-python"><strong>df_anomaly_scores = df_last_3_years.anomalies("scores", ticker="TSLA")
 </strong></code></pre>
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Local Anomalies
 
@@ -44,7 +44,7 @@ df_last_3_years = df_last_3_years.percentile()
 df_local = df_last_3_years.anomalies("local", ticker="NVDA")
 ```
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Global Anomalies
 
@@ -52,7 +52,7 @@ df_local = df_last_3_years.anomalies("local", ticker="NVDA")
 df_global = df_last_3_years.anomalies("global", ticker="NVDA")
 ```
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Cluster Anomalies
 
@@ -60,7 +60,7 @@ df_global = df_last_3_years.anomalies("global", ticker="NVDA")
 df_cluster = df_last_3_years.anomalies("cluster", ticker="NVDA")
 ```
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Notes
 

@@ -4,7 +4,7 @@ description: >-
   financial and time-series data
 ---
 
-# 🗣️ Clustering Panels
+# 🍇 Clustering Panels
 
 ### 1. Introduction
 

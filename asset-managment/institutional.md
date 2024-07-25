@@ -4,7 +4,7 @@ description: >-
   comprehensive dataset of financial and market factors.
 ---
 
-# 🏰 Screens and Filters
+# 📉 Screens and Filters
 
 ## Screens and Filters Module
 

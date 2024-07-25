@@ -5,7 +5,7 @@ description: >-
   financial datasets.
 ---
 
-# 🔩 Feature Importance
+# 🔆 Feature Importance
 
 ### Feature Importance Methods
 
@@ -17,7 +17,7 @@ The module supports several methods for calculating feature importance:
 df_mega.importance("random_projection")
 ```
 
-<figure><img src="../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
 Reflects how much each feature contributes to the variance in the randomly projected space.
 
@@ -78,4 +78,4 @@ feature_importance = df_mega.importance("sparse_projection")
 df_select = df_mega[feature_importance["feature"].head(25)]
 ```
 
-<figure><img src="../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>

@@ -41,7 +41,7 @@ This visualization helps in understanding the overall effectiveness of the signa
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-2">evaluator</a>.performance_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 This plot provides a comprehensive view of the signal's performance over time. It includes:
 
@@ -56,7 +56,7 @@ This helps in understanding how different levels of the signal correspond to fut
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-3">evaluator</a>.signal_decile_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This plot breaks down the signal's performance by strength, showing:
 
@@ -68,7 +68,7 @@ This plot breaks down the signal's performance by strength, showing:
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-4">evaluator</a>.stress_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 This visualization shows how the signal performs during various historical market stress events, helping to assess:
 
@@ -81,7 +81,7 @@ This visualization shows how the signal performs during various historical marke
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-5">evaluator</a>.drawdown_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 This plot visualizes the drawdowns of the strategy over time, helping to understand:
 
@@ -96,7 +96,7 @@ This plot helps in understanding the risk profile of the strategy and the likeli
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-6">evaluator</a>.distribution_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 This histogram shows the distribution of strategy returns, typically including:
 
@@ -110,7 +110,7 @@ This histogram shows the distribution of strategy returns, typically including:
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-7">evaluator</a>.returns_heatmap_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 This heatmap displays strategy returns across different months and years, useful for identifying:
 
@@ -123,7 +123,7 @@ This heatmap displays strategy returns across different months and years, useful
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-8">evaluator</a>.signal_correlation_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 This plot shows the autocorrelation of the signal over time, providing insights into:
 

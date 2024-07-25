@@ -4,7 +4,7 @@ description: >-
   several types based on the nature of the calculations.
 ---
 
-# 🔩 Feature Neutralization
+# 🏔️ Neutralize Features
 
 ## Feature Neutralization[¶](http://localhost:8888/lab/tree/notebooks/computational/Feature%20Neutralization.ipynb#Feature-Neutralization) <a href="#feature-neutralization" id="feature-neutralization"></a>
 
@@ -40,7 +40,7 @@ Orthogonalization transforms a set of features into a new set of uncorrelated (p
 df_orthogonalized_gs = df_mega.orthogonalize_features(method='gram_schmidt')
 ```
 
-<figure><img src="../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
 
 2. QR method:
 

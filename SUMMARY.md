@@ -43,23 +43,27 @@
 
 * [🤹‍♂️ Signal Evaluation](asset-managment/signal-evaluation.md)
 * [🗣️ Weight Optimization](asset-managment/institutional-1.md)
-* [🏰 Screens and Filters](asset-managment/institutional.md)
+* [📉 Screens and Filters](asset-managment/institutional.md)
 
-## Utility Functions
+## Pattern Recognition
 
-* [Pattern Recognition](utility-functions/pattern-recognition/README.md)
-  * [📬 Pairwise Distance](utility-functions/pattern-recognition/cheat-sheet.md)
-  * [🏰 Anomaly Detection](utility-functions/pattern-recognition/institutional.md)
-  * [🗣️ Clustering Panels](utility-functions/pattern-recognition/institutional-1.md)
-* [Time Series](utility-functions/time-series/README.md)
-  * [🔲 Nowcasting Series](utility-functions/time-series/institutional-1.md)
-  * [🔲 Time Decomposition](utility-functions/time-series/institutional-1-1.md)
-* [Feature Processing](utility-functions/feature-processing/README.md)
-  * [🛹 Feature Extractor](utility-functions/feature-processing/institutional-1.md)
-  * [🔩 Feature Neutralization](utility-functions/feature-processing/institutional-1-1.md)
-  * [🔩 Feature Importance](utility-functions/feature-processing/institutional-1-2.md)
-  * [🔩 Feature Selection](utility-functions/feature-processing/institutional-1-3.md)
-  * [🔲 Feature Compression](utility-functions/feature-processing/institutional-1-4.md)
+* [🐾 Pairwise Distance](pattern-recognition/cheat-sheet.md)
+* [🏰 Anomaly Detection](pattern-recognition/institutional.md)
+* [🍇 Clustering Panels](pattern-recognition/institutional-1.md)
+
+## Feature Processing
+
+* [🛹 Extract Features](feature-processing/institutional-1.md)
+* [🏔️ Neutralize Features](feature-processing/institutional-1-1.md)
+* [🥍 Select Features](feature-processing/institutional-1-2.md)
+* [🔲 Dimensionality Reduction](feature-processing/institutional-1-3.md)
+* [🔆 Feature Importance](feature-processing/institutional-1-4.md)
+
+## Time Series
+
+* [📡 Nowcasting Series](time-series/institutional-1.md)
+* [🃏 TS Decomposition](time-series/institutional-1-1.md)
+* [⏳ Time Segmentation](time-series/time-segmentation.md)
 
 ## IMPORTANT LINKS
 

@@ -4,7 +4,7 @@ description: >-
   Multi-Frequency Long-term and Event-based forecasting method.
 ---
 
-# 🔲 Nowcasting Series
+# 📡 Nowcasting Series
 
 ## Nowcasting Module&#x20;
 
@@ -40,7 +40,7 @@ To create a plot of the nowcasted data:
 df_accounting.nowcast("plot")
 ```
 
-<figure><img src="../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
 ### Notes
 
