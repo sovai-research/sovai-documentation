@@ -5,7 +5,7 @@ description: Learn how to install Sovai
 # 💻 Installation
 
 {% hint style="info" %}
-**Sovai is now available**. `pip install sovai` to try it. Check out this example [Notebook](https://colab.research.google.com/drive/1\_H0sHYhzKGZDmgzrQLosuZAR3nOaL6CN?usp=sharing).
+**Sovai is now available**. `pip install sovai` to try it. Check out this example [Notebook](https://colab.research.google.com/drive/1aM09QsbkjPOfG1SnF4Jv-tSaE4wuwdhS?usp=sharing).
 {% endhint %}
 
 ## Install

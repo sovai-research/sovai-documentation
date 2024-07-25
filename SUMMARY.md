@@ -44,6 +44,8 @@
 * [📬 Pairwise Distance](advanced-studies/cheat-sheet.md)
 * [🏰 Anomaly Detection](advanced-studies/institutional.md)
 * [🗣️ Clustering Panels](advanced-studies/institutional-1.md)
+* [🛹 Feature Extractor](advanced-studies/institutional-1-1.md)
+* [🛹 Dimensionality Reduction](advanced-studies/institutional-1-2.md)
 
 ## Asset Managment
 
