@@ -47,16 +47,19 @@
 
 ## Utility Functions
 
-* [📬 Pairwise Distance](utility-functions/cheat-sheet.md)
-* [🏰 Anomaly Detection](utility-functions/institutional.md)
-* [🗣️ Clustering Panels](utility-functions/institutional-1.md)
-* [🔲 Time Decomposition](utility-functions/institutional-1-1.md)
-* [🔲 Nowcasting Series](utility-functions/institutional-1-2.md)
-* [🛹 Feature Extractor](utility-functions/institutional-1-3.md)
-* [🔩 Feature Neutralization](utility-functions/institutional-1-4.md)
-* [🔩 Feature Importance](utility-functions/institutional-1-5.md)
-* [🔩 Feature Selection](utility-functions/institutional-1-6.md)
-* [🔲 Dimensionality Reduction](utility-functions/institutional-1-7.md)
+* [Pattern Recognition](utility-functions/pattern-recognition/README.md)
+  * [📬 Pairwise Distance](utility-functions/pattern-recognition/cheat-sheet.md)
+  * [🏰 Anomaly Detection](utility-functions/pattern-recognition/institutional.md)
+  * [🗣️ Clustering Panels](utility-functions/pattern-recognition/institutional-1.md)
+* [Time Series](utility-functions/time-series/README.md)
+  * [🔲 Nowcasting Series](utility-functions/time-series/institutional-1.md)
+  * [🔲 Time Decomposition](utility-functions/time-series/institutional-1-1.md)
+* [Feature Processing](utility-functions/feature-processing/README.md)
+  * [🛹 Feature Extractor](utility-functions/feature-processing/institutional-1.md)
+  * [🔩 Feature Neutralization](utility-functions/feature-processing/institutional-1-1.md)
+  * [🔩 Feature Importance](utility-functions/feature-processing/institutional-1-2.md)
+  * [🔩 Feature Selection](utility-functions/feature-processing/institutional-1-3.md)
+  * [🔲 Feature Compression](utility-functions/feature-processing/institutional-1-4.md)
 
 ## IMPORTANT LINKS
 
