@@ -39,19 +39,22 @@
   * [🧏 CFPB Complaints](realtime-datasets/sectorial-datasets/cfpb-complaints.md)
   * [💶 Request Datasets](realtime-datasets/sectorial-datasets/request-datasets.md)
 
-## Advanced Studies
-
-* [📬 Pairwise Distance](advanced-studies/cheat-sheet.md)
-* [🏰 Anomaly Detection](advanced-studies/institutional.md)
-* [🗣️ Clustering Panels](advanced-studies/institutional-1.md)
-* [🛹 Feature Extractor](advanced-studies/institutional-1-1.md)
-* [🛹 Dimensionality Reduction](advanced-studies/institutional-1-2.md)
-
 ## Asset Managment
 
 * [🤹‍♂️ Signal Evaluation](asset-managment/signal-evaluation.md)
 * [🗣️ Weight Optimization](asset-managment/institutional-1.md)
 * [🏰 Screens and Filters](asset-managment/institutional.md)
+
+## Utility Functions
+
+* [📬 Pairwise Distance](utility-functions/cheat-sheet.md)
+* [🏰 Anomaly Detection](utility-functions/institutional.md)
+* [🗣️ Clustering Panels](utility-functions/institutional-1.md)
+* [🛹 Feature Extractor](utility-functions/institutional-1-1.md)
+* [🔩 Feature Neutralization](utility-functions/institutional-1-2.md)
+* [🔩 Feature Importance](utility-functions/institutional-1-3.md)
+* [🔲 Dimensionality Reduction](utility-functions/institutional-1-4.md)
+* [🔲 Time Decomposition](utility-functions/institutional-1-5.md)
 
 ## IMPORTANT LINKS
 
