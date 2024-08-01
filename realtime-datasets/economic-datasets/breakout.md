@@ -36,4 +36,28 @@ from sovai import sov
 df_allocate = sov.data("allocation/all")
 ```
 
+### Plot Access
+
+#### Line Plot
+
+Looking at the future and past prescribed allocations over-time
+
+```python
+from sovai import sov 
+sov.plot("allocation", "line")
+```
+
+<figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+
+#### Stacked Plot
+
+Looking at the future and past prescribed allocations over-time
+
+```python
+from sovai import sov 
+sov.plot("allocation", "stacked")
+```
+
+<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+
 ***

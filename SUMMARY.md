@@ -65,6 +65,11 @@
 * [🃏 TS Decomposition](time-series/institutional-1-1.md)
 * [⏳ Time Segmentation](time-series/time-segmentation.md)
 
+## Dashboard Examples
+
+* [🔰 Bankruptcy Prediction](dashboard-examples/institutional-1.md)
+* [🛰️ Turing Risk Index](dashboard-examples/institutional-1-1.md)
+
 ## IMPORTANT LINKS
 
 * [⚙️ Main Website](https://sov.ai)
