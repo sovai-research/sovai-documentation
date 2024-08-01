@@ -6,14 +6,14 @@ description: >-
 
 # 🔰 Bankruptcy Prediction
 
-## [Bankruptcy Predictions](https://sov.ai/app/get/bankruptcies/predictions)
+### [Bankruptcy Predictions](https://sov.ai/app/get/bankruptcies/predictions)
 
 <figure><img src="../.gitbook/assets/bankruptcy_one.png" alt=""><figcaption></figcaption></figure>
 
-## [Bankruptcy Explanations](https://sov.ai/app/get/bankruptcies/explanation)
+### [Bankruptcy Explanations](https://sov.ai/app/get/bankruptcies/explanation)
 
 <figure><img src="../.gitbook/assets/bankruptcy_2 (2).png" alt=""><figcaption></figcaption></figure>
 
-## [Model Performance](https://sov.ai/app/get/bankruptcies/performance)
+### [Model Performance](https://sov.ai/app/get/bankruptcies/performance)
 
 <figure><img src="../.gitbook/assets/SOVAI.png" alt=""><figcaption></figcaption></figure>
