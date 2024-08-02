@@ -57,7 +57,7 @@ Depending on the feedback we receive from users we can add the following dataset
 
 The following people are currently core contributors to SovAI's development and maintenance:
 
-{% embed url="https://github.com/firmai" %}
+{% @github-files/github-code-block url="https://github.com/firmai" %}
 
 ## Contribution
 
@@ -75,6 +75,6 @@ If you want to contribute to the project please reach out
 
 ## Support us
 
-#### _The most user-friendly machine learning library for quantamental investment managers."_
+#### _The most user-friendly machine learning library for quantamental investment managers._
 
-:tada: For future use, star our [GitHub repository](https://sov.ai/#pricing) (click the star button on the top right corner)
+:tada: For future use, star our [GitHub](https://github.com/sovai-research/sovai-public) repository (click the star button on the top right corner)

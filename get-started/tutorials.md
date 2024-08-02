@@ -4,7 +4,7 @@ description: Official tutorials created by the developers of Sovai.
 
 # ⭐ Tutorials
 
-{% @github-files/github-code-block url="https://github.com/sovai-research/sovai-public/blob/main/notebooks/tutorials/Accounting%20Data.ipynb" %}
+We can do[ hub-links](https://hub.sov.ai/hub/user-redirect/lab/tree/sovai-public/notebooks/datasets/Breakout%20Prediction.ipynb) too:&#x20;
 
 ## Official (WIP)
 
