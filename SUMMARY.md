@@ -32,6 +32,7 @@
   * [🏳️ Asset Rotation](realtime-datasets/economic-datasets/breakout.md)
   * [📰 Core Economic Data](realtime-datasets/economic-datasets/news-1.md)
   * [📰 ETF Flows](realtime-datasets/economic-datasets/news-2.md)
+  * [🚥 Government Traffic](realtime-datasets/economic-datasets/news-2-1.md)
   * [🏳️ Turing Risk Index](realtime-datasets/economic-datasets/breakout-1.md)
 * [Sectorial Datasets](realtime-datasets/sectorial-datasets/README.md)
   * [🏠 Airbnb Data](realtime-datasets/sectorial-datasets/institutional-1.md)
