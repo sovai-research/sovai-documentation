@@ -1,51 +1,60 @@
 ---
 description: >-
-  This module provides functionality for nowcasting financial data using a
-  Multi-Frequency Long-term and Event-based forecasting method.
+  This module provides powerful tools for analyzing financial time series data,
+  offering insights that can be valuable for financial analysis, investment
+  decision-making, and economic research.
 ---
 
-# 📡 Nowcasting Series
+# 🃏 TS Decomposition
 
-## Nowcasting Module&#x20;
+### Decomposition Techniques
 
-This module demonstrates how to use the `sovai` library for nowcasting financial data, particularly focusing on accounting data for mega-cap stocks.
+The module primarily uses the Multiple Seasonal-Trend decomposition using LOESS method, which allows for:
 
-### Setup
+* Trend extraction
+* Multiple seasonal component extraction (e.g., weekly, monthly, quarterly)
+* Remainder (residual) calculation
 
-First, import and authenticate with the `sovai` library:
+### Reactive Trend Analysis
 
-### Nowcasting
+This feature categorizes the trend in real-time as:
 
-#### For a Specific Stock
+* Increasing
+* Decreasing
+* Sideways
 
-To perform nowcasting for a particular stock (e.g., AAPL) and a specific accounting metric (e.g., accounts receivable):
-
-```python
-df_accounting.query("ticker == 'AAPL'").nowcast("data", "accounts_receivable")
-```
-
-#### For All Stocks
-
-To perform nowcasting for all stocks in the dataset:
+### Usage Examples
 
 ```python
-df_accounting.nowcast("data", "accounts_receivable")
+import sovai as sov
+
+# Authenticate and load data
+sov.token_auth(token="your_token_here")
+
+df_accounting = sov.data("accounting/weekly").select_stocks("mega")
 ```
 
-### Visualization
+### Time Decomposition and Statistrics
 
-To create a plot of the nowcasted data:
+<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
 ```python
-df_accounting.nowcast("plot")
+# Perform time decomposition
+df_time = df_accounting.time_decomposition(method="data", ticker="AAPL", feature="total_revenue")
+# Access overall statistics
 ```
 
-<figure><img src="../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
+```
+print(df_time.attrs["stats"])
+```
 
-### Notes
+#### ![](<../.gitbook/assets/image (78).png>)
 
-* The `sovai` library provides methods for data retrieval, stock selection, and nowcasting.
-* The `nowcast` method can be used with "data" parameter to return nowcasted data, or "plot" to generate a visualization.
-* Make sure you have the necessary permissions and a valid token to access the `sovai` library and its data.
+### Interactive Dashboard
 
-This notebook demonstrates a streamlined approach to nowcasting financial data using the `sovai` library, allowing for quick analysis of accounting metrics for mega-cap stocks.
+```python
+# Generate decomposition plot
+df_accounting.time_decomposition(method="plot", ticker="AAPL", feature="total_revenue")
+```
+
+<figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>

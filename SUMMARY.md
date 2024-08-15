@@ -8,68 +8,68 @@
 * [⭐ Tutorials](get-started/tutorials.md)
 * [💻 Installation](get-started/installation.md)
 * [⚒️ Release Notes](get-started/release-notes.md)
-* [🔘 About](get-started/readme.md)
+* [🔘 About](get-started/about.md)
 
 ## REALTIME DATASETS
 
 * [Equity Datasets](realtime-datasets/equity-datasets/README.md)
-  * [🈁 Accounting Data](realtime-datasets/equity-datasets/breakout-1.md)
-  * [🗃️ Bankruptcy Predictions](realtime-datasets/equity-datasets/bankruptcy.md)
-  * [🇱🇻 Employee Visa](realtime-datasets/equity-datasets/spending.md)
-  * [🚦 Factor Signals](realtime-datasets/equity-datasets/news.md)
-  * [🟩 Financial Ratios](realtime-datasets/equity-datasets/ratios.md)
-  * [🏗️ Government Contracts](realtime-datasets/equity-datasets/spending-1.md)
-  * [🏦 Institutional Trading](realtime-datasets/equity-datasets/institutional.md)
-  * [🗣️ Insider Flow Prediction](realtime-datasets/equity-datasets/insider.md)
-  * [🥏 Liquidity Data](realtime-datasets/equity-datasets/news-1.md)
-  * [🎙️ Lobbying Data](realtime-datasets/equity-datasets/news-2.md)
-  * [📰 News Sentiment](realtime-datasets/equity-datasets/news-1-1.md)
-  * [🎢 Price Breakout](realtime-datasets/equity-datasets/breakout.md)
-  * [⭕ Risk Indicators](realtime-datasets/equity-datasets/corprisk.md)
-  * [🥋 Short Selling](realtime-datasets/equity-datasets/news-3.md)
-  * [🏁 Wikipedia Views](realtime-datasets/equity-datasets/wiki.md)
+  * [🈁 Accounting Data](realtime-datasets/equity-datasets/accounting-data.md)
+  * [🗃️ Bankruptcy Predictions](realtime-datasets/equity-datasets/bankruptcy-predictions.md)
+  * [🇱🇻 Employee Visa](realtime-datasets/equity-datasets/employee-visa.md)
+  * [🚦 Factor Signals](realtime-datasets/equity-datasets/factor-signals.md)
+  * [🟩 Financial Ratios](realtime-datasets/equity-datasets/financial-ratios.md)
+  * [🏗️ Government Contracts](realtime-datasets/equity-datasets/government-contracts.md)
+  * [🏦 Institutional Trading](realtime-datasets/equity-datasets/institutional-trading.md)
+  * [🗣️ Insider Flow Prediction](realtime-datasets/equity-datasets/insider-flow-prediction.md)
+  * [🥏 Liquidity Data](realtime-datasets/equity-datasets/liquidity-data.md)
+  * [🎙️ Lobbying Data](realtime-datasets/equity-datasets/lobbying-data.md)
+  * [📰 News Sentiment](realtime-datasets/equity-datasets/news-sentiment.md)
+  * [🎢 Price Breakout](realtime-datasets/equity-datasets/price-breakout.md)
+  * [⭕ Risk Indicators](realtime-datasets/equity-datasets/risk-indicators.md)
+  * [🥋 Short Selling](realtime-datasets/equity-datasets/short-selling.md)
+  * [🏁 Wikipedia Views](realtime-datasets/equity-datasets/wikipedia-views.md)
 * [Economic Datasets](realtime-datasets/economic-datasets/README.md)
-  * [🏳️ Asset Rotation](realtime-datasets/economic-datasets/breakout.md)
-  * [📰 Core Economic Data](realtime-datasets/economic-datasets/news-1.md)
-  * [📰 ETF Flows](realtime-datasets/economic-datasets/news-2.md)
-  * [🚥 Government Traffic](realtime-datasets/economic-datasets/news-2-1.md)
-  * [🏳️ Turing Risk Index](realtime-datasets/economic-datasets/breakout-1.md)
+  * [🏳️ Asset Rotation](realtime-datasets/economic-datasets/asset-rotation.md)
+  * [📰 Core Economic Data](realtime-datasets/economic-datasets/core-economic-data.md)
+  * [📰 ETF Flows](realtime-datasets/economic-datasets/etf-flows.md)
+  * [🚥 Government Traffic](realtime-datasets/economic-datasets/government-traffic.md)
+  * [🏳️ Turing Risk Index](realtime-datasets/economic-datasets/turing-risk-index.md)
 * [Sectorial Datasets](realtime-datasets/sectorial-datasets/README.md)
-  * [🏠 Airbnb Data](realtime-datasets/sectorial-datasets/institutional-1.md)
-  * [🎦 Box Office Stats](realtime-datasets/sectorial-datasets/institutional.md)
+  * [🏠 Airbnb Data](realtime-datasets/sectorial-datasets/airbnb-data.md)
+  * [🎦 Box Office Stats](realtime-datasets/sectorial-datasets/box-office-stats.md)
   * [🧏 CFPB Complaints](realtime-datasets/sectorial-datasets/cfpb-complaints.md)
   * [💶 Request Datasets](realtime-datasets/sectorial-datasets/request-datasets.md)
 
 ## Asset Managment
 
 * [🤹‍♂️ Signal Evaluation](asset-managment/signal-evaluation.md)
-* [🗣️ Weight Optimization](asset-managment/institutional-1.md)
-* [📉 Screens and Filters](asset-managment/institutional.md)
+* [🗣️ Weight Optimization](asset-managment/weight-optimization.md)
+* [📉 Screens and Filters](asset-managment/screens-and-filters.md)
 
 ## Pattern Recognition
 
-* [🐾 Pairwise Distance](pattern-recognition/cheat-sheet.md)
-* [🏰 Anomaly Detection](pattern-recognition/institutional.md)
-* [🍇 Clustering Panels](pattern-recognition/institutional-1.md)
+* [🐾 Pairwise Distance](pattern-recognition/pairwise-distance.md)
+* [🏰 Anomaly Detection](pattern-recognition/anomaly-detection.md)
+* [🍇 Clustering Panels](pattern-recognition/clustering-panels.md)
 
 ## Feature Processing
 
-* [🛹 Extract Features](feature-processing/institutional-1.md)
-* [🏔️ Neutralize Features](feature-processing/institutional-1-1.md)
-* [🥍 Select Features](feature-processing/institutional-1-2.md)
-* [🔲 Dimensionality Reduction](feature-processing/institutional-1-3.md)
-* [🔆 Feature Importance](feature-processing/institutional-1-4.md)
+* [🛹 Extract Features](feature-processing/extract-features.md)
+* [🏔️ Neutralize Features](feature-processing/neutralize-features.md)
+* [🥍 Select Features](feature-processing/select-features.md)
+* [🔲 Dimensionality Reduction](feature-processing/dimensionality-reduction.md)
+* [🔆 Feature Importance](feature-processing/feature-importance.md)
 
 ## Time Series
 
-* [📡 Nowcasting Series](time-series/institutional-1.md)
-* [🃏 TS Decomposition](time-series/institutional-1-1.md)
+* [📡 Nowcasting Series](time-series/nowcasting-series.md)
+* [🃏 TS Decomposition](time-series/institutional-1.md)
 * [⏳ Time Segmentation](time-series/time-segmentation.md)
 
 ## Dashboard Examples
 
-* [🔰 Bankruptcy Prediction](dashboard-examples/institutional-1.md)
-* [🛰️ Turing Risk Index](dashboard-examples/institutional-1-1.md)
+* [🔰 Bankruptcy Prediction](dashboard-examples/bankruptcy-prediction.md)
+* [🛰️ Turing Risk Index](dashboard-examples/turing-risk-index.md)
 
 ## IMPORTANT LINKS
 
