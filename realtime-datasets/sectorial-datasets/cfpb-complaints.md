@@ -1,5 +1,7 @@
 ---
-description: This section covers the usage of the Consumer Financial Complaint dataset.
+description: >-
+  This section covers the usage of the Consumer Financial Complaint
+  ticker-mapped dataset.
 ---
 
 # 🧏 CFPB Complaints

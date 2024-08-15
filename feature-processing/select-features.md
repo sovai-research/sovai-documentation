@@ -16,7 +16,7 @@ df_mega.select_features(method, n_components=10)
 
 Where `method` is one of the following:
 
-#### Random Projection
+#### 1. Random Projection
 
 ```python
 df_mega.select_features("random_projection", n_components=10)
@@ -24,7 +24,7 @@ df_mega.select_features("random_projection", n_components=10)
 
 Selects features based on their contribution to variance in the randomly projected space.
 
-#### Random Fourier Features
+#### 2. Random Fourier Features
 
 ```python
 df_mega.select_features("fourier", n_components=10)
@@ -32,7 +32,7 @@ df_mega.select_features("fourier", n_components=10)
 
 Chooses features based on their influence on non-linear relationships in the Fourier-transformed space.
 
-#### Independent Component Analysis (ICA)
+#### 3. Independent Component Analysis (ICA)
 
 ```python
 df_mega.select_features("ica", n_components=10)

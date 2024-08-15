@@ -1,5 +1,7 @@
 ---
-description: This section covers the usage of various short selling datasets.
+description: >-
+  This section covers the usage of various short-selling datasets for risk
+  analysis.
 ---
 
 # 🥋 Short Selling

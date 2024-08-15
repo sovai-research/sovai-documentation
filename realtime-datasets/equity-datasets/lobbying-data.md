@@ -1,7 +1,7 @@
 ---
 description: >-
-  A financial factor dataset for in-depth company analysis and investment
-  strategies.
+  A ticker matched lobbying data to see fine-grained corporate lobbying
+  behaviour.
 ---
 
 # 🎙️ Lobbying Data

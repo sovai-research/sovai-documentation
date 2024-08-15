@@ -1,20 +1,20 @@
 ---
 description: >-
-  Here we develop three tables to develop a final score of corporate risk to US
-  equities. More than 100+ institutional trading variables.
+  A look at some of the largest firms and their daily wikipedia page views and
+  trends.
 ---
 
 # 🏁 Wikipedia Views
 
 {% hint style="info" %}
-Data is updated quarterly as data arrives after market close US-EST time.&#x20;
+Data is updated quarterly as data arrives after market close US-EST time.
 {% endhint %}
 
 `Tutorials` are the best documentation — <mark style="color:blue;">`Financial Ratio Analysis`</mark>
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Wikipedia Scrapers</td></tr><tr><td><strong>Models Used</strong></td><td>Fuzzy Matching</td></tr><tr><td><strong>Model Outputs</strong></td><td>Views and Trends</td></tr></tbody></table>
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.&#x20;
+Diversified selection of ratios for factor development or bottum-up equity selection strategies.
 
 ## Data Access
 
@@ -35,8 +35,6 @@ df_news = sov.data("wikipedia/views")
 from sovai import sov
 df_news = sov.data("wikipedia/views", start_date="2017-03-30", tickers=["MSFT","TSLA"])
 ```
-
-
 
 ## Data Dictionary
 
@@ -65,11 +63,5 @@ This dataset can be leveraged by investors for various purposes:
 * **Comparative Analysis:** Comparing alpha and beta metrics across different tickers can help identify outperformers or underperformers in terms of market interest.
 
 ###
-
-
-
-
-
-
 
 ***

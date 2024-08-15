@@ -1,7 +1,7 @@
 ---
 description: >-
-  Here we develop three tables to develop a final score of corporate risk to US
-  equities. More than 100+ institutional trading variables.
+  Two types of news datasets have been developed, one is ticker-matched, and the
+  next is theme-matched.
 ---
 
 # 📰 News Sentiment

@@ -12,7 +12,7 @@ description: Quick start guide to Sovai
 
 Please note that this only works for [<mark style="color:purple;">`paying subscribers`</mark>](https://sov.ai/home)!
 
-### [`Got to Tutorials`](tutorials.md)
+### [<mark style="color:orange;">`Go to Tutorials`</mark>](tutorials.md)
 
 {% hint style="info" %}
 **To familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](tutorials.md)
@@ -98,38 +98,3 @@ We can also make use of pandas' built in functions to run queries on top of the 
 df_risks.query("ticker == 'CGRNQ'")
 ```
 
-## Running Computation: <mark style="color:blue;">sov.compute()</mark>
-
-Sovai simplifies many calculations that would otherwise take many lines to compute. We also write the code to be as fast as possible .
-
-Here is an example of one line of code needed to calculate Principal Components.
-
-```python
-pca_df = sov.compute("pca",df_risks)
-```
-
-This is an example of calculating a distance-matrix on a dataset.
-
-```python
-df_distance = sov.compute('distance-matrix', on="ticker", df=df_risks)
-```
-
-## Custom Studies: <mark style="color:blue;">sov.custom()</mark>
-
-<mark style="background-color:red;">Custome Studies - Still a work in progress.</mark>
-
-Studies include more advanced methods than calculations, and currently include software for portfolio-optimization, and time-series forecasts.
-
-### Forecasting
-
-```python
-df_future = sov.forecast(df_risks, horizon=12)
-```
-
-### Portfolio Optimization
-
-```
-df_future = sov.optimize(df_positions, scale="week")
-```
-
-Our studies is a growing area of research and we will keep expanding and enchancing our offering in this space.

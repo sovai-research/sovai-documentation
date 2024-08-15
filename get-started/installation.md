@@ -8,15 +8,6 @@ description: Learn how to install Sovai
 **Sovai is now available**. `pip install sovai` to try it. Check out this example [Notebook](https://colab.research.google.com/drive/1aM09QsbkjPOfG1SnF4Jv-tSaE4wuwdhS?usp=sharing).
 {% endhint %}
 
-## Install
-
-Sovai is tested and supported on the following 64-bit systems:
-
-* Python 3.6 – 3.11
-* Python 3.9 for Ubuntu only
-* Ubuntu 16.04 or later
-* Windows 7 or later
-
 Install Sovai with Python's pip package manager.
 
 ```shell
@@ -29,7 +20,16 @@ To install the full version (see dependencies below):
 pip install sovai[full]
 ```
 
-## Environment
+## Install
+
+Sovai is tested and supported on the following 64-bit systems:
+
+* Python 3.6 – 3.11
+* Python 3.9 for Ubuntu only
+* Ubuntu 16.04 or later
+* Windows 7 or later
+
+## &#x20;Environment
 
 In order to avoid potential conflicts with other packages, it is strongly recommended to use a virtual environment, e.g. python3 virtualenv (see [python3 virtualenv documentation](https://docs.python.org/3/tutorial/venv.html)).
 
@@ -48,83 +48,83 @@ pip install sovai
 python -m ipykernel install --user --name yourenvname --display-name "display-name"
 ```
 
-{% hint style="warning" %}
-Sovai is **not** yet compatible with sklearn>=0.23.2.
-{% endhint %}
-
 ## Dependencies
 
-* Default dependencies that are installed with `pip install sovai` are [listed here](https://github.com/pycaret/pycaret/blob/master/requirements.txt).
-* Optional dependencies that are installed with `sovai[full]` are [listed here](installation.md#install-from-pip).
-* Testing requirements are [listed here](https://github.com/pycaret/pycaret/blob/master/requirements-test.txt).
+Default dependencies that are installed with `pip install sovai` are [listed here](https://github.com/sovai-research/SovAI/blob/master/pyproject.toml).
 
 #### Select the tab
 
 {% tabs %}
 {% tab title="requirements" %}
-pandas
+numpy>=1.20
 
-scipy<=1.5.4
+scipy>=1.0&#x20;
 
-seaborn
+pandas>=1.0
 
-polars
+python-dateutil>=2.8
 
-matplotlib
+python-dotenv>=0.10
+
+&#x20;requests>=2.20
+
+&#x20;joblib>=1.0&#x20;
+
+pyarrow>=5.0
+
+&#x20;matplotlib>=3.0
+
+&#x20;plotly>=5.0
+
+&#x20;scikit-learn>=1.0
+
+&#x20;numba>=0.50
+
+&#x20;boto3>=1.20
+
+&#x20;dash>=2.0
+
+great-tables>=0.9
+
+&#x20;polars>=0.20.30
+
+&#x20;ruptures>=1.0
+
+&#x20;shap>=0.40
+
+&#x20;skfolio>=0.3
+
+&#x20;statsforecast>=1.0
+
+&#x20;tensorly>=0.6
+
+&#x20;openai>=1.0
+
+&#x20;mfles>=0.2
+
+&#x20;pexpect>=4.9.0
+
+&#x20;lightgbm>=4.5.0&#x20;
+
+ipywidgets>=8.1.3
+
+&#x20;polars-talib==0.1.3
+
+&#x20;dash-bootstrap-components>=1.6.0
 {% endtab %}
 
-{% tab title="requirements-optional" %}
-shap
+{% tab title="requirements-dev" %}
+poetry>=1.0&#x20;
 
-interpret<=0.2.4
+pytest>=6.0&#x20;
 
-tune-sklearn>=0.2.1
+flake8>=3.9&#x20;
 
-ray\[tune]>=1.0.0
+black>=21.0&#x20;
 
-hyperopt
+isort>=5.0&#x20;
 
-optuna>=2.2.0
-
-scikit-optimize>=0.8.1
-
-psutil
-
-catboost>=0.23.2
-
-xgboost>=1.1.0
-
-explainerdashboard
-
-m2cgen
-
-evidently
-
-autoviz
-
-fairlearn
-
-fastapi
-
-uvicorn
-
-gradio
-
-fugue>=0.6.5
-
-boto3
-
-azure-storage-blob
-
-google-cloud-storage
-{% endtab %}
-
-{% tab title="requirements-test" %}
-pytest
-
-moto
-
-codecov
+mypy>=0.900
 {% endtab %}
 {% endtabs %}
 

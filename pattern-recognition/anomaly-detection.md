@@ -17,8 +17,6 @@ description: >-
 
 ### Usage
 
-Loading Data
-
 Load the accounting factors data:
 
 ```python

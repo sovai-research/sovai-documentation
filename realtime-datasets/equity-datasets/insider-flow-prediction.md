@@ -1,10 +1,12 @@
 ---
 description: >-
-  Here we develop three tables to develop a final score of corporate risk to US
-  equities. More than 60+ insider trading variables.
+  More than 60+ insider trading features helpful for machine learning, including
+  a flow prediction value.
 ---
 
 # 🗣️ Insider Flow Prediction
+
+
 
 {% hint style="info" %}
 Data is updated weekly as data arrives after market close US-EST time.

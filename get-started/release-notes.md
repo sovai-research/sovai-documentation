@@ -4,7 +4,7 @@ description: This page shows release notes >= 0.0
 
 # ⚒️ Release Notes
 
-### **Sovai 0.0.1**
+### **Sovai 0.2.6**
 
 **Release Date: April 10, 2024 (BUG FIXES, NEW FUNCTIONALITY)**
 

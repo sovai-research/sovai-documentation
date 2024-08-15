@@ -1,7 +1,7 @@
 ---
 description: >-
-  Use this indicator to understand the trajectory of global risks as perceived
-  by investors.
+  Standardized financial accounting data across multiple US publicly traded
+  firms.
 ---
 
 # 🈁 Accounting Data

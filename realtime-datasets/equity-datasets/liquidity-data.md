@@ -1,5 +1,7 @@
 ---
-description: Liquidity datasets for company analysis and investment strategies.
+description: >-
+  Various dataset that could help with the assesment of security liquidity to
+  inform trading decisions.
 ---
 
 # 🥏 Liquidity Data
