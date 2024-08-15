@@ -28,6 +28,7 @@
   * [⭕ Risk Indicators](realtime-datasets/equity-datasets/risk-indicators.md)
   * [🥋 Short Selling](realtime-datasets/equity-datasets/short-selling.md)
   * [🏁 Wikipedia Views](realtime-datasets/equity-datasets/wikipedia-views.md)
+  * [SEC Edgar Filing](realtime-datasets/equity-datasets/sec-edgar-filing.md)
 * [Economic Datasets](realtime-datasets/economic-datasets/README.md)
   * [🏳️ Asset Rotation](realtime-datasets/economic-datasets/asset-rotation.md)
   * [📰 Core Economic Data](realtime-datasets/economic-datasets/core-economic-data.md)
