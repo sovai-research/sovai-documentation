@@ -10,7 +10,7 @@ description: >-
 Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
 {% endhint %}
 
-`Tutorials` are the best documentation — [<mark style="color:blue;">`Corporate Risk Indicators`</mark>](risk-indicators.md)
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Corporate Risk Indicators Tutorial`</mark>](risk-indicators.md)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Exchange Data.</td></tr><tr><td><strong>Models Used</strong></td><td>Transformations, Simple Maths</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Ratios</td></tr></tbody></table>
 

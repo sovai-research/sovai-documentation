@@ -6,6 +6,8 @@ description: >-
 
 # 🥍 Select Features
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Select Features Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Feature%20Selection.ipynb)
+
 ### Feature Selection Methods
 
 The module supports several methods for feature selection, each based on different algorithms for determining feature importance. All methods use the `select_features` function with the following syntax:

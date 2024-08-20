@@ -6,6 +6,8 @@ description: >-
 
 # 🛹 Extract Features
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Extract Features Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Feature%20Extractions.ipynb)
+
 ## Feature Extraction Module
 
 This module provides powerful feature extraction capabilities for time series data, particularly focused on financial and accounting metrics. It leverages the `sovai` library for data retrieval and a custom `feature_extractor` function for generating a wide range of statistical and time series features.

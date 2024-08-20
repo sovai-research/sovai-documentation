@@ -7,6 +7,8 @@ description: >-
 
 # 🔆 Feature Importance
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Feature Importance Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Feature%20Importance.ipynb)
+
 ### Feature Importance Methods
 
 The module supports several methods for calculating feature importance:

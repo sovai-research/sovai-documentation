@@ -1,4 +1,12 @@
+---
+description: >-
+  Segments time series into different components according to statistical tests
+  over the series. Helpful for understanding changes in regimes.
+---
+
 # ⏳ Time Segmentation
+
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Time Segmentation Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Segmentation%20Notebook.ipynb)
 
 ### Overview
 

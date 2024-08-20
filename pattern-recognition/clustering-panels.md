@@ -6,6 +6,8 @@ description: >-
 
 # 🍇 Clustering Panels
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Clustering Panels Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Clustering%20Notebook.ipynb)
+
 ### Introduction
 
 Can be used to cluster any panel dataset.  It is particularly useful for financial analysts, data scientists, and researchers working with time-series data across multiple entities (e.g., stocks, companies) and variables.

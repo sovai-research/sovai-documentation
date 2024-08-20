@@ -11,7 +11,7 @@ description: >-
 Daily index arrive between 11 pm - 4 am before market open in the US.
 {% endhint %}
 
-`Tutorials` are the best documentation — [<mark style="color:blue;">`Business, Political, and Market Risk`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Turing%20Risk%20Index.ipynb)
+`Tutorials` — [<mark style="color:blue;">`Business, Political, and Market Risk Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Turing%20Risk%20Index.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Hundreds of leading indicators.</td></tr><tr><td>Models Used</td><td>Imputation Models, Time Series Forecast Models</td></tr><tr><td>Model Outputs</td><td>Market, Business, and Political risk indicators,</td></tr></tbody></table>
 

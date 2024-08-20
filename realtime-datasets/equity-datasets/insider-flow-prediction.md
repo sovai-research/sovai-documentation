@@ -12,7 +12,7 @@ description: >-
 Data is updated weekly as data arrives after market close US-EST time.
 {% endhint %}
 
-`Tutorials` are the best documentation — [<mark style="color:blue;">`Insider Flow Prediction`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Insider%20Trading.ipynb)
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Insider Flow Prediction Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Insider%20Trading.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Insider Filings, Market Data</td></tr><tr><td><strong>Models Used</strong></td><td>Machine Learning (Gradient Boost)</td></tr><tr><td><strong>Model Outputs</strong></td><td>Percentile Outputs (Relative)</td></tr></tbody></table>
 

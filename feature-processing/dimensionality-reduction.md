@@ -6,6 +6,8 @@ description: >-
 
 # 🔲 Dimensionality Reduction
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Dimensionality Reduction Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Dimensionality%20Reduction.ipynb)
+
 ### Reduction Techniques
 
 The module supports the following dimensionality reduction methods:

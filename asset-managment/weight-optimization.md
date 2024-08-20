@@ -7,6 +7,8 @@ description: >-
 
 # 🗣️ Weight Optimization
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Weight Optimization Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/studies/Weight%20Optimization.ipynb)
+
 ### Key Features
 
 * Multiple optimization strategies

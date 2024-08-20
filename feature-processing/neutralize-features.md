@@ -6,6 +6,8 @@ description: >-
 
 # 🏔️ Neutralize Features
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Neutralize Features Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Feature%20Neutralization.ipynb)
+
 ## Feature Neutralization[¶](http://localhost:8888/lab/tree/notebooks/computational/Feature%20Neutralization.ipynb#Feature-Neutralization) <a href="#feature-neutralization" id="feature-neutralization"></a>
 
 All these methods return the same number of columns as the input DataFrame. They transform the data while maintaining the original dimensionality, which is crucial for many financial applications where each feature represents a specific economic or financial metric.

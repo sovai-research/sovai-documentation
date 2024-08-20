@@ -6,6 +6,8 @@ description: >-
 
 # 🐾 Pairwise Distance
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Pairwise Distance Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Pairwise%20Distance.ipynb)
+
 ## Pairwise Distance Statistics Module
 
 `dataframe.distance()`

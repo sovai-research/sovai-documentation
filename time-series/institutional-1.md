@@ -7,6 +7,8 @@ description: >-
 
 # 🃏 TS Decomposition
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Time Series Decomposition Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Decomposition%20Notebook.ipynb)
+
 ### Decomposition Techniques
 
 The module primarily uses the Multiple Seasonal-Trend decomposition using LOESS method, which allows for:

@@ -10,7 +10,7 @@ description: >-
 Data is updated weekly as data arrives after market close US-EST time.
 {% endhint %}
 
-`Tutorials` are the best documentation — [<mark style="color:blue;">`Lobbying Data`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Lobbying%20Analysis.ipynb)
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Lobbying Data Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Lobbying%20Analysis.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Lobbying Filings</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Scraping</td></tr><tr><td><strong>Model Outputs</strong></td><td>Lobbying Data</td></tr></tbody></table>
 

@@ -14,7 +14,7 @@ This dataset is replaceable with your preferred standardized dataset, currently 
 Daily index arrive between 11 pm - 4 am before market open in the US.
 {% endhint %}
 
-<mark style="background-color:orange;">`Tutorials`</mark> are the best documentation — [<mark style="color:blue;">`Accounting Data`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Accounting%20Data.ipynb)
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Accounting Data Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Accounting%20Data.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Raw XBRL.</td></tr><tr><td><strong>Models Used</strong></td><td>Imputation Models, Validation Against Commerical Dataset</td></tr><tr><td><strong>Model Outputs</strong></td><td>Monthly Accounting Values</td></tr></tbody></table>
 

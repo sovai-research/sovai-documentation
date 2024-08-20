@@ -7,6 +7,8 @@ description: >-
 
 # 🤹‍♂️ Signal Evaluation
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Signal Evaluation Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/studies/Signal%20Evaluation.ipynb)
+
 ### Key Features
 
 * Comprehensive performance analysis

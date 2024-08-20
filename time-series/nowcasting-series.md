@@ -6,6 +6,8 @@ description: >-
 
 # 📡 Nowcasting Series
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Nowcasting Series Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Nowcasting%20Notebook.ipynb)
+
 ## Nowcasting Module&#x20;
 
 This module demonstrates how to use the `sovai` library for nowcasting financial data, particularly focusing on accounting data for mega-cap stocks.
