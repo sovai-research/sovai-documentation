@@ -14,12 +14,6 @@ Install Sovai with Python's pip package manager.
 pip install sovai
 ```
 
-To install the full version (see dependencies below):
-
-```bash
-pip install sovai[full]
-```
-
 ## Install
 
 Sovai is tested and supported on the following 64-bit systems:

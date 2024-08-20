@@ -23,7 +23,7 @@ layout:
 
 # Python for Asset Management
 
-**Only works if you purchase an API key i.e, only for** [<mark style="color:purple;">**`paying subscribers`**</mark>](https://sov.ai/home)
+**Only works if you purchase an API key i.e, only for** [<mark style="color:purple;">**`paying subscribers`**</mark>](https://sov.ai/)
 
 <pre class="language-python"><code class="lang-python">import sovai as sov
 <strong>sov.token_auth(token="add_your_subscriber_token_here")
@@ -38,7 +38,7 @@ pip install sovai
 ```
 
 {% hint style="success" %}
-**The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](./#tutorials)
+**The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](get-started/tutorials.md)
 {% endhint %}
 
 ### Provided Datasets
@@ -52,12 +52,6 @@ pip install sovai
 Depending on the feedback we receive from users we can add the following datasets.
 
 <table><thead><tr><th width="183">Prediction Data</th><th width="210">Core Datasets</th><th width="213">Sectorial Data</th><th>Premium Data</th></tr></thead><tbody><tr><td>Earnings Surprise</td><td>Congressional Trading</td><td>Box Office Data</td><td>Shipping Data</td></tr><tr><td>ETF Flows</td><td>Senatorial Trading</td><td>Wallmart Products</td><td>Real Estate</td></tr><tr><td>Undervaluation</td><td>Patent Applications</td><td>Amazon Products</td><td>Entity Data</td></tr></tbody></table>
-
-## Admin Lead
-
-The following people are currently core contributors to SovAI's development and maintenance:
-
-{% @github-files/github-code-block url="https://github.com/firmai" %}
 
 ## Contribution
 

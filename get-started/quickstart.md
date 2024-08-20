@@ -52,7 +52,7 @@ There are two ways to authenticate your requests. Get your token [here](https://
 sov.read_key('.env')
 </code></pre>
 
-## Download Data: : <mark style="color:blue;">sov.</mark><mark style="color:purple;">data()</mark>
+## Download Data: : <mark style="color:blue;">`data()`</mark>
 
 Once this is done, downloading datasets becomes as easy as using this.
 
@@ -63,7 +63,7 @@ gs_df = sov.data("bankruptcy/monthly")
 
 We access tables "<mark style="color:blue;">corprisk</mark>", "<mark style="color:blue;">breakout</mark>", "<mark style="color:blue;">news"</mark>, "<mark style="color:blue;">institutional</mark>", "<mark style="color:blue;">wikipedia</mark>", and many more from the **data repository**.
 
-## Visualize Data: <mark style="color:blue;">sov.</mark><mark style="color:purple;">plot()</mark>
+## Visualize Data: <mark style="color:blue;">`plot()`</mark>
 
 #### Unique Plots
 
@@ -84,7 +84,7 @@ df_risks = sov.data("risks")
 df_risks[["MARKET_RISK","TURING_RISK"]].tail(15400).plot()
 ```
 
-## Running Reports: <mark style="color:blue;">sov.</mark><mark style="color:purple;">report()</mark>
+## Running Reports: <mark style="color:blue;">`report()`</mark>
 
 Another option is for us to run reports on the dataset, which largely allows us to explore the dataset.
 
