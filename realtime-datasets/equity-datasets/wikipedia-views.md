@@ -10,7 +10,7 @@ description: >-
 Data is updated quarterly as data arrives after market close US-EST time.
 {% endhint %}
 
-`Tutorials` are the best documentation — <mark style="color:blue;">`Financial Ratio Analysis`</mark>
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Wikipedia Views`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Wikipedia.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Wikipedia Scrapers</td></tr><tr><td><strong>Models Used</strong></td><td>Fuzzy Matching</td></tr><tr><td><strong>Model Outputs</strong></td><td>Views and Trends</td></tr></tbody></table>
 

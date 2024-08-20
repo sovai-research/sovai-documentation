@@ -1,11 +1,13 @@
 ---
+icon: compress
 description: >-
   State of the art notebook tools to designed to search, retrieve, and analyze
   financial data from the SEC's EDGAR database.
-icon: compress
 ---
 
 # SEC Edgar Filing
+
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Edgar Filings Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/studies/Edgar%20Tools.ipynb)
 
 #### SEC Search
 
@@ -16,7 +18,7 @@ import sovai as sov
 sov.sec_search("CFO Resignation")
 ```
 
-This function searches for filings related to the given keyword and saves the results in a CSV file.
+This function searches for filings related to the given keyword and saves the results in a CSV file. It is the fastest way to go from search query to CSV/datframe output.&#x20;
 
 * Available search parameters:
   * Search Keyword
@@ -58,7 +60,10 @@ nflx_filing.report
 
 #### Shows the financial statements
 
-```
+```python
+import sovai as sov
+nflx_filing = sov.sec_filing("NFLX", "10-Q", "2022-06-06")
+
 nflx_filing.balance_sheet
 nflx_filing.income_statement
 nflx_filing.cash_flow_statement

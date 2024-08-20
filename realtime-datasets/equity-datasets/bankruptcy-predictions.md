@@ -10,7 +10,7 @@ description: >-
 Monthly corporate bankruptcy predictions arrive the **2nd of every month**_._
 {% endhint %}
 
-`Tutorials` are the best documentation — <mark style="color:blue;">`Corporate Bankruptcy Tutorial`</mark>
+[<mark style="color:orange;">`Tutorials`</mark>](../../get-started/tutorials.md) are the best documentation — [<mark style="color:blue;">`Corporate Bankruptcy Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Bankruptcy%20Prediction.ipynb)
 
 <table data-view="cards" data-full-width="false"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Bankruptcies, Delistings, Market Data, Financial Statements</td></tr><tr><td><strong>Models Used</strong></td><td>CNN, LightGBM, RocketModel, AutoEncoder</td></tr><tr><td><strong>Model Outputs</strong></td><td>Calibrated Probabilities, Shapley Values</td></tr></tbody></table>
 

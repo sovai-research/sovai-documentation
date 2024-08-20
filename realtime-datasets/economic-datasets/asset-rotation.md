@@ -10,7 +10,7 @@ description: >-
 Monthly allocation estimates for five assets.
 {% endhint %}
 
-`Tutorials` are the best documentation — [<mark style="color:blue;">`Asset Rotation Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/tutorials/Asset%20Rotation.ipynb)
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Asset Rotation Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Asset%20Rotation%20and%20Allocation.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Hundreds of economic indicators</td></tr><tr><td>Models Used</td><td>Imputation Models, Machine Learning</td></tr><tr><td>Model Outputs</td><td>Optimal Allocations</td></tr></tbody></table>
 

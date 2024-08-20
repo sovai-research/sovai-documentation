@@ -6,6 +6,8 @@ description: >-
 
 # 🚥 Government Traffic
 
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Government Traffic Analysis`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Government%20Internet.ipynb)
+
 ### Data Access
 
 ```python

@@ -6,6 +6,8 @@ description: >-
 
 # 🎦 Box Office Stats
 
+`Tutorials` are the best documentation —  [<mark style="color:blue;">`Box Office Movie Analysis`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Movies%20Box%20Office.ipynb)
+
 ### Data Access
 
 #### Retrieving Data
