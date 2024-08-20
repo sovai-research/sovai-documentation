@@ -2,9 +2,10 @@
 description: >-
   Here we develop three tables to develop a final score of corporate risk to US
   equities.
+icon: shield-cross
 ---
 
-# ⭕ Risk Indicators
+# Risk Indicators
 
 {% hint style="info" %}
 Data arrives late Friday night 11 pm - 12 am after market close US-EST time.

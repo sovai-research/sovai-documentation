@@ -2,9 +2,10 @@
 description: >-
   This dataset provides insights into web traffic patterns for various U.S.
   government agencies and domains.
+icon: traffic-light-slow
 ---
 
-# 🚥 Government Traffic
+# Government Traffic
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Government Traffic Analysis Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Government%20Internet.ipynb)
 

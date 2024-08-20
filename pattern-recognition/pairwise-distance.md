@@ -2,9 +2,10 @@
 description: >-
   Pairwise statistics for distance and similarity between stocks in
   cross-section, time-series, and panel orientations.
+icon: people-arrows
 ---
 
-# 🐾 Pairwise Distance
+# Pairwise Distance
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Pairwise Distance Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Pairwise%20Distance.ipynb)
 

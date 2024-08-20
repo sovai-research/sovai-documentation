@@ -1,8 +1,9 @@
 ---
 description: How to request the development of new datasets for the SovAI SDK.
+icon: magnifying-glass-chart
 ---
 
-# 💶 Request Datasets
+# Request Datasets
 
 ## Development Cost
 

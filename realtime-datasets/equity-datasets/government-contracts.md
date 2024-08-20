@@ -3,9 +3,10 @@ description: >-
   The government spending data provides comprehensive information about
   government contracts, transactions, product specifications, entity details,
   locations, competition, and compensation.
+icon: file-signature
 ---
 
-# 🏗️ Government Contracts
+# Government Contracts
 
 {% hint style="info" %}
 Data arrives late Friday night 11 pm - 12 am after market close US-EST time.

@@ -2,9 +2,10 @@
 description: >-
   Developed a core economic dataset that explain more than 90% of the
   variability in most economic outcomes. Forthcoming, December 2024
+icon: apartment
 ---
 
-# 📰 Core Economic Data
+# Core Economic Data
 
 {% hint style="info" %}
 Data is updated quarterly as data arrives after market close US-EST time.

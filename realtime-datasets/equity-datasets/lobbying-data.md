@@ -2,9 +2,10 @@
 description: >-
   A ticker matched lobbying data to see fine-grained corporate lobbying
   behaviour.
+icon: microblog
 ---
 
-# 🎙️ Lobbying Data
+# Lobbying Data
 
 {% hint style="info" %}
 Data is updated weekly as data arrives after market close US-EST time.

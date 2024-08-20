@@ -3,9 +3,10 @@ description: >-
   The feature importance module in the sovai library offers multiple
   unsupervised algorithms to quantify the significance of each feature in
   financial datasets.
+icon: ranking-star
 ---
 
-# 🔆 Feature Importance
+# Feature Importance
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Feature Importance Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Feature%20Importance.ipynb)
 

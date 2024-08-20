@@ -3,9 +3,10 @@ description: >-
   This module provides a comprehensive set of tools for portfolio managers and
   quantitative analysts to optimize asset allocation strategies and evaluate
   their performance.
+icon: scale-unbalanced
 ---
 
-# 🗣️ Weight Optimization
+# Weight Optimization
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Weight Optimization Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/studies/Weight%20Optimization.ipynb)
 

@@ -2,9 +2,10 @@
 description: >-
   A financial factor dataset for in-depth company analysis and investment
   strategies.
+icon: wave-square
 ---
 
-# 🚦 Factor Signals
+# Factor Signals
 
 {% hint style="info" %}
 Data is updated weekly as data arrives after market close US-EST time.

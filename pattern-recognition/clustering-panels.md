@@ -2,9 +2,10 @@
 description: >-
   Clustering specifically designed for multivariate panel clustering of
   financial and time-series data
+icon: circle-nodes
 ---
 
-# 🍇 Clustering Panels
+# Clustering Panels
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Clustering Panels Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Clustering%20Notebook.ipynb)
 

@@ -2,9 +2,10 @@
 description: >-
   Standardized financial accounting data across multiple US publicly traded
   firms.
+icon: abacus
 ---
 
-# 🈁 Accounting Data
+# Accounting Data
 
 {% hint style="warning" %}
 This dataset is replaceable with your preferred standardized dataset, currently it is built from public filings with the values 95% confirmed against five commercial datasets.

@@ -2,9 +2,10 @@
 description: >-
   This dataset provides historical and forecasted risk-parity asset allocation
   data for investors for five asset classes.
+icon: rotate
 ---
 
-# 🏳️ Asset Rotation
+# Asset Rotation
 
 {% hint style="info" %}
 Monthly allocation estimates for five assets.

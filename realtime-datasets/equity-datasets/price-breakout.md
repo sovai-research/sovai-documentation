@@ -2,9 +2,10 @@
 description: >-
   A dataset with daily updated predictions of price breaking upwards for US
   Equities.
+icon: chart-line-up
 ---
 
-# 🎢 Price Breakout
+# Price Breakout
 
 {% hint style="info" %}
 Daily predictions arrive between 11 pm - 4 am before market open in the US for 13,000+ stocks.

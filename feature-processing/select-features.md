@@ -2,9 +2,10 @@
 description: >-
   The feature selection module in the sovai library provides various methods to
   identify and select the most important features from financial datasets.
+icon: square-dashed-circle-plus
 ---
 
-# 🥍 Select Features
+# Select Features
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Select Features Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Feature%20Selection.ipynb)
 

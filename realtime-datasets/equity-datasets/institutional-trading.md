@@ -3,9 +3,10 @@ description: >-
   The dataset provides a comprehensive analysis of institutional investment
   behaviors, strategies, and portfolio dynamics assist professional investors in
   making informed decisions.
+icon: piano-keyboard
 ---
 
-# 🏦 Institutional Trading
+# Institutional Trading
 
 {% hint style="info" %}
 Data is updated quarterly as data arrives after market close US-EST time.

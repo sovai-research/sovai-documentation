@@ -2,9 +2,10 @@
 description: >-
   More than 80+ financial ratios calculated from financial statement and market
   data.
+icon: percent
 ---
 
-# 🟩 Financial Ratios
+# Financial Ratios
 
 {% hint style="warning" %}
 This dataset is replaceable with your preferred standardized ratio dataset, currently it is built from public filings with the values 95% confirmed against five commercial datasets.

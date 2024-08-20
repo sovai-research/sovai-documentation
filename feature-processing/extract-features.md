@@ -2,9 +2,10 @@
 description: >-
   The feature extractor module generates features that can be categorized into
   several types based on the nature of the calculations.
+icon: calculator-simple
 ---
 
-# 🛹 Extract Features
+# Extract Features
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Extract Features Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Feature%20Extractions.ipynb)
 

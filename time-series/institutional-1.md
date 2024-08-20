@@ -3,9 +3,10 @@ description: >-
   This module provides powerful tools for analyzing financial time series data,
   offering insights that can be valuable for financial analysis, investment
   decision-making, and economic research.
+icon: bars-staggered
 ---
 
-# 🃏 TS Decomposition
+# TS Decomposition
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Time Series Decomposition Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Decomposition%20Notebook.ipynb)
 

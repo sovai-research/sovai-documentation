@@ -2,9 +2,10 @@
 description: >-
   This section covers the usage of the Consumer Financial Complaint
   ticker-mapped dataset.
+icon: star-sharp-half-stroke
 ---
 
-# 🧏 CFPB Complaints
+# CFPB Complaints
 
 {% hint style="info" %}
 Data is updated weekly as data arrives after market close US-EST time.

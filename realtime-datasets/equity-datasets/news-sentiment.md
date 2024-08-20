@@ -2,9 +2,10 @@
 description: >-
   Two types of news datasets have been developed, one is ticker-matched, and the
   next is theme-matched.
+icon: newspaper
 ---
 
-# 📰 News Sentiment
+# News Sentiment
 
 {% hint style="info" %}
 Data is updated quarterly as data arrives after market close US-EST time.

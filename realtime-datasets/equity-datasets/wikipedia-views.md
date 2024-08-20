@@ -2,9 +2,10 @@
 description: >-
   A look at some of the largest firms and their daily wikipedia page views and
   trends.
+icon: wikipedia-w
 ---
 
-# 🏁 Wikipedia Views
+# Wikipedia Views
 
 {% hint style="info" %}
 Data is updated quarterly as data arrives after market close US-EST time.

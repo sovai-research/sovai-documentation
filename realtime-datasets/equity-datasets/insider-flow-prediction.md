@@ -2,9 +2,10 @@
 description: >-
   More than 60+ insider trading features helpful for machine learning, including
   a flow prediction value.
+icon: user-ninja
 ---
 
-# 🗣️ Insider Flow Prediction
+# Insider Flow Prediction
 
 
 

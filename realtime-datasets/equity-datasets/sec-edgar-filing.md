@@ -1,5 +1,5 @@
 ---
-icon: compress
+icon: building-lock
 description: >-
   State of the art notebook tools to designed to search, retrieve, and analyze
   financial data from the SEC's EDGAR database.

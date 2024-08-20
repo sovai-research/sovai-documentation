@@ -3,9 +3,10 @@ description: >-
   This module provides a wide array of analytical tools and visualizations to
   help quantitative analysts and portfolio managers evaluate the quality,
   consistency, and robustness of their alpha signals.
+icon: wave-triangle
 ---
 
-# 🤹‍♂️ Signal Evaluation
+# Signal Evaluation
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Signal Evaluation Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/studies/Signal%20Evaluation.ipynb)
 

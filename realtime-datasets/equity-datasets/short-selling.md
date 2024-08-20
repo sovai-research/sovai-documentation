@@ -2,9 +2,10 @@
 description: >-
   This section covers the usage of various short-selling datasets for risk
   analysis.
+icon: sort-down
 ---
 
-# 🥋 Short Selling
+# Short Selling
 
 {% hint style="info" %}
 Data is updated weekly as data arrives after market close US-EST time.

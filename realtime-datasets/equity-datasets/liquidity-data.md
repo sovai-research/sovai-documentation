@@ -2,9 +2,10 @@
 description: >-
   Various dataset that could help with the assesment of security liquidity to
   inform trading decisions.
+icon: water
 ---
 
-# 🥏 Liquidity Data
+# Liquidity Data
 
 {% hint style="info" %}
 Data is updated weekly as data arrives after market close US-EST time.

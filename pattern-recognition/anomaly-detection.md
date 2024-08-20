@@ -2,9 +2,10 @@
 description: >-
   It provides methods to detect global, local, and cluster anomalies in
   multivariate financial data
+icon: chart-scatter
 ---
 
-# 🏰 Anomaly Detection
+# Anomaly Detection
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Anomaly Detection Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Anomaly%20Detection.ipynb)
 

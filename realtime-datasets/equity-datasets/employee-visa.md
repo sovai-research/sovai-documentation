@@ -2,9 +2,10 @@
 description: >-
   The H1B dataset offers quarterly insights into foreign hiring trends, job
   details, and wages for informed decision-making.
+icon: users-between-lines
 ---
 
-# 🇱🇻 Employee Visa
+# Employee Visa
 
 {% hint style="info" %}
 Data arrives late Friday night 11 pm - 12 as new **quarterly data** becomes available.
