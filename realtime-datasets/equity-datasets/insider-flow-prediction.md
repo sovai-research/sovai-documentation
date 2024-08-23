@@ -1,8 +1,8 @@
 ---
+icon: user-ninja
 description: >-
   More than 60+ insider trading features helpful for machine learning, including
   a flow prediction value.
-icon: user-ninja
 ---
 
 # Insider Flow Prediction
@@ -17,7 +17,11 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Insider Filings, Market Data</td></tr><tr><td><strong>Models Used</strong></td><td>Machine Learning (Gradient Boost)</td></tr><tr><td><strong>Model Outputs</strong></td><td>Percentile Outputs (Relative)</td></tr></tbody></table>
 
-Diversified selection of features for factor development or bottum-up equity selection strategies.
+## Description
+
+This dataset provides comprehensive analysis of insider trading behaviors, including metrics on transaction types, market impact, ownership dynamics, and trading patterns.&#x20;
+
+It offers investors and regulators valuable insights into insider trading strategies, market effects, and potential signaling, enabling more informed decision-making and risk assessment in the context of insider activities.
 
 ## Data Access
 

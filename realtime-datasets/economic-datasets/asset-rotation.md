@@ -1,8 +1,8 @@
 ---
+icon: rotate
 description: >-
   This dataset provides historical and forecasted risk-parity asset allocation
   data for investors for five asset classes.
-icon: rotate
 ---
 
 # Asset Rotation
@@ -15,9 +15,15 @@ Monthly allocation estimates for five assets.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Hundreds of economic indicators</td></tr><tr><td>Models Used</td><td>Imputation Models, Machine Learning</td></tr><tr><td>Model Outputs</td><td>Optimal Allocations</td></tr></tbody></table>
 
-The dataset covers five asset classes: bonds, equities, commodities, dollar, and real estate. The data is presented in a monthly frequency, starting from November 1959.&#x20;
+## Description
 
-### Data Access
+This dataset provides historical and forecasted risk-parity asset allocation data for five major asset classes: bonds, equities, commodities, dollar, and real estate.&#x20;
+
+It offers monthly allocation estimates and return predictions, both historical and 8 years into the future, based on hundreds of economic indicators.&#x20;
+
+The data and accompanying visualization tools enable investors to analyze optimal allocations and asset rotation strategies over time.The data is presented in a monthly frequency, starting from November 1959.&#x20;
+
+## Data Access
 
 #### Returns All
 

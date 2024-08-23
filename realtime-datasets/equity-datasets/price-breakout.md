@@ -1,8 +1,8 @@
 ---
+icon: chart-line-up
 description: >-
   A dataset with daily updated predictions of price breaking upwards for US
   Equities.
-icon: chart-line-up
 ---
 
 # Price Breakout
@@ -15,9 +15,11 @@ Daily predictions arrive between 11 pm - 4 am before market open in the US for 1
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Historical Stock Prices, Trading Volumes, Technical Indicators, Order Book.</td></tr><tr><td>Models Used</td><td>Classification Algorithms, Regression Models, Conformal Predictors</td></tr><tr><td>Model Outputs</td><td>Price Movement Predictions, Probability Scores, Confidence Intervals</td></tr></tbody></table>
 
-This document provides guidance on utilizing the Breakout Prediction SDK to identify potential breakout stocks over the next 30-60 days for US Equities.
+## Description
 
-The accuracy is around 65% and ROC-AUC of 68%, it is one of the strongest price breakout models on the market.
+This datasets identifies potential price breakout stocks over the next 30-60 days for US Equities. This dataset provides daily predictions of upward price breakouts for over 13,000 US equities.&#x20;
+
+The accuracy is around 65% and ROC-AUC of 68%, it is one of the most accurate breakout models on the market. It is retrained on a weekly basis.&#x20;
 
 ## Data Access
 

@@ -15,13 +15,13 @@ Data arrives late Friday night 11 pm - 12 as new **quarterly data** becomes avai
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Government Data</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Regex</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Rows</td></tr></tbody></table>
 
-## Explanation
+## Description
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.
+The Employee Visa dataset provides quarterly insights into foreign hiring trends among U.S. companies, offering detailed information on job positions, wages, and visa applications across various temporary work visa categories.&#x20;
+
+This data can serve as a valuable tool for investors to analyze labor market trends, assess company growth strategies, and gauge the impact of immigration policies on different sectors and businesses.
 
 ## Data Access
-
-#### H1B Employment data
 
 **H1B Table**: This table offers quarterly data to track foreign hiring patterns for publicly traded companies.
 

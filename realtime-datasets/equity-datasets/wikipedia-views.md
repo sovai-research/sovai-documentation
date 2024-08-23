@@ -1,8 +1,8 @@
 ---
+icon: wikipedia-w
 description: >-
   A look at some of the largest firms and their daily wikipedia page views and
   trends.
-icon: wikipedia-w
 ---
 
 # Wikipedia Views
@@ -15,7 +15,11 @@ Data is updated quarterly as data arrives after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Wikipedia Scrapers</td></tr><tr><td><strong>Models Used</strong></td><td>Fuzzy Matching</td></tr><tr><td><strong>Model Outputs</strong></td><td>Views and Trends</td></tr></tbody></table>
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.
+## Description
+
+This dataset provides daily Wikipedia page view data and trends for major companies, offering insights into public interest and market sentiment.&#x20;
+
+It includes metrics on view counts, relative views, and derived alpha/beta proxies to help investors gauge short-term and long-term trends in public attention towards specific stocks.
 
 ## Data Access
 

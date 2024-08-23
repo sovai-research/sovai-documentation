@@ -1,8 +1,8 @@
 ---
+icon: shield-cross
 description: >-
   Here we develop three tables to develop a final score of corporate risk to US
   equities.
-icon: shield-cross
 ---
 
 # Risk Indicators
@@ -15,11 +15,15 @@ Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Exchange Data.</td></tr><tr><td><strong>Models Used</strong></td><td>Transformations, Simple Maths</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Ratios</td></tr></tbody></table>
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.
+## Description
+
+This dataset provides comprehensive corporate risk indicators for US equities, including accounting risk, financial event risk, and misstatement risk.&#x20;
+
+It combines various financial metrics and event data to generate standardized risk scores, enabling investors to assess and compare company risks across industries for more informed decision-making.
 
 ## Data Access
 
-#### Accounting Risk
+### Accounting Risk
 
 **Accounting Table**: This table offers a snapshot of a company’s financial status based on standard accounting metrics. It is crucial for investors to assess a company's profitability, liquidity, and solvency.
 
@@ -30,7 +34,7 @@ df_actg_risk = sov.data("corprisk/accounting")
 
 <figure><img src="../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Financial Event Risk
+### Financial Event Risk
 
 **Events Table**: Contains data on significant corporate events that could impact a company's financial status or investor perception. This includes mergers, acquisitions, executive changes, regulatory shifts, and other material events.
 
@@ -41,7 +45,7 @@ df_events_risk = sov.data("corprisk/events")
 
 <figure><img src="../../.gitbook/assets/image (20) (2).png" alt=""><figcaption></figcaption></figure>
 
-#### Misstatement Risk
+### Misstatement Risk
 
 **Misstatement Table**: This table highlights the potential risks of financial misstatements in a company’s reporting. A higher score in this table indicates a greater risk or occurrence of financial misstatements, which can be a red flag for investors.
 
@@ -52,7 +56,7 @@ df_miss_risk = sov.data("corprisk/misstatement")
 
 <figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Aggregated Risks
+### Aggregated Risks
 
 Accounting, Event, and Misstatement Risks combined together:
 

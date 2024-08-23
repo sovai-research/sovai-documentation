@@ -29,8 +29,6 @@ It offers a comprehensive view of companies' financial positions and performance
 
 ### Retrieving Data
 
-Fetch the latest index data using the SDK:
-
 ```python
 from sovai import sov
 df_accounting = sov.data("accounting/weekly", tickers=["MSFT", "TSLA", "META"])

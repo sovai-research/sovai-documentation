@@ -1,9 +1,9 @@
 ---
+icon: file-signature
 description: >-
   The government spending data provides comprehensive information about
   government contracts, transactions, product specifications, entity details,
   locations, competition, and compensation.
-icon: file-signature
 ---
 
 # Government Contracts
@@ -14,9 +14,13 @@ Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Government Contracts Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Government%20Spending.ipynb)
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Exchange Data.</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Regex, Entity Recognition</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Contracts</td></tr></tbody></table>
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Governmental Filings</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Regex, Entity Recognition</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Contracts</td></tr></tbody></table>
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.
+## Description
+
+This dataset provides comprehensive information about government contracts, including details on transactions, product specifications, entities, locations, competition, and compensation.&#x20;
+
+It offers investors valuable insights into companies' relationships with government agencies, allowing for risk assessment, comparative analysis, and informed decision-making in the context of government spending and contracts.
 
 ## Data Access
 

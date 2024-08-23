@@ -17,6 +17,12 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 ***
 
+## Description
+
+This dataset provides comprehensive information on short-selling activity for various stocks, including metrics on short interest, volume, and related indicators.&#x20;
+
+It offers investors and analysts insights into market sentiment, potential short squeezes, and overall risk assessment, enabling more informed decision-making in trading strategies and liquidity analysis.
+
 ## Data Access
 
 ### Over-shorted Dataset

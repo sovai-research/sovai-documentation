@@ -1,19 +1,23 @@
 ---
+icon: camera-movie
 description: >-
   This dataset contains information about movie producers, their movies, and the
   corresponding box office performance.
-icon: camera-movie
 ---
 
 # Box Office Stats
 
 `Tutorials` are the best documentation —  [<mark style="color:blue;">`Box Office Movie Analysis Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Movies%20Box%20Office.ipynb)
 
-### Data Access
+## Description
+
+This dataset provides detailed box office performance data for movies, including daily revenue, theater counts, and distributor information.
+
+It links movies to their producer companies via ticker symbols, enabling analysis of box office success across different production studios and distributors over time.
+
+## Data Access
 
 #### Retrieving Data
-
-Fetch the latest index data using the SDK:
 
 ```python
 from sovai import sov 

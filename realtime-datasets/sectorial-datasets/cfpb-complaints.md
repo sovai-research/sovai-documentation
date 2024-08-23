@@ -1,8 +1,8 @@
 ---
+icon: star-sharp-half-stroke
 description: >-
   This section covers the usage of the Consumer Financial Complaint
   ticker-mapped dataset.
-icon: star-sharp-half-stroke
 ---
 
 # CFPB Complaints
@@ -15,11 +15,13 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>CFPB Filings</td></tr><tr><td><strong>Models Used</strong></td><td>LLMs, Parsing, Risk Scoring</td></tr><tr><td><strong>Model Outputs</strong></td><td>CFPB Risk Scores</td></tr></tbody></table>
 
+## Description
 
+This dataset provides detailed information on consumer complaints filed against financial institutions, mapped to company ticker symbols. It includes data on complaint types, company responses, and resolution status, along with derived risk scores.&#x20;
 
-### Consumer Financial Complaint Dataset (CFPB)
+This data enables analysis of consumer sentiment, regulatory compliance, and potential risks across different financial companies and products.
 
-The Consumer Financial Complaint dataset provides detailed information on complaints filed by consumers against financial institutions, including the nature of the complaint, company response, and resolution status.
+## Data Access
 
 ```python
 import sovai as sov

@@ -15,15 +15,15 @@ Daily index arrive between 11 pm - 4 am before market open in the US.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Hundreds of leading indicators.</td></tr><tr><td>Models Used</td><td>Imputation Models, Time Series Forecast Models</td></tr><tr><td>Model Outputs</td><td>Market, Business, and Political risk indicators,</td></tr></tbody></table>
 
-This indicator uses leading as opposed to lagging inputs. The constituents of the indicator has been selected for their predictive qualities.
+## Description
 
-The final Turing Index is a simple average of Market, Business, and Political risk.
+This dataset provides a comprehensive Turing Risk Index, combining market, business, and political risk indicators. It offers daily updates on global risk perceptions, using leading indicators and advanced models to forecast various types of risk.&#x20;
 
-### Data Access
+The data enables investors and analysts to assess and predict market volatility, recession probabilities, geopolitical tensions, and other key risk factors affecting global markets and economies.
+
+## Data Access
 
 #### Retrieving Data
-
-Fetch the latest index data using the SDK:
 
 ```python
 from sovai import sov 

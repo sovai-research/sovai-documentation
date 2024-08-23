@@ -17,6 +17,12 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 ***
 
+## Description
+
+This dataset provides comprehensive liquidity metrics for various stocks, including price improvement data and market making opportunities.&#x20;
+
+It offers investors valuable insights into execution quality, liquidity risk, and market microstructure, enabling more informed trading decisions and strategy development across different market conditions and participant types.
+
 ## Data Access
 
 #### Price Improvement Dataset

@@ -1,6 +1,6 @@
 ---
-description: How to request the development of new datasets for the SovAI SDK.
 icon: magnifying-glass-chart
+description: How to request the development of new datasets for the SovAI SDK.
 ---
 
 # Request Datasets
@@ -19,7 +19,7 @@ The samples include **Amazon**, **Wallmart**, **Earnings Transcripts**, **Websit
 
 ### Amazon - Product Data
 
-### Wallmart - Product Data
+### Walmart - Product Data
 
 ### Earnings Call - Text + Audio
 

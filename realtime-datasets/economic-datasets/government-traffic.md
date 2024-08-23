@@ -1,15 +1,21 @@
 ---
+icon: traffic-light-slow
 description: >-
   This dataset provides insights into web traffic patterns for various U.S.
   government agencies and domains.
-icon: traffic-light-slow
 ---
 
 # Government Traffic
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Government Traffic Analysis Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Government%20Internet.ipynb)
 
-### Data Access
+## Description
+
+This dataset provides web traffic data for U.S. government agencies and domains, offering insights into public engagement with government websites.&#x20;
+
+It enables analysis of traffic trends, inter-agency comparisons, and patterns of citizen interaction with government online resources.
+
+## Data Access
 
 ```python
 import sovai as sov

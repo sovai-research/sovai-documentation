@@ -1,9 +1,9 @@
 ---
+icon: piano-keyboard
 description: >-
   The dataset provides a comprehensive analysis of institutional investment
   behaviors, strategies, and portfolio dynamics assist professional investors in
   making informed decisions.
-icon: piano-keyboard
 ---
 
 # Institutional Trading
@@ -16,7 +16,11 @@ Data is updated quarterly as data arrives after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>13F Filings, Market Data</td></tr><tr><td><strong>Models Used</strong></td><td>Simple Calculations, Aggregations</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Ratios</td></tr></tbody></table>
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.
+## Description
+
+This dataset provides comprehensive analysis of institutional investment behaviors, including metrics on fund ratios, growth, derivative usage, and portfolio dynamics.&#x20;
+
+It offers investors valuable insights into market trends, risk profiles, investment strategies, and fund flows, enabling informed decision-making in institutional trading.
 
 ## Data Access
 

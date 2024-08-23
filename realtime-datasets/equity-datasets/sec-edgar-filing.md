@@ -9,6 +9,12 @@ description: >-
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Edgar Filings Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/studies/Edgar%20Tools.ipynb)
 
+## Description
+
+This documentation outlines tools for accessing and analyzing SEC EDGAR filings data. It provides functions to search for specific filings, retrieve filing documents, extract financial statements, and visualize key financial facts.&#x20;
+
+The toolkit enables users to efficiently gather and analyze regulatory filing data for various companies, supporting in-depth financial analysis and research.
+
 ## Data Access
 
 #### SEC Search

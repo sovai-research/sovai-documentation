@@ -19,15 +19,15 @@ Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Exchange Data.</td></tr><tr><td><strong>Models Used</strong></td><td>Transformations, Simple Maths</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Ratios</td></tr></tbody></table>
 
-## Explanation
+## Description
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.
+Diversified selection of ratios for factor development or bottom-up equity selection strategies. The Financial Ratios dataset offers over 80 standardized financial ratios calculated from financial statements and market data, updated weekly after market close.&#x20;
+
+This comprehensive set of ratios, covering categories such as liquidity, profitability, efficiency, solvency, cash flow, and valuation, provides investors with crucial metrics for in-depth financial analysis, factor development, and bottom-up equity selection strategies.
 
 ## Data Access
 
 #### Retrieving Data
-
-Fetch the latest index data using the SDK:
 
 ```python
 from sovai import sov

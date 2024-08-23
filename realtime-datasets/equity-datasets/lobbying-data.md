@@ -15,13 +15,15 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Lobbying Filings</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Scraping</td></tr><tr><td><strong>Model Outputs</strong></td><td>Lobbying Data</td></tr></tbody></table>
 
-Diversified selection of ratios for factor development or bottum-up equity selection strategies.
+## Description
+
+This dataset provides detailed information on corporate lobbying activities, including spending amounts, issues lobbied, and involved entities for various companies.&#x20;
+
+It offers investors, researchers, and policymakers valuable insights into corporate influence on policy-making, regulatory trends, and potential political risks, enabling more informed decision-making in areas like ESG investing, competitive analysis, and public policy research.
 
 ***
 
 ## Data Access
-
-This section covers the usage of the lobbying dataset. The dataset can be accessed using the sov.data function from our data library.
 
 ### Lobbying Dataset
 
