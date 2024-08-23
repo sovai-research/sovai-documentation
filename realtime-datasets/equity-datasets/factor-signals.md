@@ -1,8 +1,8 @@
 ---
+icon: wave-square
 description: >-
   A financial factor dataset for in-depth company analysis and investment
   strategies.
-icon: wave-square
 ---
 
 # Factor Signals
@@ -15,11 +15,13 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Filings, Financial Data</td></tr><tr><td><strong>Models Used</strong></td><td>OLS Regression</td></tr><tr><td><strong>Model Outputs</strong></td><td>Factors, Coefficients, Standard Errors</td></tr></tbody></table>
 
+## Explanation
+
 Diversified selection of ratios for factor development or bottum-up equity selection strategies.
 
 ***
 
-### Financial Factors Data Documentation
+## Data Access
 
 This section covers the usage of various financial factors datasets. Each dataset can be accessed using the `sov.data` function from our data library.
 

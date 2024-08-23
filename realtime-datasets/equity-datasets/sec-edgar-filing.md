@@ -9,6 +9,8 @@ description: >-
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Edgar Filings Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/studies/Edgar%20Tools.ipynb)
 
+## Data Access
+
 #### SEC Search
 
 To search for SEC filings:

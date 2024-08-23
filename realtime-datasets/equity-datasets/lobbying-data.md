@@ -1,8 +1,8 @@
 ---
+icon: microblog
 description: >-
   A ticker matched lobbying data to see fine-grained corporate lobbying
   behaviour.
-icon: microblog
 ---
 
 # Lobbying Data
@@ -19,7 +19,7 @@ Diversified selection of ratios for factor development or bottum-up equity selec
 
 ***
 
-## Lobbying Dataset&#x20;
+## Data Access
 
 This section covers the usage of the lobbying dataset. The dataset can be accessed using the sov.data function from our data library.
 

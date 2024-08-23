@@ -1,8 +1,8 @@
 ---
+icon: abacus
 description: >-
   Standardized financial accounting data across multiple US publicly traded
   firms.
-icon: abacus
 ---
 
 # Accounting Data
@@ -19,9 +19,11 @@ Daily index arrive between 11 pm - 4 am before market open in the US.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Raw XBRL.</td></tr><tr><td><strong>Models Used</strong></td><td>Imputation Models, Validation Against Commerical Dataset</td></tr><tr><td><strong>Model Outputs</strong></td><td>Monthly Accounting Values</td></tr></tbody></table>
 
-The following is an investigation into the accounting patterns of companies as per their filings.
+## Description
 
-Daily index arrive between 11 pm - 4 am before market open in the US.
+This dataset provides standardized financial accounting data for US publicly traded companies, compiled from SEC filings and validated against commercial datasets.&#x20;
+
+It offers a comprehensive view of companies' financial positions and performance, including balance sheet, income statement, and cash flow data, making it valuable for investors conducting financial analysis and quantitative modeling.
 
 ## Data Access
 

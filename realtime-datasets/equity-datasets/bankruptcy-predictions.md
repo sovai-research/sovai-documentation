@@ -1,8 +1,8 @@
 ---
+icon: seal-exclamation
 description: >-
   Chapter 7 and Chapter 11 bankruptcy predictions made easy for over 13,000 US
   publicly traded stocks.
-icon: seal-exclamation
 ---
 
 # Bankruptcy Predictions
@@ -15,9 +15,9 @@ Monthly corporate bankruptcy predictions arrive the **2nd of every month**_._
 
 <table data-view="cards" data-full-width="false"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Bankruptcies, Delistings, Market Data, Financial Statements</td></tr><tr><td><strong>Models Used</strong></td><td>CNN, LightGBM, RocketModel, AutoEncoder</td></tr><tr><td><strong>Model Outputs</strong></td><td>Calibrated Probabilities, Shapley Values</td></tr></tbody></table>
 
-The model predicts the likelihood of bankruptcies in the next 6-months for US publicly listed companies using advanced machine learning models.
+## Explanation
 
-With an accuracy of around 89% and ROC-AUC of 85%, these models represent a large improvement over traditional methods of bankruptcy prediction for equity selection.
+<table data-header-hidden data-full-width="false"><thead><tr><th>Explanation</th></tr></thead><tbody><tr><td><p>The model predicts the likelihood of bankruptcies in the next 6-months for US publicly listed companies using advanced machine learning models.</p><p></p><p>With an accuracy of around 89% and ROC-AUC of 85%, these models represent a large improvement over traditional methods of bankruptcy prediction for equity selection.</p></td></tr></tbody></table>
 
 ## Data Access
 
@@ -65,6 +65,10 @@ df_importance = sov.data('bankruptcy/shapleys', tickers=["MSFT","TSLA","META"])
 Feature Importance (Shapley Values) calculates the contribution of each input variable (features) such as Debt, Assets, and Revenue to predict bankruptcy risk.
 
 <figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+
+{% content-ref url="https://app.gitbook.com/o/qQMiaeuxNXgnYYhBQWuB/snippet/1205" %}
+[Accounting Dictionary](https://app.gitbook.com/o/qQMiaeuxNXgnYYhBQWuB/snippet/1205)
+{% endcontent-ref %}
 
 ## Data Dictionary
 

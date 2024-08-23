@@ -1,8 +1,8 @@
 ---
+icon: percent
 description: >-
   More than 80+ financial ratios calculated from financial statement and market
   data.
-icon: percent
 ---
 
 # Financial Ratios
@@ -19,9 +19,11 @@ Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Exchange Data.</td></tr><tr><td><strong>Models Used</strong></td><td>Transformations, Simple Maths</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Ratios</td></tr></tbody></table>
 
+## Explanation
+
 Diversified selection of ratios for factor development or bottum-up equity selection strategies.
 
-### Data Access
+## Data Access
 
 #### Retrieving Data
 

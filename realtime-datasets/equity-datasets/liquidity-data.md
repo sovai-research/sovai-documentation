@@ -1,8 +1,8 @@
 ---
+icon: water
 description: >-
   Various dataset that could help with the assesment of security liquidity to
   inform trading decisions.
-icon: water
 ---
 
 # Liquidity Data
@@ -15,13 +15,11 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Financial Intermediaries</td></tr><tr><td><strong>Models Used</strong></td><td>Aggregate Calculations</td></tr><tr><td><strong>Model Outputs</strong></td><td>Price Improvement, Market Opportunity</td></tr></tbody></table>
 
-## Liquidity Datasets Documentation
-
-Two datasets that can help with understanding the liquidity dynamics for equities.&#x20;
-
 ***
 
-### Price Improvement Dataset
+## Data Access
+
+#### Price Improvement Dataset
 
 The Price Improvement dataset provides information on price improvements for various stocks, offering insights into trading execution quality.
 
@@ -30,7 +28,7 @@ import sovai as sov
 df_improve = sov.data("liquidity/price_improvement")
 ```
 
-### Market Opportunity Dataset
+#### Market Opportunity Dataset
 
 The Market Opportunity dataset offers information on market making opportunities and liquidity provision for different stocks.
 
@@ -38,7 +36,7 @@ The Market Opportunity dataset offers information on market making opportunities
 df_market = sov.data("liquidity/market_opportunity")
 ```
 
-### Accessing Specific Tickers
+#### Accessing Specific Tickers
 
 You can also retrieve data for specific tickers across these datasets. For example:
 

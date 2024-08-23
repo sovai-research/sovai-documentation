@@ -51,7 +51,7 @@ pip install sovai
 
 Depending on the feedback we receive from users we can add the following datasets.
 
-<table><thead><tr><th width="183">Prediction Data</th><th width="210">Core Datasets</th><th width="213">Sectorial Data</th><th>Premium Data</th></tr></thead><tbody><tr><td>Earnings Surprise</td><td>Congressional Trading</td><td>Box Office Data</td><td>Shipping Data</td></tr><tr><td>ETF Flows</td><td>Senatorial Trading</td><td>Wallmart Products</td><td>Real Estate</td></tr><tr><td>Undervaluation</td><td>Patent Applications</td><td>Amazon Products</td><td>Entity Data</td></tr></tbody></table>
+<table><thead><tr><th width="183">Prediction Data</th><th width="210">Core Datasets</th><th width="213">Sectorial Data</th><th>Premium Data</th></tr></thead><tbody><tr><td>Earnings Surprise</td><td>Congressional Trading</td><td>Box Office Data</td><td>Shipping Data</td></tr><tr><td>ETF Flows</td><td>Senatorial Trading</td><td>Walmart Products</td><td>Real Estate</td></tr><tr><td>Undervaluation</td><td>Patent Applications</td><td>Amazon Products</td><td>Entity Data</td></tr></tbody></table>
 
 ## Contribution
 
@@ -65,7 +65,6 @@ If you want to contribute to the project please reach out
 
 * The fastest way to get help is to email us at [d.snow@sov.ai](mailto:d.snow@sov.ai) for support.
 * We also have a pretty active [Linkedin](https://www.linkedin.com/company/sovai/) page.
-* Check our [Frequently Asked Questions](broken-reference/) (FAQs) page.
 
 ## Support us
 
