@@ -5,13 +5,21 @@ description: Learn how to install Sovai
 # 💻 Installation
 
 {% hint style="info" %}
-**Sovai is now available**. `pip install sovai` to try it. Check out this example [Notebook](https://colab.research.google.com/drive/1aM09QsbkjPOfG1SnF4Jv-tSaE4wuwdhS?usp=sharing).
+**Sovai is now available**. `pip install sovai[full]` to try it. Check out this example [Notebook](https://colab.research.google.com/drive/1aM09QsbkjPOfG1SnF4Jv-tSaE4wuwdhS?usp=sharing).
 {% endhint %}
 
 Install Sovai with Python's pip package manager.
 
 ```shell
-pip install sovai
+pip install sovai[full]
+```
+
+### Data
+
+If you only want to download data into pandas, i.e., run`sov.data()` then please use the much lighter package.&#x20;
+
+```
+!pip install sovai
 ```
 
 ## Install
@@ -157,5 +165,3 @@ For docker image with full version:
 ```bash
 docker run -p 8888:8888 sovai/full
 ```
-
-To learn more, check out [this documentation](https://hub.docker.com/r/pycaret/full).

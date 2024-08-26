@@ -6,7 +6,7 @@ description: Quick start guide to Sovai
 
 {% code fullWidth="false" %}
 ```bash
-!pip install sovai
+!pip install sovai[full]
 ```
 {% endcode %}
 
@@ -17,6 +17,14 @@ Please note that this only works for [<mark style="color:purple;">`paying subscr
 {% hint style="info" %}
 **To familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](tutorials.md)
 {% endhint %}
+
+### Data
+
+If you only want to download data into pandas, i.e., run`sov.data()` then please use the much lighter package.&#x20;
+
+```
+!pip install sovai
+```
 
 ## Introduction
 

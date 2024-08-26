@@ -34,12 +34,20 @@ layout:
 To use Sovai's python module you can install `SovAI`.
 
 ```
-pip install sovai
+pip install sovai[full]
 ```
 
 {% hint style="success" %}
 **The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](get-started/tutorials.md)
 {% endhint %}
+
+### Data
+
+If you only want to download data into pandas, i.e., run`sov.data()` then please use the much lighter package.&#x20;
+
+```
+pip install sovai
+```
 
 ### Provided Datasets
 
