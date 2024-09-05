@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Python for Asset Management](README.md)
+* [Python for Investment Insights](README.md)
 
 ## GET STARTED
 
