@@ -4,7 +4,7 @@
 
 ## GET STARTED
 
-* [🚀 Quickstart](get-started/quickstart.md)
+* [🚀 Quick Start](get-started/quickstart.md)
 * [⭐ Tutorials](get-started/tutorials.md)
 * [💻 Installation](get-started/installation.md)
 * [⚒️ Release Notes](get-started/release-notes.md)
