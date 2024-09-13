@@ -8,7 +8,7 @@ description: >-
 # Accounting Data
 
 {% hint style="warning" %}
-Replace with your commercial standardized accounting solution. This dataset is derived from public filings, so we cannot guarantee its quality.&#x20;
+This dataset is derived from public filings, so we cannot guarantee its quality. Replace with your commercial standardized accounting solution.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
