@@ -23,19 +23,7 @@ Daily index data is updated before market opens in the US ET time.
 
 This dataset provides standardized financial accounting data for US publicly traded companies, compiled from SEC filings and validated against commercial datasets.&#x20;
 
-[https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Accounting%20Data.ipynb](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Accounting%20Data.ipynb)
-
 It offers a comprehensive view of companies' financial positions and performance, including balance sheet, income statement, and cash flow data, making it valuable for investors conducting financial analysis and quantitative modeling.
-
-[https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Accounting%20Data.ipynb](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Accounting%20Data.ipynb)
-
-
-
-[gO](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Accounting%20Data.ipynb)
-
-{% embed url="https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Accounting%20Data.ipynb" %}
-
-
 
 ## Data Access
 
