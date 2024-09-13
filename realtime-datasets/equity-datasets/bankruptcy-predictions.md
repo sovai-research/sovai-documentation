@@ -21,7 +21,13 @@ The model predicts the likelihood of bankruptcies in the next 6-months for US pu
 
 With an accuracy of around 89% and ROC-AUC of 85%, these models represent a large improvement over traditional methods of bankruptcy prediction for equity selection.
 
+Advanced modeling techniques used in this dataset:
 
+* **The Boosting Model**: Utilizes LightGBM technology, integrating both fundamental and market data for accurate predictions.
+* **The Convolutional Model**: Employs a Convolutional Neural Network (CNN) for efficient pattern recognition in market trends.
+* **The Rocket Model**: Specializes in time series data, using random convolutional kernels for effective classification and forecasting.
+* **The Encoder Model**: Combines LightGBM with CNN autoencoders, enhancing feature engineering for more precise predictions.
+* **The Fundamental Model**: Focuses solely on fundamental data via LightGBM, without extra architectural layers, for straightforward financial analysis.
 
 ## Data Access
 
@@ -69,16 +75,6 @@ df_importance = sov.data('bankruptcy/shapleys', tickers=["MSFT","TSLA","META"])
 Feature Importance (Shapley Values) calculates the contribution of each input variable (features) such as Debt, Assets, and Revenue to predict bankruptcy risk.
 
 <figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
-
-
-
-## Data Dictionary
-
-<table><thead><tr><th width="293">Name</th><th width="246">Description</th><th width="89">Type</th><th>Example</th></tr></thead><tbody><tr><td><code>ticker</code></td><td>Stock ticker symbol.</td><td>TEXT</td><td>"TSLA"</td></tr><tr><td><code>date</code></td><td>Record date.</td><td>DATE</td><td>2023-09-30</td></tr><tr><td><code>probability_light</code></td><td>LightGBM Boosting Model prediction.</td><td>FLOAT</td><td>1.46636</td></tr><tr><td><code>probability_convolution</code></td><td>CNN Model prediction for bankruptcies</td><td>FLOAT</td><td>0.135975</td></tr><tr><td><code>probability_rocket</code></td><td>Rocket Model prediction for time series classification</td><td>FLOAT</td><td>0.02514</td></tr><tr><td><code>probability_encoder</code></td><td>LightGBM and CNN autoencoders Model prediction.</td><td>FLOAT</td><td>0.587817</td></tr><tr><td><code>probability_fundamental</code></td><td>Prediction using accounting data only.</td><td>FLOAT</td><td>1.26148</td></tr><tr><td><code>probability</code></td><td>Average probability across models.</td><td>FLOAT</td><td>0.553823</td></tr><tr><td><code>sans_market</code></td><td>Fundamental prediction adjusted for market predictions.</td><td>FLOAT</td><td>-0.20488</td></tr><tr><td><code>volatility</code></td><td>Variability of model predictions.</td><td>FLOAT</td><td>0.62934</td></tr><tr><td><code>multiplier</code></td><td>Coefficient for model prediction calibration.</td><td>FLOAT</td><td>1.951868</td></tr><tr><td><code>version</code></td><td>Model/data record version.</td><td>INT</td><td>20240201</td></tr></tbody></table>
-
-{% hint style="info" %}
-When `sans_market` is <mark style="color:green;">positive</mark>, it means that the fundamentals show a larger predicted bankruptcy than what the market predicts **(stock might go down in medium term)** , when `sans_market` is <mark style="color:red;">negative</mark>, the market might have overreacted, and predict a larger probability of bankruptcy than what the fundamentals suggest **(stock might go up in medium term)**.
-{% endhint %}
 
 ## Reports
 
@@ -162,7 +158,7 @@ sov.plot("bankruptcy", chart_type="facet", tickers=["DDD"])
 
 <figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Global Performance
+## Model Performance
 
 ### **Confusion Matrix**
 
@@ -235,21 +231,15 @@ Leverage advanced computational tools for deeper analysis:
 
 **For more advanced applications, see the tutotrial.**
 
-***
+## Data Dictionary
 
-## **Description**
+<table><thead><tr><th width="293">Name</th><th width="246">Description</th><th width="89">Type</th><th>Example</th></tr></thead><tbody><tr><td><code>ticker</code></td><td>Stock ticker symbol.</td><td>TEXT</td><td>"TSLA"</td></tr><tr><td><code>date</code></td><td>Record date.</td><td>DATE</td><td>2023-09-30</td></tr><tr><td><code>probability_light</code></td><td>LightGBM Boosting Model prediction.</td><td>FLOAT</td><td>1.46636</td></tr><tr><td><code>probability_convolution</code></td><td>CNN Model prediction for bankruptcies</td><td>FLOAT</td><td>0.135975</td></tr><tr><td><code>probability_rocket</code></td><td>Rocket Model prediction for time series classification</td><td>FLOAT</td><td>0.02514</td></tr><tr><td><code>probability_encoder</code></td><td>LightGBM and CNN autoencoders Model prediction.</td><td>FLOAT</td><td>0.587817</td></tr><tr><td><code>probability_fundamental</code></td><td>Prediction using accounting data only.</td><td>FLOAT</td><td>1.26148</td></tr><tr><td><code>probability</code></td><td>Average probability across models.</td><td>FLOAT</td><td>0.553823</td></tr><tr><td><code>sans_market</code></td><td>Fundamental prediction adjusted for market predictions.</td><td>FLOAT</td><td>-0.20488</td></tr><tr><td><code>volatility</code></td><td>Variability of model predictions.</td><td>FLOAT</td><td>0.62934</td></tr><tr><td><code>multiplier</code></td><td>Coefficient for model prediction calibration.</td><td>FLOAT</td><td>1.951868</td></tr><tr><td><code>version</code></td><td>Model/data record version.</td><td>INT</td><td>20240201</td></tr></tbody></table>
 
-The model attempts to predict the likelihood of bankruptcies in the next 6-months. The likelihood that companies would go bankrupt in the next 6-months is very low. The change of this value over time can also be very revealing. See for example: `sov.report("bankruptcy", report_type="sector-change")`
+{% hint style="info" %}
+When `sans_market` is <mark style="color:green;">positive</mark>, it means that the fundamentals show a larger predicted bankruptcy than what the market predicts **(stock might go down in medium term)** , when `sans_market` is <mark style="color:red;">negative</mark>, the market might have overreacted, and predict a larger probability of bankruptcy than what the fundamentals suggest **(stock might go up in medium term)**.
+{% endhint %}
 
-### **Advanced Modeling Techniques**:
-
-* **The Boosting Model**: Utilizes LightGBM technology, integrating both fundamental and market data for accurate predictions.
-* **The Convolutional Model**: Employs a Convolutional Neural Network (CNN) for efficient pattern recognition in market trends.
-* **The Rocket Model**: Specializes in time series data, using random convolutional kernels for effective classification and forecasting.
-* **The Encoder Model**: Combines LightGBM with CNN autoencoders, enhancing feature engineering for more precise predictions.
-* **The Fundamental Model**: Focuses solely on fundamental data via LightGBM, without extra architectural layers, for straightforward financial analysis.
-
-### Potential Use-cases
+## Use Cases
 
 1. **Bankruptcy Prediction Analysis**: Offer insights into predicted corporate bankruptcies and identify key factors, clarifying main drivers across different cycles.
 2. **Variable Impact Breakdown**: Analyze how each individual variable affects bankruptcy predictions, providing in-depth feature contribution insights.
@@ -258,3 +248,4 @@ The model attempts to predict the likelihood of bankruptcies in the next 6-month
 5. **Probability Shift Overview**: Showcase changes in bankruptcy probabilities among correlated stocks, providing a comprehensive market perspective.
 6. **Sentiment Inversion Analysis**: Convert bankruptcy predictions into positive sentiment indicators to gauge potential impacts on stock returns.
 7. **Behavioral Similarity Mapping**: Locate stocks with similar behaviors to a selected reference, based on bankruptcy trends and PCA feature analysis.
+

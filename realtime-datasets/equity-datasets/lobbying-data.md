@@ -85,7 +85,7 @@ This documentation provides a clear guide on how to access the dataset, and can 
 | ticker                            | Stock ticker symbol of the client company                               |
 | date                              | Date of the lobbying activity                                           |
 
-### Potential Use Cases
+### Use Cases
 
 1. Corporate Influence Analysis: Examine how companies allocate resources to influence policy-making.
 2. Sector Trends: Identify trends in lobbying activities across different sectors or industries.

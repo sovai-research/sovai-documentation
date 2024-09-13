@@ -7,10 +7,8 @@ description: >-
 
 # Insider Flow Prediction
 
-
-
 {% hint style="info" %}
-Data is updated weekly as data arrives after market close US-EST time.
+Data is updated every Friday after market closes US ET time.
 {% endhint %}
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Insider Flow Prediction Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Insider%20Trading.ipynb)

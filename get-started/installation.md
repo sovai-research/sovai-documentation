@@ -1,28 +1,34 @@
----
-description: Learn how to install Sovai
----
-
 # 💻 Installation
 
-{% hint style="info" %}
-**Sovai is now available**. `pip install sovai[full]` to try it. Check out this example [Notebook](https://colab.research.google.com/drive/1aM09QsbkjPOfG1SnF4Jv-tSaE4wuwdhS?usp=sharing).
+## Install
+
+<pre class="language-python"><code class="lang-python"><strong>import sovai as sov
+</strong><strong>sov.token_auth(token="add_your_subscriber_token_here")
+</strong></code></pre>
+
+### Full package
+
+<pre><code><strong>pip install sovai[full]
+</strong></code></pre>
+
+{% hint style="success" %}
+**The best way to familiarize yourself with this powerful library is to head straight to the**[ **tutorial section.**](tutorials.md)
 {% endhint %}
 
-Install Sovai with Python's pip package manager.
+### Data package
 
-```shell
-pip install sovai[full]
-```
-
-### Data
-
-If you only want to download data into pandas, i.e., run`sov.data()` then please use the much lighter package.&#x20;
+If you only want to download data into pandas please use the much lighter package.&#x20;
 
 ```
-!pip install sovai
+pip install sovai
 ```
 
-## Install
+```python
+import sovai as sov
+sov.data("query")
+```
+
+## Environment
 
 Sovai is tested and supported on the following 64-bit systems:
 
@@ -31,22 +37,20 @@ Sovai is tested and supported on the following 64-bit systems:
 * Ubuntu 16.04 or later
 * Windows 7 or later
 
-## &#x20;Environment
-
-In order to avoid potential conflicts with other packages, it is strongly recommended to use a virtual environment, e.g. python3 virtualenv (see [python3 virtualenv documentation](https://docs.python.org/3/tutorial/venv.html)).
+In order to avoid potential conflicts with other packages, it is strongly recommended to use a virtual environment, e.g. [python3 virtualenv](https://docs.python.org/3/tutorial/venv.html).
 
 ```sh
-# create a virtual environment
+# Create a virtual environment
 python -m venv yourenvname
 
-# activate the virtual environment
+# Activate the virtual environment
 source yourenvname/bin/activate  # For Unix/Linux
 yourenvname\Scripts\activate  # For Windows
 
-# install sovai
+# Install sovai
 pip install sovai
 
-# create notebook kernel
+# Create notebook kernel
 python -m ipykernel install --user --name yourenvname --display-name "display-name"
 ```
 
@@ -130,31 +134,9 @@ mypy>=0.900
 {% endtab %}
 {% endtabs %}
 
-{% hint style="info" %}
-**NOTE:** We are actively working on reducing default dependencies in the next major release. We intend to support functionality level and module-specific install in the future. For example: `pip install sovai[nlp].`
-{% endhint %}
-
-## Building from source
-
-To install the package directly from GitHub (latest source), use the following command:
-
-```bash
-pip install git+https://github.com/sovai/sovai.git#egg=pycaret
-```
-
-Don't forget to include the `#egg=sovai` part to explicitly name the project, this way pip can track metadata for it without having to have run the `setup.py` script.
-
-#### Run the tests:
-
-To launch the test suite, run the following command from outside the source directory:
-
-```bash
-pytest sovai
-```
-
 ## Docker
 
-Docker uses containers to create virtual environments that isolate a Sovai installation from the rest of the system. Sovai docker comes pre-installed with a Notebook environment. that can share resources with its host machine (access directories, use the GPU, connect to the Internet, etc.). The Sovai Docker images are tested for each release.
+Docker uses containers to create virtual environments that isolate a Sovai installation from the rest of the system. Sovai docker comes pre-installed with a Notebook environment that can share resources with its host machine (access directories, use the GPU, connect to the Internet, etc.). The Sovai Docker images are tested for each release.
 
 ```bash
 docker run -p 8888:8888 sovai/slim

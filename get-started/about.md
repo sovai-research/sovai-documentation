@@ -20,11 +20,11 @@ layout:
 
 # 🔘 About
 
-**SovAI was founded in 2023 to bridge the gap between quality research and asset managers.** The company recognized that fundamental investors lack accessible solutions to apply machine learning.
+SovAI was founded in 2023 to make machine learning solutions accessible to investment managers.
 
 <figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
-The company is **privately funded, ensuring the independence and objectivity of its research outputs.**
+The company is privately funded, ensuring the independence and objectivity of its research outputs.
 
 <figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
@@ -32,11 +32,10 @@ The software is built by alumni from the **Alan Turing Institute**, the Oxford-M
 
 <figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
-SovAI is and will remain the most robust and simultaneously most affordable subscription product on the market. This will be **gauranteed with an anytime refund**.&#x20;
+SovAI is and will remain the most robust and most affordable subscription product on the market.
 
 <figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
-Finally we have benefited from the input of the following **four academic advisors** that has been supporting us since the birth of SovAI.
+Finally, we have benefited from the input of the following **four academic advisors** who have been supporting us since the birth of SovAI.
 
 <figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
-

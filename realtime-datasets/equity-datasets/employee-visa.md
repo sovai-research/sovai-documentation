@@ -32,7 +32,7 @@ df_visa = sov.data("visas/h1b")
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Data Dictionaries
+## Data Dictionary
 
 ### Government Contracts
 
@@ -59,7 +59,7 @@ The dataset includes 39 columns, each representing a specific attribute related 
 * Worksite information, offering location details where the employment takes place.
 * Additional attributes related to the petition's nature, like new employment, continued employment, and any amendments.
 
-### Use Cases
+## Use Cases
 
 1. **Labor Market Analysis**: Investors can identify trends in employment such as demand for specific roles or average wages offered across sectors, informing investment strategies.
 2. **Compliance Monitoring**: Companies can ensure their wage offerings are competitive and compliant with prevailing wage standards for different visa categories.

@@ -2,8 +2,8 @@
 
 **Only works for paying subscribers, purchase your API key** [<mark style="color:purple;">**`here`**</mark>](https://sov.ai/subscribe)**.**&#x20;
 
-<pre class="language-python"><code class="lang-python">import sovai as sov
-<strong>sov.token_auth(token="add_your_subscriber_token_here")
+<pre class="language-python"><code class="lang-python"><strong>import sovai as sov
+</strong><strong>sov.token_auth(token="add_your_subscriber_token_here")
 </strong></code></pre>
 
 ## Installation
