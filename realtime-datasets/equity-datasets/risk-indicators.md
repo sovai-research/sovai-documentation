@@ -98,9 +98,7 @@ For the misstatements, all of the variables have been changed into negative indi
 
 <table><thead><tr><th width="241">Name</th><th width="313">Description</th><th>Type</th></tr></thead><tbody><tr><td>ticker</td><td>Stock ticker symbol identifying the company</td><td>string</td></tr><tr><td>date</td><td>Date of the record</td><td>date</td></tr><tr><td>accounting</td><td>Score or value derived from accounting data</td><td>float64</td></tr><tr><td>accounting_ind_adjs</td><td>Adjusted score or value for accounting data based on industry standards</td><td>float64</td></tr><tr><td>misstatement</td><td>Score or value indicating the likelihood or extent of financial misstatements</td><td>float64</td></tr><tr><td>misstatement_ind_adjs</td><td>Adjusted score or value for misstatement data based on industry standards</td><td>float64</td></tr><tr><td>events</td><td>Score or value related to specific corporate events</td><td>float64</td></tr><tr><td>events_ind_adjs</td><td>Adjusted score or value for event data based on industry standards</td><td>float64</td></tr><tr><td>risk</td><td>Score or value indicating the level of total financial risk</td><td>float64</td></tr><tr><td>risk_ind_adjs</td><td>Adjusted score based on industry averages</td><td>float64</td></tr></tbody></table>
 
-## Explanations
-
-### Importance for Investors
+## Use Cases
 
 Understanding these tables is essential for investors:
 

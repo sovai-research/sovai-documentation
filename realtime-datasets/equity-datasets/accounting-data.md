@@ -8,7 +8,7 @@ description: >-
 # Accounting Data
 
 {% hint style="warning" %}
-This dataset is replaceable with your preferred standardized dataset, currently it is built from public filings with the values 95% confirmed against five commercial datasets.
+Replace with your commercial standardized accounting solution. This dataset is derived from public filings, so we cannot guarantee its quality.&#x20;
 {% endhint %}
 
 {% hint style="info" %}

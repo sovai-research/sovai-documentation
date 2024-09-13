@@ -94,7 +94,7 @@ df_risks_agg = sov.compute('risk-aggregates', df=df_risks)
 df_risks[["MARKET_RISK","BUSINESS_RISK","POLITICAL_RISK","TURING_RISK"]].tail(15400).plot()
 ```
 
-## Risk Database Description
+## Use Cases
 
 ### Overview
 

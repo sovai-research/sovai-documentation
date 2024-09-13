@@ -195,11 +195,7 @@ For the misstatements, all of the variables have been changed into negative indi
 | highly\_compensated\_officer\_5\_name   | The name of an individual identified as the fifth of the five most highly compensated "Executives."                                                 | THOMAS BRADY                   |
 | highly\_compensated\_officer\_5\_amount | The cash and noncash dollar value earned by the fifth of the five most highly compensated “Executives” during the awardee's preceding fiscal year.  | 365064.81250                   |
 
-##
-
-## Explanations
-
-### Importance for Investors
+## Use Cases
 
 Understanding these tables is essential for investors:
 

@@ -21,6 +21,12 @@ This datasets identifies potential price breakout stocks over the next 30-60 day
 
 The accuracy is around 65% and ROC-AUC of 68%, it is one of the most accurate breakout models on the market. It is retrained on a weekly basis.&#x20;
 
+Several machine learning models are trained using the prepared dataset:
+
+* **Calibrated Classifier**: A classification model trained on the engineered features to predict the binary target.
+* **Proprietory Regressor**: A proprietory regression model is used to predict the probability of a price increase.
+* **Conformal Regressor**: Used to provide calibrated confidence intervals around the predictions, offering an additional measure of uncertainty.
+
 ## Data Access
 
 ### Retrieving Data
@@ -87,42 +93,26 @@ sov.plot("breakout", chart_type="accuracy", df=df_msft)
 
 ***
 
-## **Description**
+## Use Case
 
-***
+Understood. I'll focus on the use cases that would be most relevant to professional investors. Here's the refined list:
 
-### Prediction Model for Price Increases
+• Portfolio optimization:
 
-This document outlines the prediction model used to forecast stock price movements. The model employs a variety of machine learning techniques and is optimized for equity selection. With an emphasis on pricing information, it is designed to predict significant price increases with high accuracy.
+* Identify potential new additions to diversified stock portfolios
+* Rebalance existing holdings based on breakout predictions
 
-### Model Description
+• Risk management:
 
-The model is constructed using a series of Python-based machine learning algorithms, with data processing and feature engineering steps to prepare the data for analysis.
+* Use confidence intervals and standard deviations to assess potential downside risk
+* Implement more precise hedging strategies based on predicted price movements
 
-#### Data Preparation
+• Sector and market analysis:
 
-Data is initially sourced from a BigQuery table containing historical pricing information, such as adjusted close prices and trading volume. The data is preprocessed to generate features that capture historical trends and patterns, including:
+* Identify trends across industry sectors or the broader market
+* Compare breakout potentials across different stock categories (e.g., large-cap vs. small-cap)
 
-* **Return Features**: Percent changes in price and volume over specified time windows.
-* **Rolling Features**: Rolling statistics (mean, standard deviation, skewness, etc.) calculated over different periods to capture short- and long-term movements.
-* **Date Features**: Time-based features to account for seasonal trends and temporal patterns.
-* **Target Variable**: A binary classification target indicating whether the stock price will see a significant increase (`1`) or decrease (`0`) over a given time horizon.
+• Market timing:
 
-#### Feature Engineering
-
-The model includes extensive feature engineering to enhance the predictive power of the training data:
-
-* **Standardized Returns**: The return of a stock over a specified period divided by the rolling standard deviation of the return, offering a normalized measure of price movement.
-* **Summary Statistics**: Aggregated metrics derived from the newly created lagged return features, providing a comprehensive view of recent price behavior.
-
-#### Model Training
-
-Several machine learning models are trained using the prepared dataset:
-
-* **Calibrated Classifier**: A classification model trained on the engineered features to predict the binary target.
-* **Proprietory Regressor**: A proprietory regression model is used to predict the probability of a price increase.
-* **Conformal Regressor**: Used to provide calibrated confidence intervals around the predictions, offering an additional measure of uncertainty.
-
-#### Model Usage
-
-The model can be applied to new data to generate predictions for the likelihood of price increases. It utilizes the trained classifiers and regressors to provide both point estimates and confidence intervals for these predictions.
+* Use aggregate predictions across multiple stocks to gauge overall market sentiment
+* Time entry and exit points for broader market positions

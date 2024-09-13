@@ -13,7 +13,7 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Liquidity Data Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Liquidity%20Data.ipynb)
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Financial Intermediaries</td></tr><tr><td><strong>Models Used</strong></td><td>Aggregate Calculations</td></tr><tr><td><strong>Model Outputs</strong></td><td>Price Improvement, Market Opportunity</td></tr></tbody></table>
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Public Data from Financial Intermediaries</td></tr><tr><td><strong>Models Used</strong></td><td>Aggregate Calculations</td></tr><tr><td><strong>Model Outputs</strong></td><td>Price Improvement, Market Opportunity</td></tr></tbody></table>
 
 ***
 
@@ -53,7 +53,7 @@ df_ticker_opp = sov.data("liquidity/market_opportunity", tickers=["AAPL", "MSFT"
 
 
 
-### Data Dictionary
+## Data Dictionary
 
 #### Price Improvement Dataset
 
@@ -90,7 +90,7 @@ df_ticker_opp = sov.data("liquidity/market_opportunity", tickers=["AAPL", "MSFT"
 | algo\_institute\_ratio   | Ratio of algorithmic to institutional pressure |
 | retail\_algo\_ratio      | Ratio of retail to algorithmic pressure        |
 
-### Potential Use Cases
+## Use Cases
 
 * Execution Quality Analysis: Evaluate the execution quality of trades using price improvement data.
 * Market Making Strategies: Develop market making strategies based on liquidity provision opportunities.

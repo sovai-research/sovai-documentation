@@ -154,16 +154,6 @@ sov.plot("insider", chart_type="flows")
 | `sale_press_occurrences_direct_to_indirect_abs_ratio_pert`   | Variability in absolute ratio of occurrences under direct versus indirect sales pressure.                           |
 | `flow_prediction`                                            | Predicted transaction flow based on analysis (not directly computed in the provided code but implied).              |
 
-## Insider Trading Analysis Data Dictionary
-
-This dataset provides a comprehensive analysis of insider trading behaviors, strategies, and portfolio dynamics. It covers various aspects like transaction ratios, market impact metrics, ownership dynamics, and more. The data is designed to assist investors and regulators in understanding insider trading patterns, evaluating the impact of insider transactions, and making informed decisions.
-
-### Data Applications
-
-* Market Impact Analysis: Understand the impact of insider transactions on market prices and liquidity.
-* Risk Assessment: Evaluate the risk profiles of different insider trading strategies and behaviors.
-* Investment Decision Making: Utilize insider trading data to make informed investment decisions.
-
 ### Feature Descriptions
 
 1. Derivative and Non-Derivative Transaction Metrics (Columns 1-4)
@@ -197,5 +187,13 @@ This dataset provides a comprehensive analysis of insider trading behaviors, str
    * `holding_period_pert`: Perturbation or change in the holding period of insiders.
    * `sale_to_purchase_ratio_pert`: Change in the sale-to-purchase ratio of insiders.
    * `flow_prediction`: Predicted transaction flow from insider trading patterns.
+
+## Use Cases
+
+This dataset provides a comprehensive analysis of insider trading behaviors, strategies, and portfolio dynamics. It covers various aspects like transaction ratios, market impact metrics, ownership dynamics, and more. The data is designed to assist investors and regulators in understanding insider trading patterns, evaluating the impact of insider transactions, and making informed decisions.Use
+
+* Market Impact Analysis: Understand the impact of insider transactions on market prices and liquidity.
+* Risk Assessment: Evaluate the risk profiles of different insider trading strategies and behaviors.
+* Investment Decision Making: Utilize insider trading data to make informed investment decisions.
 
 ***

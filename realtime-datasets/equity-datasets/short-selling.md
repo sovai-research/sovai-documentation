@@ -52,7 +52,7 @@ df_ticker_over_shorted = sov.data("short/over_shorted", tickers=["AAPL", "MSFT"]
 df_ticker_short_volume = sov.data("short/volume", tickers=["AAPL", "MSFT"])
 ```
 
-### Data Dictionary
+## Data Dictionary
 
 **Over-Shorted Dataset:**
 
@@ -86,7 +86,7 @@ df_ticker_short_volume = sov.data("short/volume", tickers=["AAPL", "MSFT"])
 | institutional\_short\_ratio    | Ratio of short volume from institutional traders      |
 | market\_maker\_short\_ratio    | Ratio of short volume from market makers              |
 
-### Potential Use Cases
+## Use Cases
 
 * Short Squeeze Analysis: Identify potentially over-shorted stocks that might be candidates for a short squeeze.
 * Risk Assessment: Evaluate the short interest in a stock as part of overall risk assessment.

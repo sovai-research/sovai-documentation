@@ -25,7 +25,7 @@ It offers investors, researchers, and policymakers valuable insights into corpor
 
 ## Data Access
 
-### Lobbying Dataset
+#### Lobbying Dataset
 
 The Lobbying dataset provides detailed information on lobbying activities, including client information, spending, and lobbying issues for various companies.
 
@@ -33,7 +33,7 @@ The Lobbying dataset provides detailed information on lobbying activities, inclu
 </strong><strong>df_lobbying = sov.data("lobbying/public")
 </strong></code></pre>
 
-### Accessing Specific Tickers
+#### Accessing Specific Tickers
 
 You can also retrieve data for specific tickers. For example:
 
@@ -43,7 +43,7 @@ df_ticker_lobbying = sov.data("lobbying/public", tickers=["WFC", "EXPGY"])
 
 This documentation provides a clear guide on how to access the dataset, and can be easily extended or modified as needed for additional details.
 
-### Data Dictionary
+## Data Dictionary
 
 | Column Name                       | Description                                                             |
 | --------------------------------- | ----------------------------------------------------------------------- |
@@ -85,7 +85,7 @@ This documentation provides a clear guide on how to access the dataset, and can 
 | ticker                            | Stock ticker symbol of the client company                               |
 | date                              | Date of the lobbying activity                                           |
 
-### Use Cases
+## Use Cases
 
 1. Corporate Influence Analysis: Examine how companies allocate resources to influence policy-making.
 2. Sector Trends: Identify trends in lobbying activities across different sectors or industries.

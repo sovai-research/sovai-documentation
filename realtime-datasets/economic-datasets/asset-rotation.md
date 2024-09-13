@@ -43,7 +43,7 @@ from sovai import sov
 df_allocate = sov.data("allocation/all")
 ```
 
-### Plot Access
+## Plot Access
 
 #### Line Plot
 

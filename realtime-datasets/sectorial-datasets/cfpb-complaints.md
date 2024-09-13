@@ -66,7 +66,7 @@ df_ticker_complaints = sov.data("complaints/public", tickers=["WFC", "EXPGY"])
 | selected\_name                  | Name used for company matching                                             |
 | similarity                      | Similarity score for company name matching                                 |
 
-### Potential Use Cases
+## Use Cases
 
 1. Risk Assessment: Evaluate the risk profile of financial institutions based on complaint data.
 2. Consumer Sentiment Analysis: Analyze consumer sentiment towards different financial products and companies.
