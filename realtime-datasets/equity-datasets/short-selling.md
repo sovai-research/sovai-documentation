@@ -29,18 +29,36 @@ It offers investors and analysts insights into market sentiment, potential short
 
 The Over-Shorted dataset provides information on short interest and potentially over-shorted stocks, offering insights into short selling activity and related metrics.
 
+#### Latest Data
+
 ```python
 import sov as sov
 df_over_shorted = sov.data("short/over_shorted")
+```
+
+#### All Data
+
+```python
+import sov as sov
+df_over_shorted = sov.data("short/over_shorted", full_history=True)
 ```
 
 ### Short Volume Dataset
 
 The Short Volume dataset offers information on the short selling volume for specified stocks, including breakdowns by different types of market participants.
 
+#### Latest Data
+
 ```python
 import sov as sov
 df_short_volume = sov.data("short/volume")
+```
+
+#### All Data
+
+```python
+import sov as sov
+df_short_volume = sov.data("short/volume", full_history=True)
 ```
 
 ### Accessing Specific Tickers

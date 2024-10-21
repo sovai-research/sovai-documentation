@@ -24,18 +24,25 @@ It offers investors valuable insights into market trends, risk profiles, investm
 
 ## Data Access
 
-#### Institutional Trading Data
-
-This data is around 1GB if you download the entire dataset.
+#### Latest Data
 
 ```python
 from sovai import sov
 df_institute = sov.data("institutional/trading")
 ```
 
-<figure><img src="../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-#### Filtered Dataset
+#### All Data
+
+This data is around 1GB if you download the entire dataset.
+
+```python
+from sovai import sov
+df_institute = sov.data("institutional/trading", full_history=True)
+```
+
+#### Filtered Data
 
 ```python
 from sovai import sov
@@ -51,7 +58,7 @@ import sovai as sov
 sov.report("institutional/flow_prediction", report_type="ranking")
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Plots
 
@@ -112,6 +119,6 @@ This dataset provides a comprehensive analysis of institutional investment behav
 * **Strategy Evaluation:** Assess and compare the effectiveness of different investment strategies.
 * **Investment Decision Making:** Utilize historical data and flow metrics to make informed investment decisions.
 
-###
+
 
 ***

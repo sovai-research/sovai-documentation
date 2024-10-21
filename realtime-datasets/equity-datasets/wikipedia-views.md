@@ -23,13 +23,20 @@ It includes metrics on view counts, relative views, and derived alpha/beta proxi
 
 ## Data Access
 
-#### Institutional Trading Data
+#### Latest Data
+
+```python
+from sovai import sov
+df_news = sov.data("wikipedia/views")
+```
+
+#### All Data
 
 This data is around 1GB if you download the entire dataset.
 
 ```python
 from sovai import sov
-df_news = sov.data("wikipedia/views")
+df_news = sov.data("wikipedia/views", full_history=True)
 ```
 
 <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>

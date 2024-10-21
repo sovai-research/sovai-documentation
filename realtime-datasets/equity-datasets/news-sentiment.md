@@ -23,25 +23,30 @@ It includes metrics on sentiment, tone, polarity, and article count, enabling in
 
 ## Data Access
 
-#### Institutional Trading Data
-
-This data is around 1GB if you download the entire dataset.
+#### Sentiment Data - All Data
 
 ```python
 from sovai import sov
-df_news = sov.data("news/daily")
+sov.data("news/sentiment", full_histor=True)
 ```
 
-<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
-
-#### Filtered Dataset
+#### Sentiment Data - Latest Data
 
 ```python
 from sovai import sov
-df_news = sov.data("news/daily", start_date="2017-03-30", tickers=["MSFT","TSLA"])
+sov.data("news/sentiment", full_history=True)
 ```
 
-### Ticker Level Full-Files
+#### Sentiment Data -Filtered Dataset
+
+```python
+from sovai import sov
+df_news = sov.data("news/sentiment", start_date="2017-03-30", tickers=["MSFT","TSLA"])
+```
+
+As you have done for `sentiment` above you can do for news `tone`, `polarity`, `activeness` etc.&#x20;
+
+### All Variations
 
 ```python
 from sovai import sov
@@ -122,8 +127,6 @@ from sovai import sov
 df_topic = sov.data("news/topic_probability")
 ```
 
-
-
 ### Vizualisations
 
 #### Strategy
@@ -133,7 +136,7 @@ from sovai import sov
 sov.plot("news", chart_type="strategy", ticker='NVDA')
 ```
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Econometrics
 
@@ -142,7 +145,7 @@ from sovai import sov
 sov.report("news", report_type="econometric")
 ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Analysis
 

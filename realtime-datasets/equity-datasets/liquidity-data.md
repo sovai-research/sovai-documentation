@@ -27,7 +27,7 @@ It offers investors valuable insights into execution quality, liquidity risk, an
 
 #### Price Improvement Dataset
 
-The Price Improvement dataset provides information on price improvements for various stocks, offering insights into trading execution quality.
+The latest Price Improvement dataset provides information on price improvements for various stocks, offering insights into trading execution quality.
 
 ```python
 import sovai as sov
@@ -36,10 +36,21 @@ df_improve = sov.data("liquidity/price_improvement")
 
 #### Market Opportunity Dataset
 
-The Market Opportunity dataset offers information on market making opportunities and liquidity provision for different stocks.
+The latest Market Opportunity dataset offers information on market making opportunities and liquidity provision for different stocks.
 
 ```python
+import sovai as sov
 df_market = sov.data("liquidity/market_opportunity")
+```
+
+#### All data
+
+The full history can be obtained using the `full_history=True` command:
+
+```python
+import sovai as sov
+df_ticker_imp = sov.data("liquidity/price_improvement", full_history=True)
+df_ticker_opp = sov.data("liquidity/market_opportunity", full_history=True)
 ```
 
 #### Accessing Specific Tickers
@@ -47,11 +58,10 @@ df_market = sov.data("liquidity/market_opportunity")
 You can also retrieve data for specific tickers across these datasets. For example:
 
 ```python
+import sovai as sov
 df_ticker_imp = sov.data("liquidity/price_improvement", tickers=["AAPL", "MSFT"])
 df_ticker_opp = sov.data("liquidity/market_opportunity", tickers=["AAPL", "MSFT"])
 ```
-
-
 
 ## Data Dictionary
 

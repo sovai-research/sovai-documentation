@@ -27,7 +27,7 @@ This data can serve as a valuable tool for investors to analyze labor market tre
 
 ```python
 from sovai import sov
-df_visa = sov.data("visas/h1b")
+df_visa = sov.data("visas/h1b", start_date="2010-01-01", tickers=["MSFT","TSLA"])
 ```
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -23,9 +23,7 @@ It offers investors and regulators valuable insights into insider trading strate
 
 ## Data Access
 
-#### Insider Trading Data
-
-This data is around 1GB if you download the entire dataset.
+#### Latest Data
 
 ```python
 from sovai import sov
@@ -34,11 +32,16 @@ df_insider = sov.data("insider/trading")
 
 <figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
-{% code title="Grab latest forecasts" %}
+#### All Data
+
+This data is around 1GB if you download the entire dataset.
+
 ```python
-df_insider.get_latest("flow_prediction")
+from sovai import sov
+df_insider = sov.data("insider/trading", full_history=True)
 ```
-{% endcode %}
+
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Filtered Dataset
 
@@ -56,7 +59,7 @@ import sovai as sov
 sov.plot("insider", chart_type="percentile", ticker="AAPL")
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Insider Flow Prediction
 

@@ -1,8 +1,8 @@
 ---
+icon: roller-coaster
 description: >-
   Segments time series into different components according to statistical tests
   over the series. Helpful for understanding changes in regimes.
-icon: roller-coaster
 ---
 
 # Time Segmentation
@@ -52,7 +52,7 @@ df_change.attrs['stats']  # View additional statistics
 df_accounting.change_point(method='plot')
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Regime Change Analysis
 

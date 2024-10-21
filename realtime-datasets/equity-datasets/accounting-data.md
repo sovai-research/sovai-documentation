@@ -29,12 +29,28 @@ It offers a comprehensive view of companies' financial positions and performance
 
 ### Retrieving Data
 
+#### Ticker Data
+
 ```python
 from sovai import sov
 df_accounting = sov.data("accounting/weekly", tickers=["MSFT", "TSLA", "META"])
 ```
 
 <figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Latest Data
+
+```python
+from sovai import sov
+df_accounting = sov.data("accounting/weekly")
+```
+
+#### All Data
+
+```python
+from sovai import sov
+df_accounting = sov.data("accounting/weekly", full_history=True)
+```
 
 ## Reports
 

@@ -49,11 +49,18 @@ import sovai as sov
 df_bankrupt = sov.data('bankruptcy', start_date="2017-01-03", tickers=["MSFT"])
 ```
 
-**All Data**
+**Latest Data**
 
 ```python
 import sovai as sov
 df_bankrupt = sov.data('bankruptcy')
+```
+
+**All Data**
+
+```python
+import sovai as sov
+df_bankrupt = sov.data('bankruptcy', full_history=True)
 ```
 
 ### Daily Probabilities
@@ -85,7 +92,7 @@ import sovai as sov
 sov.report("bankruptcy", report_type="ranking")
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Filter the outputs based on the top by **Sector**, **Marketcap**, and **Revenue** and bankruptcy risk. You can also change <mark style="color:blue;">`ranking`</mark> to <mark style="color:blue;">`change`</mark> to investigate the month on month change.
 

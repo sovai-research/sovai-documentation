@@ -27,11 +27,18 @@ This comprehensive set of ratios, covering categories such as liquidity, profita
 
 ## Data Access
 
-#### Retrieving Data
+#### Latest Data
 
 ```python
 from sovai import sov
 df_ratios = sov.data("ratios/normal")
+```
+
+#### All Data
+
+```python
+from sovai import sov
+df_ratios = sov.data("ratios/normal", full_history=True)
 ```
 
 <figure><img src="../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>

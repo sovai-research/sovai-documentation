@@ -1,9 +1,9 @@
 ---
+icon: wave-triangle
 description: >-
   This module provides a wide array of analytical tools and visualizations to
   help quantitative analysts and portfolio managers evaluate the quality,
   consistency, and robustness of their alpha signals.
-icon: wave-triangle
 ---
 
 # Signal Evaluation
@@ -59,7 +59,7 @@ This helps in understanding how different levels of the signal correspond to fut
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-3">evaluator</a>.signal_decile_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This plot breaks down the signal's performance by strength, showing:
 

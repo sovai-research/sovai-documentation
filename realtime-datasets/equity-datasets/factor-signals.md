@@ -30,7 +30,8 @@ It could be used for bottom-up equity selection strategies and for the developme
 Comprehensive Factors dataset is a merged set of both accounting and alternative financial metrics, providing a holistic view of a company's financial status.
 
 ```python
-df_factor_comp = sov.data("factors/comprehensive")
+import sovai as sov
+df_factor_comp = sov.data("factors/comprehensive",tickers=["MSFT","TSLA"])
 ```
 
 <figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
@@ -40,7 +41,8 @@ df_factor_comp = sov.data("factors/comprehensive")
 The Accounting Factors dataset includes key financial metrics related to accounting for various companies.
 
 ```python
-df_factor_actn = sov.data("factors/accounting")
+import sovai as sov
+df_factor_actn = sov.data("factors/accounting",tickers=["MSFT","TSLA"])
 ```
 
 #### Alternative Factors
@@ -48,23 +50,25 @@ df_factor_actn = sov.data("factors/accounting")
 This dataset contains alternative financial factors that are not typically found in standard financial statements.
 
 ```python
-df_factor_alt = sov.data("factors/alternative")
+import sovai as sov
+df_factor_alt = sov.data("factors/alternative",tickers=["MSFT","TSLA"])
 ```
 
 #### Coefficients Factors
 
 The Coefficients Factors dataset includes various coefficients related to different financial metrics.
 
-```python
-df_factor_coeff = sov.data("factors/coefficients")
-```
+<pre class="language-python"><code class="lang-python">import sovai as sov
+<strong>df_factor_coeff = sov.data("factors/coefficients",tickers=["MSFT","TSLA"])
+</strong></code></pre>
 
 #### Standard Errors Factors
 
 This dataset provides standard errors for various financial metrics, useful for statistical analysis and modeling.
 
 ```python
-df_factor_std_err = get_data("factors/standard_errors")
+import sovai as sov
+df_factor_std_err = get_data("factors/standard_errors",tickers=["MSFT","TSLA"])
 ```
 
 #### T-Statistics Factors
@@ -72,7 +76,8 @@ df_factor_std_err = get_data("factors/standard_errors")
 The T-Statistics Factors dataset includes t-statistics for different financial metrics, offering insights into their significance.
 
 ```python
-df_factor_t_stat = get_data("factors/t_statistics")
+import sovai as sov
+df_factor_t_stat = get_data("factors/t_statistics",tickers=["MSFT","TSLA"])
 ```
 
 #### Model Metrics
@@ -80,15 +85,8 @@ df_factor_t_stat = get_data("factors/t_statistics")
 Model Metrics dataset includes various metrics such as R-squared, AIC, BIC, etc., that are crucial for evaluating the performance of financial models.
 
 ```python
-df_model_metrics = sov.data("factors/model_metrics")
-```
-
-#### Accessing Specific Tickers
-
-You can also retrieve data for specific tickers across these datasets. For example:
-
-```python
-df_ticker_factors_accounting = sov.data("factors/accounting", tickers=[ "GOOGL"])
+import sovai as sov
+df_model_metrics = sov.data("factors/model_metrics",tickers=["MSFT","TSLA"])
 ```
 
 ***

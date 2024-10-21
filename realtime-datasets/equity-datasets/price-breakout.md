@@ -31,27 +31,23 @@ Several machine learning models are trained using the prepared dataset:
 
 ### Retrieving Data
 
-Fetch the latest breakout data using the SDK:
+#### Latest Data
 
 ```python
 from sovai import sov
-df_breakout = sov.data("breakout").set_index("date")
-```
-
-### Today's Breakout Prediction
-
-Access today's highest breakout stock predictions:
-
-```python
-# Filter for the latest date and sort by prediction values
-df_breakout.get_latest()
+df_breakout = sov.data("breakout")
 ```
 
 <figure><img src="../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Retrieve Specific Ticker Data
+#### Full history
 
-Get breakout data for a specific ticker such as Microsoft (MSFT):
+```python
+from sovai import sov
+df_breakout = sov.data("breakout", full_history=True)
+```
+
+#### Specific Ticker
 
 ```python
 df_msft = sov.data("breakout", tickers=["MSFT"])

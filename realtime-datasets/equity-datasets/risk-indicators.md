@@ -11,7 +11,7 @@ description: >-
 Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
 {% endhint %}
 
-`Tutorials` are the best documentation — [<mark style="color:blue;">`Corporate Risk Indicators Tutorial`</mark>](risk-indicators.md)
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Corporate Risk Indicators Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Corporate%20Risk%20Analysis.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>SEC Filings, EDGAR API, Exchange Data.</td></tr><tr><td><strong>Models Used</strong></td><td>Transformations, Simple Maths</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Ratios</td></tr></tbody></table>
 
@@ -63,6 +63,13 @@ Accounting, Event, and Misstatement Risks combined together:
 ```python
 from sovai import sov
 df_miss_risk = sov.data("corprisk/risks")
+```
+
+#### All Data
+
+```python
+from sovai import sov
+df_miss_risk = sov.data("corprisk/risks", full_history=True)
 ```
 
 <figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
