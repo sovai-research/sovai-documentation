@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Python for Investment Insights](README.md)
+* [AI-Powered Screening](README.md)
 
 ## GET STARTED
 
