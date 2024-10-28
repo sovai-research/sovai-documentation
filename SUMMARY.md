@@ -1,6 +1,6 @@
 # Table of contents
 
-* [AI-Powered Screening](README.md)
+* [Statistical Investment Screening](README.md)
 
 ## GET STARTED
 
