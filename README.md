@@ -18,7 +18,7 @@ layout:
     visible: true
 ---
 
-# Python for Investment Insights
+# Statistical Investment Screening
 
 **Only works for paying subscribers, purchase your API key** [<mark style="color:purple;">**`here`**</mark>](https://sov.ai/subscribe)**.**&#x20;
 
@@ -57,13 +57,7 @@ sov.data("query")
 2. [Economic Datasets](realtime-datasets/equity-datasets/) - Data for economic forecasting.
 3. [Sectorial Datasets](realtime-datasets/sectorial-datasets/) - Sector-specific data for predictive insights.
 
-### Upcoming Datasets
-
-Depending on the feedback we receive from users we can add the following datasets.
-
-<table><thead><tr><th width="183">Prediction Data</th><th width="210">Core Datasets</th><th width="213">Sectorial Data</th><th>Premium Data</th></tr></thead><tbody><tr><td>Earnings Surprise</td><td>Congressional Trading</td><td>Box Office Data</td><td>Shipping Data</td></tr><tr><td>ETF Flows</td><td>Senatorial Trading</td><td>Walmart Products</td><td>Real Estate</td></tr><tr><td>Undervaluation</td><td>Patent Applications</td><td>Amazon Products</td><td>Entity Data</td></tr></tbody></table>
-
-## Get Help
+### Get Help
 
 * The fastest way to get help is to email us at [d.snow@sov.ai](mailto:d.snow@sov.ai) for support.
 * We also have a pretty active [Linkedin](https://www.linkedin.com/company/sovai/) page.
