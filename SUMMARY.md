@@ -4,6 +4,7 @@
 
 ## GET STARTED
 
+* [Blog (Screener)](https://blog.sov.ai)
 * [🚀 Quick Start](get-started/quickstart.md)
 * [⭐ Tutorials](get-started/tutorials.md)
 * [💻 Installation](get-started/installation.md)
@@ -16,6 +17,8 @@
   * [Accounting Data](realtime-datasets/equity-datasets/accounting-data.md)
   * [Bankruptcy Predictions](realtime-datasets/equity-datasets/bankruptcy-predictions.md)
   * [Employee Visa](realtime-datasets/equity-datasets/employee-visa.md)
+  * [Earnings Surprise](realtime-datasets/equity-datasets/earnings-surprise.md)
+  * [Congressional Data](realtime-datasets/equity-datasets/congressional-data.md)
   * [Factor Signals](realtime-datasets/equity-datasets/factor-signals.md)
   * [Financial Ratios](realtime-datasets/equity-datasets/financial-ratios.md)
   * [Government Contracts](realtime-datasets/equity-datasets/government-contracts.md)
