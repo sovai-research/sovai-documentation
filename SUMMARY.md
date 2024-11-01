@@ -42,6 +42,7 @@
   * [Airbnb Data](realtime-datasets/sectorial-datasets/airbnb-data.md)
   * [Box Office Stats](realtime-datasets/sectorial-datasets/box-office-stats.md)
   * [CFPB Complaints](realtime-datasets/sectorial-datasets/cfpb-complaints.md)
+  * [Phrama Clinical Trials](realtime-datasets/sectorial-datasets/phrama-clinical-trials.md)
   * [Request Datasets](realtime-datasets/sectorial-datasets/request-datasets.md)
 
 ## Asset Managment
