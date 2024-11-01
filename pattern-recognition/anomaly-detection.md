@@ -1,8 +1,8 @@
 ---
+icon: chart-scatter
 description: >-
   It provides methods to detect global, local, and cluster anomalies in
   multivariate financial data
-icon: chart-scatter
 ---
 
 # Anomaly Detection
@@ -37,7 +37,7 @@ df_last_3_years = df_last_3_years.percentile()
 <pre class="language-python"><code class="lang-python"><strong>df_anomaly_scores = df_last_3_years.anomalies("scores", ticker="TSLA")
 </strong></code></pre>
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Local Anomalies
 

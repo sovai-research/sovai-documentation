@@ -59,7 +59,7 @@ This helps in understanding how different levels of the signal correspond to fut
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-3">evaluator</a>.signal_decile_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This plot breaks down the signal's performance by strength, showing:
 
@@ -71,7 +71,7 @@ This plot breaks down the signal's performance by strength, showing:
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-4">evaluator</a>.stress_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This visualization shows how the signal performs during various historical market stress events, helping to assess:
 

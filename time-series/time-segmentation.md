@@ -52,7 +52,7 @@ df_change.attrs['stats']  # View additional statistics
 df_accounting.change_point(method='plot')
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Regime Change Analysis
 
@@ -66,7 +66,7 @@ rc_result.tail(10)  # View the last 10 rows
 rc_result.attrs['stats']  # View additional statistics
 ```
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Visualization
 

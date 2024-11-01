@@ -178,7 +178,7 @@ dist_matrix_tucker = df_slice.distance(orient="panel", on="date")
 
 These functions calculate distances between different dates based on the market conditions or stock behaviors on those dates.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Sorting and Analyzing Date Distances
 

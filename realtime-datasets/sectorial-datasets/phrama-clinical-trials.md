@@ -1,8 +1,8 @@
 ---
+icon: star-sharp-half-stroke
 description: >-
   This section covers a very unique dataset that tags clinical trials with their
   predicted outcome success.
-icon: star-sharp-half-stroke
 ---
 
 # Phrama Clinical Trials
@@ -30,7 +30,7 @@ import sovai as sov
 df_clinical = sov.data("trials/predict", full_history=True)
 ```
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Description Data
 
@@ -39,7 +39,7 @@ import sovai as sov
 df_clinical = sov.data("trials/describe", full_history=True)
 ```
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Accessing Specific Tickers
 

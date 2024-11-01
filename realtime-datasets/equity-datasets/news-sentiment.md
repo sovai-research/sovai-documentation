@@ -136,7 +136,7 @@ from sovai import sov
 sov.plot("news", chart_type="strategy", ticker='NVDA')
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Econometrics
 
@@ -145,7 +145,7 @@ from sovai import sov
 sov.report("news", report_type="econometric")
 ```
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Analysis
 
@@ -155,7 +155,7 @@ from sovai import sov
 sov.plot("news", chart_type="analysis")
 ```
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
