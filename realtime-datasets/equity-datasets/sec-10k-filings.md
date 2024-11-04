@@ -1,8 +1,8 @@
 ---
+icon: building-lock
 description: >-
   A very easily digestable dataframe format for all 10-K filings, with multiple
   sections, categories, and textual datapoints.
-icon: building-lock
 ---
 
 # SEC 10K Filings
@@ -22,5 +22,4 @@ import sovai as sov
 data = sov.data("sec/10k", tickers=["AAPL"], limit=1)
 ```
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
