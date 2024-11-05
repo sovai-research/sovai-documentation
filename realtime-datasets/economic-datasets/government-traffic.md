@@ -28,7 +28,7 @@ df_agencies = sov.data("government/traffic/agencies")
 df_domains = sov.data("government/traffic/domains")
 ```
 
-<figure><img src="../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/government_traffic_1.png" alt=""><figcaption></figcaption></figure>
 
 ### Dataset Contents
 

@@ -41,7 +41,7 @@ from sovai import sov
 df_ratios = sov.data("ratios/normal", full_history=True)
 ```
 
-<figure><img src="../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/financial_ratios_1.png" alt=""><figcaption></figcaption></figure>
 
 #### Retrieve a Subsection
 
@@ -70,7 +70,7 @@ import sovai as sov
 sov.plot("ratios", chart_type="benchmark")
 ```
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/financial_ratios_2.png" alt=""><figcaption></figcaption></figure>
 
 ### Dynamic Ratios
 
@@ -79,7 +79,7 @@ import sovai as sov
 sov.plot("ratios", chart_type="relative")
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/financial_ratios_3.png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

@@ -33,7 +33,7 @@ from sovai import sov
 df_contracts = sov.data("spending/contracts", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/government_contracts_1.png" alt=""><figcaption></figcaption></figure>
 
 #### Transactions Data:
 
@@ -44,7 +44,7 @@ from sovai import sov
 df_transactions = sov.data("spending/transactions", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/government_contracts_2.png" alt=""><figcaption></figcaption></figure>
 
 #### Product Specifications
 
@@ -55,7 +55,7 @@ from sovai import sov
 df_product = sov.data("spending/product", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/government_contracts_3.png" alt=""><figcaption></figcaption></figure>
 
 #### Entity Specification
 
@@ -66,7 +66,7 @@ from sovai import sov
 df_entities = sov.data("spending/entities", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/government_contracts_4.png" alt=""><figcaption></figcaption></figure>
 
 #### Location Data
 
@@ -77,7 +77,7 @@ from sovai import sov
 df_location = sov.data("spending/location", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/government_contracts_5.png" alt=""><figcaption></figcaption></figure>
 
 #### Competition Data:
 
@@ -88,7 +88,7 @@ from sovai import sov
 df_competition = sov.data("spending/competition", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/government_contracts_5.png" alt=""><figcaption></figcaption></figure>
 
 #### Compensation Date
 
@@ -99,7 +99,7 @@ from sovai import sov
 df_compensation = sov.data("spending/compensation")
 ```
 
-<figure><img src="../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/government_contracts_5.png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionaries
 
