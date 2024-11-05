@@ -39,7 +39,7 @@ from sovai import sov
 df_news = sov.data("wikipedia/views", full_history=True)
 ```
 
-<figure><img src="../.gitbook/assets/wikipedia_views_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 #### Filtered Dataset
 

@@ -30,7 +30,7 @@ import sovai as sov
 df_clinical = sov.data("trials/predict", full_history=True)
 ```
 
-<figure><img src="../.gitbook/assets/phrama_clinical_trials_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Description Data
 
@@ -39,7 +39,7 @@ import sovai as sov
 df_clinical = sov.data("trials/describe", full_history=True)
 ```
 
-<figure><img src="../.gitbook/assets/phrama_clinical_trials_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Accessing Specific Tickers
 

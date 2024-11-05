@@ -51,7 +51,7 @@ Shows the distribution of Sharpe ratios across different strategies, helping to 
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-2">portfolio</a>.sharpe_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ### **Cumulative Returns Plot**
 
@@ -60,7 +60,7 @@ Displays the cumulative returns of all portfolio strategies over time, allowing 
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-3">portfolio</a>.return_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ### **Overall Composition Plot**
 
@@ -69,7 +69,7 @@ Illustrates the asset allocation of all strategies, allowing for a comparison of
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-4">portfolio</a>.composition_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ### **Best Performing Model**
 
@@ -89,7 +89,7 @@ Provides a comprehensive summary of key performance metrics for all strategies, 
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-6">portfolio</a>.performance_report
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ## Model-Specific Analysis
 
@@ -100,7 +100,7 @@ For model-specific analysis, replace "model\_name" with the actual model name (e
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-7">portfolio</a>["model_name"].backtest_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 Displays the cumulative returns of the specific model over the backtesting period.
 
@@ -111,7 +111,7 @@ Detailed performance statistics from the backtesting period for the specific mod
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-8">portfolio</a>["model_name"].backtest_report
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ### **Rolling Sharpe Ratio**
 
@@ -120,7 +120,7 @@ Visualizes how the Sharpe ratio of the model changes over time, indicating consi
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-9">portfolio</a>["model_name"].sharpe_rolling_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ### **Model Composition**
 
@@ -129,7 +129,7 @@ Illustrates the asset allocation for the specific model.
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-10">portfolio</a>["model_name"].composition_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 ### **Drawdown Contribution**
 
@@ -138,7 +138,7 @@ Shows which assets contribute most to the portfolio's drawdowns, helping identif
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-11">portfolio</a>["model_name"].drawdown_contribution_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 ### **Sharpe Ratio Contribution**
 
@@ -147,7 +147,7 @@ Indicates which assets contribute most to the portfolio's Sharpe ratio, highligh
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-12">portfolio</a>["model_name"].sharpe_contribution_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 ### **Correlation Heatmap**
 
@@ -156,7 +156,7 @@ Displays the correlation structure of assets used in the model (not available fo
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-13">portfolio</a>["model_name"].heatmap_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 ### **Clustering Dendrogram**
 
@@ -165,7 +165,7 @@ Visualizes the hierarchical clustering of assets used in the model (not availabl
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-14">portfolio</a>["model_name"].cluster_plot
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ### **Current Recommended Allocation**
 
@@ -174,7 +174,7 @@ Provides the model's most recent recommended asset allocation.
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-15">portfolio</a>["model_name"].recommended_allocation
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 ### **Sharpe Ratio Distribution**
 
@@ -183,7 +183,7 @@ Shows the distribution of Sharpe ratio helping to understand the consistency of 
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-16">portfolio</a>["model_name"].recommended_allocation
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 ### **Daily Weights**
 
@@ -192,7 +192,7 @@ Shows how the model's asset allocation changes day-by-day over the backtesting p
 <pre class="language-python"><code class="lang-python"><a data-footnote-ref href="#user-content-fn-17">portfolio</a>["model_name"].daily_weights
 </code></pre>
 
-<figure><img src="../.gitbook/assets/weight_optimization_15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 [^1]: class module
 

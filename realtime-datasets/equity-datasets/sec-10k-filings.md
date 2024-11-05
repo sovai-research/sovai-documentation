@@ -22,4 +22,4 @@ import sovai as sov
 data = sov.data("sec/10k", tickers=["AAPL"], limit=1)
 ```
 
-<figure><img src="../.gitbook/assets/sec_10k_filings_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>

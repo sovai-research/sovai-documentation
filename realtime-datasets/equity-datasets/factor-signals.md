@@ -34,7 +34,7 @@ import sovai as sov
 df_factor_comp = sov.data("factors/comprehensive",tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../.gitbook/assets/factor_signals_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 #### Accounting Factors
 

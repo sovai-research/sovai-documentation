@@ -37,7 +37,7 @@ This function searches for filings related to the given keyword and saves the re
   * Ticker Symbol
 * Search and Download buttons functionality
 
-<figure><img src="../.gitbook/assets/sec_edgar_search_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
 
 #### Loading Search Results
 
@@ -64,7 +64,7 @@ The filing object provides several attributes and methods for analysis:
 nflx_filing.report
 ```
 
-<figure><img src="../.gitbook/assets/sec_edgar_search_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
 
 #### Shows the financial statements
 
@@ -77,7 +77,7 @@ nflx_filing.income_statement
 nflx_filing.cash_flow_statement
 ```
 
-<figure><img src="../.gitbook/assets/sec_edgar_search_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
 #### Provides sampled financial facts
 
@@ -87,7 +87,7 @@ Allows you to perform time-series analysis with fact-level financial data.
 nflx_filing.sampled_facts
 ```
 
-<figure><img src="../.gitbook/assets/sec_edgar_search_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
 
 **Generates visualizations of financial facts**
 
@@ -97,5 +97,5 @@ It self-selects facts that have increased/decreased the most over a lookback per
 nflx_filing.plot_facts
 ```
 
-<figure><img src="../.gitbook/assets/sec_edgar_search_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 
