@@ -54,7 +54,7 @@ from sovai import sov
 sov.plot("allocation", "line")
 ```
 
-<figure><img src="../.gitbook/assets/asset_rotation_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 #### Stacked Plot
 
@@ -65,6 +65,6 @@ from sovai import sov
 sov.plot("allocation", "stacked")
 ```
 
-<figure><img src="../.gitbook/assets/asset_rotation_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
 ***

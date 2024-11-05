@@ -8,16 +8,16 @@ description: >-
 
 ### [Overall Index](https://sov.ai/app/get/overall-index)
 
-<figure><img src="../.gitbook/assets/turing_risk_index_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
 ### [Index Composition](https://sov.ai/app/get/index-composition)
 
-<figure><img src="../.gitbook/assets/turing_risk_index_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/risk-2.png" alt=""><figcaption></figcaption></figure>
 
 ### [Risk Forecast](https://sov.ai/app/get/risk-forecast)
 
-<figure><img src="../.gitbook/assets/turing_risk_index_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/risk_forecast (1).png" alt=""><figcaption></figcaption></figure>
 
 ### [Risk Statistics](https://sov.ai/app/get/risk-statistics)
 
-<figure><img src="../.gitbook/assets/turing_risk_index_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/risk_dash (2).png" alt=""><figcaption></figcaption></figure>

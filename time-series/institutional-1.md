@@ -39,7 +39,7 @@ df_accounting = sov.data("accounting/weekly").select_stocks("mega")
 
 ### Time Decomposition and Statistrics
 
-<figure><img src="../.gitbook/assets/institutional_1_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
 ```python
 # Perform time decomposition
@@ -60,4 +60,4 @@ print(df_time.attrs["stats"])
 df_accounting.time_decomposition(method="plot", ticker="AAPL", feature="total_revenue")
 ```
 
-<figure><img src="../.gitbook/assets/institutional_1_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>

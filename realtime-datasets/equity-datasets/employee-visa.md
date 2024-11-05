@@ -30,7 +30,7 @@ from sovai import sov
 df_visa = sov.data("visas/h1b", start_date="2010-01-01", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../.gitbook/assets/employee_visa_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This dataset encompasses detailed records from labor condition applications, which are indicative of employment patterns within companies that hire foreign workers under various temporary visa categories in the United States. It provides a comprehensive view of job positions, wages, and employment periods.
 
