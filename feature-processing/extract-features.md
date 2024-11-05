@@ -42,7 +42,7 @@ result = df_mega.extract_features(every="all")
 print(result.head())
 ```
 
-<figure><img src="../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/extract_features_1.png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Weekly Rolling Features
 

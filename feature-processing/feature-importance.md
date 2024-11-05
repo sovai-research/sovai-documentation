@@ -20,7 +20,7 @@ The module supports several methods for calculating feature importance:
 df_mega.importance("random_projection")
 ```
 
-<figure><img src="../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/feature_importance_1.png" alt=""><figcaption></figcaption></figure>
 
 Reflects how much each feature contributes to the variance in the randomly projected space.
 
@@ -81,4 +81,4 @@ feature_importance = df_mega.importance("sparse_projection")
 df_select = df_mega[feature_importance["feature"].head(25)]
 ```
 
-<figure><img src="../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/feature_importance_2.png" alt=""><figcaption></figcaption></figure>

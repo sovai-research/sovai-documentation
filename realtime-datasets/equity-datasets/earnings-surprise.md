@@ -28,7 +28,7 @@ from sovai import sov
 df_earn_surp = sov.data("earnings/surprise", tickers=["AAPL", "MSFT"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/earnings_surprise_1.png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

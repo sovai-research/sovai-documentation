@@ -24,7 +24,7 @@ from sovai import sov
 df_movies = sov.data("movies/boxoffice")
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/box_office_stats_1.png" alt=""><figcaption></figcaption></figure>
 
 ### Data Dictionary
 
