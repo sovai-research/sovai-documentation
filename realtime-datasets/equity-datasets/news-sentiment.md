@@ -107,7 +107,7 @@ from sovai import sov
 df_sentiment_score = sov.data("news/sentiment_score")
 ```
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/news_sentiment_1.png" alt=""><figcaption></figcaption></figure>
 
 **df\_polarity\_score** = `sov.data("news/polarity_score")` Gauges **opinion intensity** in news. **Higher scores**: stronger opinions; **Lower scores**: more neutral reporting.
 
@@ -136,7 +136,7 @@ from sovai import sov
 sov.plot("news", chart_type="strategy", ticker='NVDA')
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/news_sentiment_2.png" alt=""><figcaption></figcaption></figure>
 
 #### Econometrics
 
@@ -145,7 +145,7 @@ from sovai import sov
 sov.report("news", report_type="econometric")
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/news_sentiment_3.png" alt=""><figcaption></figcaption></figure>
 
 #### Analysis
 
@@ -155,7 +155,7 @@ from sovai import sov
 sov.plot("news", chart_type="analysis")
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/news_sentiment_4.png" alt=""><figcaption></figcaption></figure>
 
 
 

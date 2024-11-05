@@ -28,7 +28,7 @@ from sovai import sov
 df_econ = sov.data("macro/features")
 ```
 
-<figure><img src="../../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/core_economic_data_1.png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

@@ -30,7 +30,7 @@ from sovai import sov
 df_congress = sov.data("congress")
 ```
 
-<figure><img src="../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/congressional_data_1.png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

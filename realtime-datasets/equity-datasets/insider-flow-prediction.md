@@ -30,7 +30,7 @@ from sovai import sov
 df_insider = sov.data("insider/trading")
 ```
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/insider_flow_prediction_1.png" alt=""><figcaption></figcaption></figure>
 
 #### All Data
 
@@ -41,7 +41,7 @@ from sovai import sov
 df_insider = sov.data("insider/trading", full_history=True)
 ```
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/insider_flow_prediction_1.png" alt=""><figcaption></figcaption></figure>
 
 #### Filtered Dataset
 
@@ -59,7 +59,7 @@ import sovai as sov
 sov.plot("insider", chart_type="percentile", ticker="AAPL")
 ```
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/insider_flow_prediction_3.png" alt=""><figcaption></figcaption></figure>
 
 ### Insider Flow Prediction
 
@@ -68,7 +68,7 @@ import sovai as sov
 sov.plot("insider", chart_type="prediction")
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/insider_flow_prediction_4.png" alt=""><figcaption></figcaption></figure>
 
 ### Grouped Plot
 
@@ -77,9 +77,9 @@ import sovai as sov
 sov.plot("insider", chart_type="flows")
 ```
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Drag on the plot to select shorter periods</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/insider_flow_prediction_5.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Double click a single item for a line plot of the flow prediction over time</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/insider_flow_prediction_6.png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

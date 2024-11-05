@@ -43,7 +43,7 @@ Orthogonalization transforms a set of features into a new set of uncorrelated (p
 df_orthogonalized_gs = df_mega.orthogonalize_features(method='gram_schmidt')
 ```
 
-<figure><img src="../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/neutralize_features_1.png" alt=""><figcaption></figcaption></figure>
 
 2. QR method:
 

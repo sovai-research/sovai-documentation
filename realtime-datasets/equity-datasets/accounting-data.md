@@ -36,7 +36,7 @@ from sovai import sov
 df_accounting = sov.data("accounting/weekly", tickers=["MSFT", "TSLA", "META"])
 ```
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/accounting_data_1.png" alt=""><figcaption></figcaption></figure>
 
 #### Latest Data
 
@@ -61,11 +61,11 @@ import sovai as sov
 sov.report("accounting", report_type="balance_sheet", ticker="MSFT")
 ```
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/accounting_data_2.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/accounting_data_3.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/accounting_data_4.png" alt=""><figcaption></figcaption></figure>
 
 ## Plots
 
@@ -76,7 +76,7 @@ import sovai as sov
 sov.plot("accounting", chart_type="balance", ticker="MSFT")
 ```
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/accounting_data_5.png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 
