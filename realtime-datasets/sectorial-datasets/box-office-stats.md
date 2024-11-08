@@ -20,7 +20,7 @@ It links movies to their producer companies via ticker symbols, enabling analysi
 #### Retrieving Data
 
 ```python
-from sovai import sov 
+import sovai as sov 
 df_movies = sov.data("movies/boxoffice")
 ```
 

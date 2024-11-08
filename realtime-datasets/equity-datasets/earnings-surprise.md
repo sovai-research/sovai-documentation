@@ -24,7 +24,7 @@ By offering a granular view of earnings performance, this data serves as a vital
 ## Data Access
 
 ```python
-from sovai import sov
+import sovai as sov
 df_earn_surp = sov.data("earnings/surprise", tickers=["AAPL", "MSFT"])
 ```
 

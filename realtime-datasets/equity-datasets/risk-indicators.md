@@ -28,7 +28,7 @@ It combines various financial metrics and event data to generate standardized ri
 **Accounting Table**: This table offers a snapshot of a company’s financial status based on standard accounting metrics. It is crucial for investors to assess a company's profitability, liquidity, and solvency.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_actg_risk = sov.data("corprisk/accounting")
 ```
 
@@ -39,7 +39,7 @@ df_actg_risk = sov.data("corprisk/accounting")
 **Events Table**: Contains data on significant corporate events that could impact a company's financial status or investor perception. This includes mergers, acquisitions, executive changes, regulatory shifts, and other material events.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_events_risk = sov.data("corprisk/events")
 ```
 
@@ -50,7 +50,7 @@ df_events_risk = sov.data("corprisk/events")
 **Misstatement Table**: This table highlights the potential risks of financial misstatements in a company’s reporting. A higher score in this table indicates a greater risk or occurrence of financial misstatements, which can be a red flag for investors.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_miss_risk = sov.data("corprisk/misstatement")
 ```
 
@@ -61,14 +61,14 @@ df_miss_risk = sov.data("corprisk/misstatement")
 Accounting, Event, and Misstatement Risks combined together:
 
 ```python
-from sovai import sov
+import sovai as sov
 df_miss_risk = sov.data("corprisk/risks")
 ```
 
 #### All Data
 
 ```python
-from sovai import sov
+import sovai as sov
 df_miss_risk = sov.data("corprisk/risks", full_history=True)
 ```
 
@@ -77,7 +77,7 @@ df_miss_risk = sov.data("corprisk/risks", full_history=True)
 ## Reports
 
 ```python
-from sovai import sov
+import sovai as sov
 sov.plot("corprisk/risks",chart_type="line")
 ```
 

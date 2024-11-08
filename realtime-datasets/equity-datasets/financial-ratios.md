@@ -30,14 +30,14 @@ This comprehensive set of ratios, covering categories such as liquidity, profita
 #### Latest Data
 
 ```python
-from sovai import sov
+import sovai as sov
 df_ratios = sov.data("ratios/normal")
 ```
 
 #### All Data
 
 ```python
-from sovai import sov
+import sovai as sov
 df_ratios = sov.data("ratios/normal", full_history=True)
 ```
 
@@ -48,7 +48,7 @@ df_ratios = sov.data("ratios/normal", full_history=True)
 Filter by `ticker` or `date` to select ratios:
 
 ```python
-from sovai import sov
+import sovai as sov
 df_ratios = sov.data("ratios/normal", start_date="2008-03-30", tickers=["AMZN","MMM"])
 ```
 
@@ -57,7 +57,7 @@ df_ratios = sov.data("ratios/normal", start_date="2008-03-30", tickers=["AMZN","
 You can also obtain data in percentiles across time with `ratios/relative`.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_percentile = sov.data("ratios/relative", start_date="2018-01-01", tickers=["TSLA", "META"])
 ```
 

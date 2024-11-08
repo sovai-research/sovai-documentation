@@ -27,7 +27,7 @@ It offers investors valuable insights into market trends, risk profiles, investm
 #### Latest Data
 
 ```python
-from sovai import sov
+import sovai as sov
 df_institute = sov.data("institutional/trading")
 ```
 
@@ -38,14 +38,14 @@ df_institute = sov.data("institutional/trading")
 This data is around 1GB if you download the entire dataset.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_institute = sov.data("institutional/trading", full_history=True)
 ```
 
 #### Filtered Data
 
 ```python
-from sovai import sov
+import sovai as sov
 df_institute = sov.data("institutional/trading", start_date="2004-04-30", tickers=["MSFT"])
 ```
 

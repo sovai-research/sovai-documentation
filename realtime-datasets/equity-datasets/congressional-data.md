@@ -26,7 +26,7 @@ By providing transparency into the investment activities of elected officials, t
 The easiest is to just download the dump and to filter data from there, this is updated on a daily basis.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_congress = sov.data("congress")
 ```
 

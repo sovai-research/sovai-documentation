@@ -26,21 +26,21 @@ It includes metrics on sentiment, tone, polarity, and article count, enabling in
 #### Sentiment Data - All Data
 
 ```python
-from sovai import sov
+import sovai as sov
 sov.data("news/sentiment", full_histor=True)
 ```
 
 #### Sentiment Data - Latest Data
 
 ```python
-from sovai import sov
+import sovai as sov
 sov.data("news/sentiment", full_history=True)
 ```
 
 #### Sentiment Data -Filtered Dataset
 
 ```python
-from sovai import sov
+import sovai as sov
 df_news = sov.data("news/sentiment", start_date="2017-03-30", tickers=["MSFT","TSLA"])
 ```
 
@@ -49,7 +49,7 @@ As you have done for `sentiment` above you can do for news `tone`, `polarity`, `
 ### All Variations
 
 ```python
-from sovai import sov
+import sovai as sov
 
 # Sentiment Dataset
 df_sentiment = sov.data("news/sentiment")
@@ -103,7 +103,7 @@ df_associated_companies = sov.data("news/associated_companies")
 **df\_sentiment\_score** = `sov.data("news/sentiment_score")` Measures **emotional tone** of news articles. **Positive scores**: favorable news; **Negative scores**: unfavorable news.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_sentiment_score = sov.data("news/sentiment_score")
 ```
 
@@ -112,7 +112,7 @@ df_sentiment_score = sov.data("news/sentiment_score")
 **df\_polarity\_score** = `sov.data("news/polarity_score")` Gauges **opinion intensity** in news. **Higher scores**: stronger opinions; **Lower scores**: more neutral reporting.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_polarity_score = sov.data("news/polarity_score")
 ```
 
@@ -123,7 +123,7 @@ df_polarity_score = sov.data("news/polarity_score")
 All use various statistical measures (mean, median, etc.) across financial/economic topics over time.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_topic = sov.data("news/topic_probability")
 ```
 
@@ -132,7 +132,7 @@ df_topic = sov.data("news/topic_probability")
 #### Strategy
 
 ```python
-from sovai import sov
+import sovai as sov
 sov.plot("news", chart_type="strategy", ticker='NVDA')
 ```
 
@@ -141,7 +141,7 @@ sov.plot("news", chart_type="strategy", ticker='NVDA')
 #### Econometrics
 
 ```python
-from sovai import sov
+import sovai as sov
 sov.report("news", report_type="econometric")
 ```
 
@@ -150,7 +150,7 @@ sov.report("news", report_type="econometric")
 #### Analysis
 
 ```python
-from sovai import sov
+import sovai as sov
 
 sov.plot("news", chart_type="analysis")
 ```

@@ -29,7 +29,7 @@ It offers investors valuable insights into companies' relationships with governm
 Data about contract award details, potential total value, federal action obligations, performance duration, and recipient details.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_contracts = sov.data("spending/contracts", tickers=["MSFT","TSLA"])
 ```
 
@@ -40,7 +40,7 @@ df_contracts = sov.data("spending/contracts", tickers=["MSFT","TSLA"])
 The data includes information about individual transactions related to contracts, such as federal action obligations, transaction descriptions, and last modified dates.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_transactions = sov.data("spending/transactions", tickers=["MSFT","TSLA"])
 ```
 
@@ -51,7 +51,7 @@ df_transactions = sov.data("spending/transactions", tickers=["MSFT","TSLA"])
 Data about the products or services associated with contracts, such as product or service code descriptions, NAICS codes and descriptions, country of origin, and sustainability information.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_product = sov.data("spending/product", tickers=["MSFT","TSLA"])
 ```
 
@@ -62,7 +62,7 @@ df_product = sov.data("spending/product", tickers=["MSFT","TSLA"])
 Data about the entities involved in contracts, such as recipient unique identifiers, recipient names, parent company details, and matching information with other datasets like Bloomberg.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_entities = sov.data("spending/entities", tickers=["MSFT","TSLA"])
 ```
 
@@ -73,7 +73,7 @@ df_entities = sov.data("spending/entities", tickers=["MSFT","TSLA"])
 Data about the geographical locations associated with contracts, such as recipient country, address, city, county, state, and zip code, as well as the primary place of performance details.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_location = sov.data("spending/location", tickers=["MSFT","TSLA"])
 ```
 
@@ -84,7 +84,7 @@ df_location = sov.data("spending/location", tickers=["MSFT","TSLA"])
 Data related to the competition aspect of contracts, such as the extent of competition, number of offers received, and solicitation procedures.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_competition = sov.data("spending/competition", tickers=["MSFT","TSLA"])
 ```
 
@@ -95,7 +95,7 @@ df_competition = sov.data("spending/competition", tickers=["MSFT","TSLA"])
 Data about the compensation of highly compensated officers in recipient organization, only published voluntarily by a few companies.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_compensation = sov.data("spending/compensation")
 ```
 

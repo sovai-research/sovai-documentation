@@ -26,7 +26,7 @@ It includes metrics on view counts, relative views, and derived alpha/beta proxi
 #### Latest Data
 
 ```python
-from sovai import sov
+import sovai as sov
 df_news = sov.data("wikipedia/views")
 ```
 
@@ -35,7 +35,7 @@ df_news = sov.data("wikipedia/views")
 This data is around 1GB if you download the entire dataset.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_news = sov.data("wikipedia/views", full_history=True)
 ```
 
@@ -44,7 +44,7 @@ df_news = sov.data("wikipedia/views", full_history=True)
 #### Filtered Dataset
 
 ```python
-from sovai import sov
+import sovai as sov
 df_news = sov.data("wikipedia/views", start_date="2017-03-30", tickers=["MSFT","TSLA"])
 ```
 

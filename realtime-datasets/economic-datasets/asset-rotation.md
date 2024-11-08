@@ -30,7 +30,7 @@ The data and accompanying visualization tools enable investors to analyze optima
 Return predictions, historically and 8-years in the future.
 
 ```python
-from sovai import sov 
+import sovai as sov 
 df_returns = sov.data("allocation/returns")
 ```
 
@@ -39,7 +39,7 @@ df_returns = sov.data("allocation/returns")
 Historical allocations and future risk-parity allocations
 
 ```python
-from sovai import sov 
+import sovai as sov 
 df_allocate = sov.data("allocation/all")
 ```
 
@@ -50,7 +50,7 @@ df_allocate = sov.data("allocation/all")
 Looking at the future and past prescribed allocations over-time
 
 ```python
-from sovai import sov 
+import sovai as sov 
 sov.plot("allocation", "line")
 ```
 
@@ -61,7 +61,7 @@ sov.plot("allocation", "line")
 Looking at the future and past prescribed allocations over-time
 
 ```python
-from sovai import sov 
+import sovai as sov 
 sov.plot("allocation", "stacked")
 ```
 

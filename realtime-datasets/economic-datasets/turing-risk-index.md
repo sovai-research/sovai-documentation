@@ -26,7 +26,7 @@ The data enables investors and analysts to assess and predict market volatility,
 #### Retrieving Data
 
 ```python
-from sovai import sov 
+import sovai as sov 
 df_risks = sov.data("risks")
 ```
 
@@ -37,7 +37,7 @@ df_risks = sov.data("risks")
 Isolating market risk indicators
 
 ```python
-from sovai import sov
+import sovai as sov
 df_market = sov.data("risks/market")
 ```
 
@@ -46,7 +46,7 @@ df_market = sov.data("risks/market")
 Isolating business risk indicators
 
 ```python
-from sovai import sov
+import sovai as sov
 df_business = sov.data("risks/business")
 ```
 
@@ -55,7 +55,7 @@ df_business = sov.data("risks/business")
 Isolating business risk indicators
 
 ```python
-from sovai import sov
+import sovai as sov
 df_political = sov.data("risks/political")
 ```
 

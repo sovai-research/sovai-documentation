@@ -26,7 +26,7 @@ It offers investors and regulators valuable insights into insider trading strate
 #### Latest Data
 
 ```python
-from sovai import sov
+import sovai as sov
 df_insider = sov.data("insider/trading")
 ```
 
@@ -37,7 +37,7 @@ df_insider = sov.data("insider/trading")
 This data is around 1GB if you download the entire dataset.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_insider = sov.data("insider/trading", full_history=True)
 ```
 
@@ -46,7 +46,7 @@ df_insider = sov.data("insider/trading", full_history=True)
 #### Filtered Dataset
 
 ```python
-from sovai import sov
+import sovai as sov
 df_insider = sov.data("insider/trading", start_date="2004-04-30", tickers=["MSFT"])
 ```
 

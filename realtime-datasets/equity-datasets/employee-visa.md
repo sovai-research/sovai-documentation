@@ -26,7 +26,7 @@ This data can serve as a valuable tool for investors to analyze labor market tre
 **H1B Table**: This table offers quarterly data to track foreign hiring patterns for publicly traded companies.
 
 ```python
-from sovai import sov
+import sovai as sov
 df_visa = sov.data("visas/h1b", start_date="2010-01-01", tickers=["MSFT","TSLA"])
 ```
 

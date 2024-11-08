@@ -24,7 +24,7 @@ This dataset provides a core set of economic indicators that explain over 90% of
 #### Economic Time Series
 
 ```python
-from sovai import sov
+import sovai as sov
 df_econ = sov.data("macro/features")
 ```
 

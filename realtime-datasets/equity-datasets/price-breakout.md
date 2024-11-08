@@ -34,7 +34,7 @@ Several machine learning models are trained using the prepared dataset:
 #### Latest Data
 
 ```python
-from sovai import sov
+import sovai as sov
 df_breakout = sov.data("breakout")
 ```
 
@@ -43,7 +43,7 @@ df_breakout = sov.data("breakout")
 #### Full history
 
 ```python
-from sovai import sov
+import sovai as sov
 df_breakout = sov.data("breakout", full_history=True)
 ```
 
