@@ -1,8 +1,8 @@
 ---
+icon: calculator-simple
 description: >-
   The feature extractor module generates features that can be categorized into
   several types based on the nature of the calculations.
-icon: calculator-simple
 ---
 
 # Extract Features
@@ -42,7 +42,7 @@ result = df_mega.extract_features(every="all")
 print(result.head())
 ```
 
-<figure><img src="../.gitbook/assets/extract_features_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/extract_features_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Weekly Rolling Features
 

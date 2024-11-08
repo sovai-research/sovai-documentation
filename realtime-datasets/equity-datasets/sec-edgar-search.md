@@ -5,13 +5,13 @@ description: >-
   financial data from the SEC's EDGAR database.
 ---
 
-# SEC Edgar Filing
+# SEC Edgar Search
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Edgar Filings Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/studies/Edgar%20Tools.ipynb)
 
 ## Description
 
-This documentation outlines tools for accessing and analyzing SEC EDGAR filings data. It provides functions to search for specific filings, retrieve filing documents, extract financial statements, and visualize key financial facts.&#x20;
+This documentation outlines tools for accessing and analyzing SEC EDGAR filings data. It provides functions to search for specific filings, retrieve filing documents, extract financial statements, and visualize key financial facts.
 
 The toolkit enables users to efficiently gather and analyze regulatory filing data for various companies, supporting in-depth financial analysis and research.
 
@@ -26,7 +26,7 @@ import sovai as sov
 sov.sec_search("CFO Resignation")
 ```
 
-This function searches for filings related to the given keyword and saves the results in a CSV file. It is the fastest way to go from search query to CSV/datframe output.&#x20;
+This function searches for filings related to the given keyword and saves the results in a CSV file. It is the fastest way to go from search query to CSV/datframe output.
 
 * Available search parameters:
   * Search Keyword
@@ -37,7 +37,7 @@ This function searches for filings related to the given keyword and saves the re
   * Ticker Symbol
 * Search and Download buttons functionality
 
-<figure><img src="../../.gitbook/assets/sec_edgar_search_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sec_edgar_search_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Loading Search Results
 
@@ -64,7 +64,7 @@ The filing object provides several attributes and methods for analysis:
 nflx_filing.report
 ```
 
-<figure><img src="../../.gitbook/assets/sec_edgar_search_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sec_edgar_search_2 (3).png" alt=""><figcaption></figcaption></figure>
 
 #### Shows the financial statements
 
@@ -77,7 +77,7 @@ nflx_filing.income_statement
 nflx_filing.cash_flow_statement
 ```
 
-<figure><img src="../../.gitbook/assets/sec_edgar_search_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sec_edgar_search_3 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Provides sampled financial facts
 
@@ -87,7 +87,7 @@ Allows you to perform time-series analysis with fact-level financial data.
 nflx_filing.sampled_facts
 ```
 
-<figure><img src="../../.gitbook/assets/sec_edgar_search_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sec_edgar_search_4 (3).png" alt=""><figcaption></figcaption></figure>
 
 **Generates visualizations of financial facts**
 
@@ -97,5 +97,4 @@ It self-selects facts that have increased/decreased the most over a lookback per
 nflx_filing.plot_facts
 ```
 
-<figure><img src="../../.gitbook/assets/sec_edgar_search_5.png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/sec_edgar_search_5 (4).png" alt=""><figcaption></figcaption></figure>

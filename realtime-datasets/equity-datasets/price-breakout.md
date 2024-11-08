@@ -17,9 +17,9 @@ Daily predictions arrive between 11 pm - 4 am before market open in the US for 1
 
 ## Description
 
-This datasets identifies potential price breakout stocks over the next 30-60 days for US Equities. This dataset provides daily predictions of upward price breakouts for over 13,000 US equities.&#x20;
+This datasets identifies potential price breakout stocks over the next 30-60 days for US Equities. This dataset provides daily predictions of upward price breakouts for over 13,000 US equities.
 
-The accuracy is around 65% and ROC-AUC of 68%, it is one of the most accurate breakout models on the market. It is retrained on a weekly basis.&#x20;
+The accuracy is around 65% and ROC-AUC of 68%, it is one of the most accurate breakout models on the market. It is retrained on a weekly basis.
 
 Several machine learning models are trained using the prepared dataset:
 
@@ -38,7 +38,7 @@ import sovai as sov
 df_breakout = sov.data("breakout")
 ```
 
-<figure><img src="../../.gitbook/assets/price_breakout_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/price_breakout_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Full history
 
@@ -61,7 +61,7 @@ df_msft = sov.data("breakout", tickers=["MSFT"])
 df_breakout.plot_line(tickers=["TSLA", "META", "NFLX"])
 ```
 
-<figure><img src="../../.gitbook/assets/price_breakout_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/price_breakout_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Breakout Predictions
 
@@ -71,7 +71,7 @@ Visualize breakout predictions using the SDK's plotting capabilities:
 sov.plot("breakout", chart_type="predictions", df=df_msft)
 ```
 
-<figure><img src="../../.gitbook/assets/price_breakout_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/price_breakout_3 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Prediction Accuracy
 
@@ -81,7 +81,7 @@ Assess the accuracy of breakout predictions:
 sov.plot("breakout", chart_type="accuracy", df=df_msft)
 ```
 
-<figure><img src="../../.gitbook/assets/price_breakout_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/price_breakout_4 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

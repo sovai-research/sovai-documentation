@@ -24,7 +24,7 @@ description: >-
 
 ### Usage
 
-The module is integrated into a custom DataFrame class, allowing for easy calculation of pairwise distances.&#x20;
+The module is integrated into a custom DataFrame class, allowing for easy calculation of pairwise distances.
 
 ```python
 import sovai as sov
@@ -39,7 +39,7 @@ df_slice = df_factors.select_stocks("mega").date_range("2020-01-01")
 dist_matrix = df_slice.distance()
 ```
 
-<figure><img src="../.gitbook/assets/pairwise_distance_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/pairwise_distance_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Distance Calculation Methods
 
@@ -145,7 +145,7 @@ dist_matrix_tucker = df_slice.distance(orient="panel")
 
 ### Date instead of Ticker
 
-While previous examples focused on calculating distances between stocks, we can also compute distances between dates using the same methods.&#x20;
+While previous examples focused on calculating distances between stocks, we can also compute distances between dates using the same methods.
 
 This allows for analyzing how market conditions change over time.
 
@@ -178,7 +178,7 @@ dist_matrix_tucker = df_slice.distance(orient="panel", on="date")
 
 These functions calculate distances between different dates based on the market conditions or stock behaviors on those dates.
 
-<figure><img src="../.gitbook/assets/pairwise_distance_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/pairwise_distance_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Sorting and Analyzing Date Distances
 

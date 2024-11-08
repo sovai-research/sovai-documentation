@@ -1,8 +1,8 @@
 ---
+icon: users-between-lines
 description: >-
   Earnings announcements are obtained from external sources as well as estimate
   information leading up to the actual announcement.
-icon: users-between-lines
 ---
 
 # Earnings Surprise
@@ -17,7 +17,7 @@ Data arrives late Friday night 11 pm - 12; the model also retrains weekly.
 
 ## Description
 
-The **Earnings Surprise** dataset provides detailed insights into the financial performance of publicly traded companies by capturing the discrepancies between reported earnings and analysts' estimates. This dataset includes metrics such as the probability of an earnings surprise, the magnitude of earnings per share (EPS) surprises, actual earnings results, estimated earnings, and the publication dates of earnings reports.&#x20;
+The **Earnings Surprise** dataset provides detailed insights into the financial performance of publicly traded companies by capturing the discrepancies between reported earnings and analysts' estimates. This dataset includes metrics such as the probability of an earnings surprise, the magnitude of earnings per share (EPS) surprises, actual earnings results, estimated earnings, and the publication dates of earnings reports.
 
 By offering a granular view of earnings performance, this data serves as a vital tool for investors to assess company performance, predict stock price movements, and make informed investment decisions based on the reliability and accuracy of earnings forecasts.
 
@@ -28,7 +28,7 @@ import sovai as sov
 df_earn_surp = sov.data("earnings/surprise", tickers=["AAPL", "MSFT"])
 ```
 
-<figure><img src="../../.gitbook/assets/earnings_surprise_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/earnings_surprise_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

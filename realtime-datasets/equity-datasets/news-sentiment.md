@@ -17,7 +17,7 @@ Data is updated quarterly as data arrives after market close US-EST time.
 
 ## Description
 
-This dataset provides comprehensive news sentiment analysis, offering ticker-matched and theme-matched data on various aspects of news coverage.&#x20;
+This dataset provides comprehensive news sentiment analysis, offering ticker-matched and theme-matched data on various aspects of news coverage.
 
 It includes metrics on sentiment, tone, polarity, and article count, enabling investors and analysts to gauge public perception and potential market impacts of news.
 
@@ -44,7 +44,7 @@ import sovai as sov
 df_news = sov.data("news/sentiment", start_date="2017-03-30", tickers=["MSFT","TSLA"])
 ```
 
-As you have done for `sentiment` above you can do for news `tone`, `polarity`, `activeness` etc.&#x20;
+As you have done for `sentiment` above you can do for news `tone`, `polarity`, `activeness` etc.
 
 ### All Variations
 
@@ -96,8 +96,6 @@ df_associated_companies = sov.data("news/associated_companies")
 # Tracks companies mentioned in association with specific entities or topics in news articles.
 ```
 
-
-
 ### Themed Sentiment
 
 **df\_sentiment\_score** = `sov.data("news/sentiment_score")` Measures **emotional tone** of news articles. **Positive scores**: favorable news; **Negative scores**: unfavorable news.
@@ -107,7 +105,7 @@ import sovai as sov
 df_sentiment_score = sov.data("news/sentiment_score")
 ```
 
-<figure><img src="../../.gitbook/assets/news_sentiment_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/news_sentiment_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 **df\_polarity\_score** = `sov.data("news/polarity_score")` Gauges **opinion intensity** in news. **Higher scores**: stronger opinions; **Lower scores**: more neutral reporting.
 
@@ -115,8 +113,6 @@ df_sentiment_score = sov.data("news/sentiment_score")
 import sovai as sov
 df_polarity_score = sov.data("news/polarity_score")
 ```
-
-
 
 **df\_topic** = `sov.data("news/topic_probability")` Indicates **topic prevalence** in news. **Higher values**: more frequently discussed topics.
 
@@ -136,7 +132,7 @@ import sovai as sov
 sov.plot("news", chart_type="strategy", ticker='NVDA')
 ```
 
-<figure><img src="../../.gitbook/assets/news_sentiment_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/news_sentiment_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Econometrics
 
@@ -145,7 +141,7 @@ import sovai as sov
 sov.report("news", report_type="econometric")
 ```
 
-<figure><img src="../../.gitbook/assets/news_sentiment_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/news_sentiment_3 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Analysis
 
@@ -155,9 +151,7 @@ import sovai as sov
 sov.plot("news", chart_type="analysis")
 ```
 
-<figure><img src="../../.gitbook/assets/news_sentiment_4.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/news_sentiment_4 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

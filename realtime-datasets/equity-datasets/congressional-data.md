@@ -1,8 +1,8 @@
 ---
+icon: users-between-lines
 description: >-
   From filings we collect and match trades in the Senate and House and make them
   available within a day of processing.
-icon: users-between-lines
 ---
 
 # Congressional Data
@@ -17,7 +17,7 @@ Data arrives daily or as new trades are being made triggering the processing of 
 
 ## Description
 
-The Congressional Trading dataset offers comprehensive insights into the financial transactions of U.S. Congress members, encompassing both Senate and House representatives. This dataset includes detailed information on securities traded, transaction dates, types of transactions (e.g., purchases, sales), transaction amounts, political party affiliations, and pertinent biographical details of each legislator.&#x20;
+The Congressional Trading dataset offers comprehensive insights into the financial transactions of U.S. Congress members, encompassing both Senate and House representatives. This dataset includes detailed information on securities traded, transaction dates, types of transactions (e.g., purchases, sales), transaction amounts, political party affiliations, and pertinent biographical details of each legislator.
 
 By providing transparency into the investment activities of elected officials, this data serves as a crucial tool for constituents, analysts, investors, and policymakers to monitor potential conflicts of interest, assess ethical compliance, and understand the financial behaviors of those in power.
 
@@ -30,7 +30,7 @@ import sovai as sov
 df_congress = sov.data("congress")
 ```
 
-<figure><img src="../../.gitbook/assets/congressional_data_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/congressional_data_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

@@ -44,7 +44,7 @@ df_change.tail(10)  # View the last 10 rows
 df_change.attrs['stats']  # View additional statistics
 ```
 
-<figure><img src="../.gitbook/assets/time_segmentation_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/time_segmentation_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Visualization
 
@@ -52,7 +52,7 @@ df_change.attrs['stats']  # View additional statistics
 df_accounting.change_point(method='plot')
 ```
 
-<figure><img src="../.gitbook/assets/time_segmentation_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/time_segmentation_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Regime Change Analysis
 
@@ -66,7 +66,7 @@ rc_result.tail(10)  # View the last 10 rows
 rc_result.attrs['stats']  # View additional statistics
 ```
 
-<figure><img src="../.gitbook/assets/time_segmentation_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/time_segmentation_3 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Visualization
 
@@ -74,7 +74,7 @@ rc_result.attrs['stats']  # View additional statistics
 df_accounting.regime_change(method="plot", ticker="AAPL", feature="total_revenue")
 ```
 
-<figure><img src="../.gitbook/assets/time_segmentation_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/time_segmentation_4 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Comprehensive Regime Analysis (PCA-based)
 
@@ -88,7 +88,7 @@ pca_rc_result.tail()  # View the last rows
 pca_rc_result.attrs['stats']  # View additional statistics
 ```
 
-<figure><img src="../.gitbook/assets/time_segmentation_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/time_segmentation_5 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Visualization
 
@@ -96,7 +96,7 @@ pca_rc_result.attrs['stats']  # View additional statistics
 df_accounting.pca_regime_change(method="plot", ticker="AAPL")
 ```
 
-<figure><img src="../.gitbook/assets/time_segmentation_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/time_segmentation_6 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Tips for Users
 

@@ -17,7 +17,7 @@ Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
 
 ## Description
 
-This dataset provides comprehensive corporate risk indicators for US equities, including accounting risk, financial event risk, and misstatement risk.&#x20;
+This dataset provides comprehensive corporate risk indicators for US equities, including accounting risk, financial event risk, and misstatement risk.
 
 It combines various financial metrics and event data to generate standardized risk scores, enabling investors to assess and compare company risks across industries for more informed decision-making.
 
@@ -32,7 +32,7 @@ import sovai as sov
 df_actg_risk = sov.data("corprisk/accounting")
 ```
 
-<figure><img src="../../.gitbook/assets/risk_indicators_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/risk_indicators_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Financial Event Risk
 
@@ -43,7 +43,7 @@ import sovai as sov
 df_events_risk = sov.data("corprisk/events")
 ```
 
-<figure><img src="../../.gitbook/assets/risk_indicators_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/risk_indicators_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Misstatement Risk
 
@@ -54,7 +54,7 @@ import sovai as sov
 df_miss_risk = sov.data("corprisk/misstatement")
 ```
 
-<figure><img src="../../.gitbook/assets/risk_indicators_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/risk_indicators_3 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Aggregated Risks
 
@@ -72,7 +72,7 @@ import sovai as sov
 df_miss_risk = sov.data("corprisk/risks", full_history=True)
 ```
 
-<figure><img src="../../.gitbook/assets/risk_indicators_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/risk_indicators_4 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Reports
 
@@ -81,7 +81,7 @@ import sovai as sov
 sov.plot("corprisk/risks",chart_type="line")
 ```
 
-<figure><img src="../../.gitbook/assets/risk_indicators_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/risk_indicators_5 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionaries
 

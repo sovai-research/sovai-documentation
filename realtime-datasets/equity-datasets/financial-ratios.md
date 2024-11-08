@@ -21,7 +21,7 @@ Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
 
 ## Description
 
-Diversified selection of ratios for factor development or bottom-up equity selection strategies. The Financial Ratios dataset offers over 80 standardized financial ratios calculated from financial statements and market data, updated weekly after market close.&#x20;
+Diversified selection of ratios for factor development or bottom-up equity selection strategies. The Financial Ratios dataset offers over 80 standardized financial ratios calculated from financial statements and market data, updated weekly after market close.
 
 This comprehensive set of ratios, covering categories such as liquidity, profitability, efficiency, solvency, cash flow, and valuation, provides investors with crucial metrics for in-depth financial analysis, factor development, and bottom-up equity selection strategies.
 
@@ -41,7 +41,7 @@ import sovai as sov
 df_ratios = sov.data("ratios/normal", full_history=True)
 ```
 
-<figure><img src="../../.gitbook/assets/financial_ratios_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/financial_ratios_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Retrieve a Subsection
 
@@ -70,7 +70,7 @@ import sovai as sov
 sov.plot("ratios", chart_type="benchmark")
 ```
 
-<figure><img src="../../.gitbook/assets/financial_ratios_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/financial_ratios_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Dynamic Ratios
 
@@ -79,7 +79,7 @@ import sovai as sov
 sov.plot("ratios", chart_type="relative")
 ```
 
-<figure><img src="../../.gitbook/assets/financial_ratios_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/financial_ratios_3 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

@@ -17,9 +17,9 @@ Data is updated weekly on Fridays as is made available from regulatory filers
 
 ## Description
 
-We predict the success of a clinical trial, its duration, and the expected economic impact, including potential market reactions, using state-of-the-art machine learning models. Our solution also provides detailed metadata about each trial that allowed us to predict regulatory phase success and/or approval rate, empowering users to anticipate outcomes with greater accuracy.&#x20;
+We predict the success of a clinical trial, its duration, and the expected economic impact, including potential market reactions, using state-of-the-art machine learning models. Our solution also provides detailed metadata about each trial that allowed us to predict regulatory phase success and/or approval rate, empowering users to anticipate outcomes with greater accuracy.
 
-Achieving an impressive 87% ROC-AUC—the highest among commercially available solutions—clients can rely on our predictions to make informed decisions. With an average of 1,052 new clinical trials launched each week, our platform lets you screen and focus on the most promising opportunities.&#x20;
+Achieving an impressive 87% ROC-AUC—the highest among commercially available solutions—clients can rely on our predictions to make informed decisions. With an average of 1,052 new clinical trials launched each week, our platform lets you screen and focus on the most promising opportunities.
 
 ## Data Access
 
@@ -30,7 +30,7 @@ import sovai as sov
 df_clinical = sov.data("trials/predict", full_history=True)
 ```
 
-<figure><img src="../../.gitbook/assets/phrama_clinical_trials_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/phrama_clinical_trials_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Description Data
 
@@ -39,7 +39,7 @@ import sovai as sov
 df_clinical = sov.data("trials/describe", full_history=True)
 ```
 
-<figure><img src="../../.gitbook/assets/phrama_clinical_trials_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/phrama_clinical_trials_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Accessing Specific Tickers
 
@@ -92,7 +92,5 @@ df_pfizer = sov.data("trials/predict", tickers=["PFE"])
 8. ESG Research: Incorporate complaint data into Environmental, Social, and Governance (ESG) assessments.
 9. Fraud Detection: Identify patterns that might indicate fraudulent activities.
 10. Policy Impact Assessment: Evaluate the impact of policy changes on consumer complaints over time.
-
-
 
 The resulting dataset provides a comprehensive view of consumer complaints in the financial sector, enabling detailed analysis of company performance, consumer issues, and regulatory compliance.

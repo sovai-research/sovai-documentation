@@ -40,7 +40,7 @@ import sovai as sov
 df_bankrupt = sov.data('bankruptcy', tickers=["MSFT","TSLA","META"])
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 **Specific Dates**
 
@@ -81,7 +81,7 @@ df_importance = sov.data('bankruptcy/shapleys', tickers=["MSFT","TSLA","META"])
 
 Feature Importance (Shapley Values) calculates the contribution of each input variable (features) such as Debt, Assets, and Revenue to predict bankruptcy risk.
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Reports
 
@@ -92,7 +92,7 @@ import sovai as sov
 sov.report("bankruptcy", report_type="ranking")
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_3 (2).png" alt=""><figcaption></figcaption></figure>
 
 Filter the outputs based on the top by **Sector**, **Marketcap**, and **Revenue** and bankruptcy risk. You can also change <mark style="color:blue;">`ranking`</mark> to <mark style="color:blue;">`change`</mark> to investigate the month on month change.
 
@@ -109,7 +109,7 @@ import sovai as sov
 sov.plot('bankruptcy', chart_type='compare')
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_4 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Timed Feature Importance
 
@@ -118,7 +118,7 @@ import sovai as sov
 df = sov.plot("bankruptcy", chart_type="shapley", tickers=["TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_5 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Total Feature Importance
 
@@ -127,7 +127,7 @@ import sovai as sov
 sov.plot("bankruptcy", chart_type="stack", tickers=["DDD"])
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_6 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Bankruptcy and Returns
 
@@ -136,7 +136,7 @@ import sovai as sov
 df= sov.plot("bankruptcy", chart_type="line", tickers=["DDD"])
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_7 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **PCA Statistical Similarity**
 
@@ -145,7 +145,7 @@ import sovai as sov
 df= sov.plot("bankruptcy", chart_type="line", tickers=["DDD"])
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_8 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Correlation Similarity
 
@@ -154,7 +154,7 @@ import sovai as sov
 sov.plot("bankruptcy", chart_type="similar", tickers=["DDD"])
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_9 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Trend Similarity
 
@@ -163,7 +163,7 @@ import sovai as sov
 sov.plot("bankruptcy", chart_type="facet", tickers=["DDD"])
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_10 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Model Performance
 
@@ -174,7 +174,7 @@ import sovai as sov
 sov.plot("bankruptcy", chart_type="confusion_global")
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_11 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### **Threshold Plots**
 
@@ -183,7 +183,7 @@ import sovai as sov
 sov.plot("bankruptcy", chart_type="classification_global")
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_12 (3).png" alt=""><figcaption></figcaption></figure>
 
 ### **Lift Curve**
 
@@ -192,7 +192,7 @@ import sovai as sov
 sov.plot("bankruptcy", chart_type="lift_global")
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_13 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Global Explainability
 
@@ -201,7 +201,7 @@ import sovai as sov
 sov.plot("bankruptcy", chart_type="time_global")
 ```
 
-<figure><img src="../../.gitbook/assets/bankruptcy_predictions_14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bankruptcy_predictions_14 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Computations
 
@@ -255,4 +255,3 @@ When `sans_market` is <mark style="color:green;">positive</mark>, it means that 
 5. **Probability Shift Overview**: Showcase changes in bankruptcy probabilities among correlated stocks, providing a comprehensive market perspective.
 6. **Sentiment Inversion Analysis**: Convert bankruptcy predictions into positive sentiment indicators to gauge potential impacts on stock returns.
 7. **Behavioral Similarity Mapping**: Locate stocks with similar behaviors to a selected reference, based on bankruptcy trends and PCA feature analysis.
-

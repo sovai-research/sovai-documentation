@@ -17,7 +17,7 @@ Daily index arrive between 11 pm - 4 am before market open in the US.
 
 ## Description
 
-This dataset provides a comprehensive Turing Risk Index, combining market, business, and political risk indicators. It offers daily updates on global risk perceptions, using leading indicators and advanced models to forecast various types of risk.&#x20;
+This dataset provides a comprehensive Turing Risk Index, combining market, business, and political risk indicators. It offers daily updates on global risk perceptions, using leading indicators and advanced models to forecast various types of risk.
 
 The data enables investors and analysts to assess and predict market volatility, recession probabilities, geopolitical tensions, and other key risk factors affecting global markets and economies.
 
@@ -30,7 +30,7 @@ import sovai as sov
 df_risks = sov.data("risks")
 ```
 
-<figure><img src="../../.gitbook/assets/turing_risk_index_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/turing_risk_index_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Market Risks
 
@@ -73,7 +73,7 @@ We can use the inputs to come up with new aggregartes of the original input data
 df_risks_agg = sov.compute('risk-aggregates', df=df_risks)
 ```
 
-<figure><img src="../../.gitbook/assets/turing_risk_index_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/turing_risk_index_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 | Column                    | Description                                                                       |
 | ------------------------- | --------------------------------------------------------------------------------- |

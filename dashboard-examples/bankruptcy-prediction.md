@@ -8,12 +8,12 @@ description: >-
 
 ### [Bankruptcy Predictions](https://sov.ai/app/get/bankruptcies/predictions)
 
-<figure><img src="../.gitbook/assets/bankruptcy_prediction_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/bankruptcy_prediction_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### [Bankruptcy Explanations](https://sov.ai/app/get/bankruptcies/explanation)
 
-<figure><img src="../.gitbook/assets/bankruptcy_prediction_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/bankruptcy_prediction_2 (5).png" alt=""><figcaption></figcaption></figure>
 
 ### [Model Performance](https://sov.ai/app/get/bankruptcies/performance)
 
-<figure><img src="../.gitbook/assets/bankruptcy_prediction_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/bankruptcy_prediction_3 (2).png" alt=""><figcaption></figcaption></figure>

@@ -18,7 +18,7 @@ Data is updated quarterly as data arrives after market close US-EST time.
 
 ## Description
 
-This dataset provides comprehensive analysis of institutional investment behaviors, including metrics on fund ratios, growth, derivative usage, and portfolio dynamics.&#x20;
+This dataset provides comprehensive analysis of institutional investment behaviors, including metrics on fund ratios, growth, derivative usage, and portfolio dynamics.
 
 It offers investors valuable insights into market trends, risk profiles, investment strategies, and fund flows, enabling informed decision-making in institutional trading.
 
@@ -31,7 +31,7 @@ import sovai as sov
 df_institute = sov.data("institutional/trading")
 ```
 
-<figure><img src="../../.gitbook/assets/institutional_trading_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/institutional_trading_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### All Data
 
@@ -58,7 +58,7 @@ import sovai as sov
 sov.report("institutional/flow_prediction", report_type="ranking")
 ```
 
-<figure><img src="../../.gitbook/assets/institutional_trading_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/institutional_trading_2 (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Plots
 
@@ -69,7 +69,7 @@ import sovai as sov
 sov.plot("institutional", chart_type="prediction")
 ```
 
-<figure><img src="../../.gitbook/assets/institutional_trading_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/institutional_trading_3 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Grouped Plot
 
@@ -78,9 +78,9 @@ import sovai as sov
 sov.plot("institutional", chart_type="flows")
 ```
 
-<figure><img src="../../.gitbook/assets/institutional_trading_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/institutional_trading_4 (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/institutional_trading_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/institutional_trading_5 (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 
@@ -118,7 +118,5 @@ This dataset provides a comprehensive analysis of institutional investment behav
 * **Risk Assessment:** Evaluate the risk profiles of different funds and strategies using volatility and diversification metrics.
 * **Strategy Evaluation:** Assess and compare the effectiveness of different investment strategies.
 * **Investment Decision Making:** Utilize historical data and flow metrics to make informed investment decisions.
-
-
 
 ***

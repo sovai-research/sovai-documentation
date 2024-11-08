@@ -18,7 +18,7 @@ Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
 
 ## Description
 
-This dataset provides comprehensive information about government contracts, including details on transactions, product specifications, entities, locations, competition, and compensation.&#x20;
+This dataset provides comprehensive information about government contracts, including details on transactions, product specifications, entities, locations, competition, and compensation.
 
 It offers investors valuable insights into companies' relationships with government agencies, allowing for risk assessment, comparative analysis, and informed decision-making in the context of government spending and contracts.
 
@@ -33,7 +33,7 @@ import sovai as sov
 df_contracts = sov.data("spending/contracts", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/government_contracts_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/government_contracts_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Transactions Data:
 
@@ -44,7 +44,7 @@ import sovai as sov
 df_transactions = sov.data("spending/transactions", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/government_contracts_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/government_contracts_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Product Specifications
 
@@ -55,7 +55,7 @@ import sovai as sov
 df_product = sov.data("spending/product", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/government_contracts_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/government_contracts_3 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Entity Specification
 
@@ -66,7 +66,7 @@ import sovai as sov
 df_entities = sov.data("spending/entities", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/government_contracts_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/government_contracts_4 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Location Data
 

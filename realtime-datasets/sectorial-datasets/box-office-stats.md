@@ -7,7 +7,7 @@ description: >-
 
 # Box Office Stats
 
-`Tutorials` are the best documentation —  [<mark style="color:blue;">`Box Office Movie Analysis Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Movies%20Box%20Office.ipynb)
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Box Office Movie Analysis Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Movies%20Box%20Office.ipynb)
 
 ## Description
 
@@ -24,7 +24,7 @@ import sovai as sov
 df_movies = sov.data("movies/boxoffice")
 ```
 
-<figure><img src="../../.gitbook/assets/box_office_stats_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/box_office_stats_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Data Dictionary
 

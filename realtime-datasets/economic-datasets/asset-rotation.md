@@ -17,11 +17,11 @@ Monthly allocation estimates for five assets.
 
 ## Description
 
-This dataset provides historical and forecasted risk-parity asset allocation data for five major asset classes: bonds, equities, commodities, dollar, and real estate.&#x20;
+This dataset provides historical and forecasted risk-parity asset allocation data for five major asset classes: bonds, equities, commodities, dollar, and real estate.
 
-It offers monthly allocation estimates and return predictions, both historical and 8 years into the future, based on hundreds of economic indicators.&#x20;
+It offers monthly allocation estimates and return predictions, both historical and 8 years into the future, based on hundreds of economic indicators.
 
-The data and accompanying visualization tools enable investors to analyze optimal allocations and asset rotation strategies over time.The data is presented in a monthly frequency, starting from November 1959.&#x20;
+The data and accompanying visualization tools enable investors to analyze optimal allocations and asset rotation strategies over time.The data is presented in a monthly frequency, starting from November 1959.
 
 ## Data Access
 
@@ -54,7 +54,7 @@ import sovai as sov
 sov.plot("allocation", "line")
 ```
 
-<figure><img src="../../.gitbook/assets/asset_rotation_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/asset_rotation_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Stacked Plot
 
@@ -65,6 +65,6 @@ import sovai as sov
 sov.plot("allocation", "stacked")
 ```
 
-<figure><img src="../../.gitbook/assets/asset_rotation_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/asset_rotation_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 ***

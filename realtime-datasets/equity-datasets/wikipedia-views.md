@@ -17,7 +17,7 @@ Data is updated quarterly as data arrives after market close US-EST time.
 
 ## Description
 
-This dataset provides daily Wikipedia page view data and trends for major companies, offering insights into public interest and market sentiment.&#x20;
+This dataset provides daily Wikipedia page view data and trends for major companies, offering insights into public interest and market sentiment.
 
 It includes metrics on view counts, relative views, and derived alpha/beta proxies to help investors gauge short-term and long-term trends in public attention towards specific stocks.
 
@@ -39,7 +39,7 @@ import sovai as sov
 df_news = sov.data("wikipedia/views", full_history=True)
 ```
 
-<figure><img src="../../.gitbook/assets/wikipedia_views_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wikipedia_views_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Filtered Dataset
 
@@ -71,7 +71,5 @@ This dataset can be leveraged by investors for various purposes:
 * **Risk Assessment:** Variability in page views, as indicated by beta proxies, can aid in assessing the market's perception of risk associated with certain tickers.
 * **Trend Identification:** Alpha proxies provide a means to identify emerging trends in investor interest, which can be precursors to market movements.
 * **Comparative Analysis:** Comparing alpha and beta metrics across different tickers can help identify outperformers or underperformers in terms of market interest.
-
-
 
 ***

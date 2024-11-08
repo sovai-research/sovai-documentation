@@ -1,8 +1,8 @@
 ---
+icon: angle-90
 description: >-
   The feature extractor module generates features that can be categorized into
   several types based on the nature of the calculations.
-icon: angle-90
 ---
 
 # Neutralize Features
@@ -43,7 +43,7 @@ Orthogonalization transforms a set of features into a new set of uncorrelated (p
 df_orthogonalized_gs = df_mega.orthogonalize_features(method='gram_schmidt')
 ```
 
-<figure><img src="../.gitbook/assets/neutralize_features_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/neutralize_features_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 2. QR method:
 
@@ -70,7 +70,7 @@ df_neutralized_pca = df_mega.neutralize_features(method='pca')
 df_neutralized_svd = df_mega.neutralize_features(method='svd')
 ```
 
-### Orthogonalization Methods:&#x20;
+### Orthogonalization Methods:
 
 * Gram-Schmidt orthogonalization:
   * Transforms the original features into a set of orthogonal features.
@@ -80,7 +80,7 @@ df_neutralized_svd = df_mega.neutralize_features(method='svd')
   * Similar to Gram-Schmidt, it produces orthogonal features.
   * It's a more numerically stable method for orthogonalization.
 
-### Neutralization Methods:&#x20;
+### Neutralization Methods:
 
 * PCA neutralization:
   * Transforms the data into principal components and keeps only the last component.

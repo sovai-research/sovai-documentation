@@ -11,7 +11,7 @@ description: >-
 
 ## Description
 
-This dataset provides web traffic data for U.S. government agencies and domains, offering insights into public engagement with government websites.&#x20;
+This dataset provides web traffic data for U.S. government agencies and domains, offering insights into public engagement with government websites.
 
 It enables analysis of traffic trends, inter-agency comparisons, and patterns of citizen interaction with government online resources.
 
@@ -28,7 +28,7 @@ df_agencies = sov.data("government/traffic/agencies")
 df_domains = sov.data("government/traffic/domains")
 ```
 
-<figure><img src="../../.gitbook/assets/government_traffic_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/government_traffic_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Dataset Contents
 

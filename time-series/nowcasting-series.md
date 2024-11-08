@@ -1,15 +1,15 @@
 ---
+icon: chart-mixed
 description: >-
   This module provides functionality for nowcasting financial data using a
   Multi-Frequency Long-term and Event-based forecasting method.
-icon: chart-mixed
 ---
 
 # Nowcasting Series
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Nowcasting Series Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/computational/Nowcasting%20Notebook.ipynb)
 
-## Nowcasting Module&#x20;
+## Nowcasting Module
 
 This module demonstrates how to use the `sovai` library for nowcasting financial data, particularly focusing on accounting data for mega-cap stocks.
 
@@ -43,7 +43,7 @@ To create a plot of the nowcasted data:
 df_accounting.nowcast("plot")
 ```
 
-<figure><img src="../.gitbook/assets/nowcasting_series_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/nowcasting_series_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Notes
 

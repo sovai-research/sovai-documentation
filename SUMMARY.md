@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Statistical Investment Screening](README.md)
+* [Investment Data & Screens](README.md)
 
 ## GET STARTED
 

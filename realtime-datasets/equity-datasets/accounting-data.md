@@ -8,7 +8,7 @@ description: >-
 # Accounting Data
 
 {% hint style="warning" %}
-This dataset is derived from public filings, so we cannot guarantee its quality. Replace with your commercial standardized accounting solution.&#x20;
+This dataset is derived from public filings, so we cannot guarantee its quality. Replace with your commercial standardized accounting solution.
 {% endhint %}
 
 {% hint style="info" %}
@@ -21,7 +21,7 @@ Daily index data is updated before market opens in the US ET time.
 
 ## Description
 
-This dataset provides standardized financial accounting data for US publicly traded companies, compiled from SEC filings and validated against commercial datasets.&#x20;
+This dataset provides standardized financial accounting data for US publicly traded companies, compiled from SEC filings and validated against commercial datasets.
 
 It offers a comprehensive view of companies' financial positions and performance, including balance sheet, income statement, and cash flow data, making it valuable for investors conducting financial analysis and quantitative modeling.
 
@@ -36,7 +36,7 @@ import sovai as sov
 df_accounting = sov.data("accounting/weekly", tickers=["MSFT", "TSLA", "META"])
 ```
 
-<figure><img src="../../.gitbook/assets/accounting_data_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/accounting_data_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Latest Data
 
@@ -61,11 +61,11 @@ import sovai as sov
 sov.report("accounting", report_type="balance_sheet", ticker="MSFT")
 ```
 
-<figure><img src="../../.gitbook/assets/accounting_data_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/accounting_data_2 (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/accounting_data_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/accounting_data_3 (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/accounting_data_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/accounting_data_4 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Plots
 
@@ -76,7 +76,7 @@ import sovai as sov
 sov.plot("accounting", chart_type="balance", ticker="MSFT")
 ```
 
-<figure><img src="../../.gitbook/assets/accounting_data_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/accounting_data_5 (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 

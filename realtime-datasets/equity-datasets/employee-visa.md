@@ -17,7 +17,7 @@ Data arrives late Friday night 11 pm - 12 as new **quarterly data** becomes avai
 
 ## Description
 
-The Employee Visa dataset provides quarterly insights into foreign hiring trends among U.S. companies, offering detailed information on job positions, wages, and visa applications across various temporary work visa categories.&#x20;
+The Employee Visa dataset provides quarterly insights into foreign hiring trends among U.S. companies, offering detailed information on job positions, wages, and visa applications across various temporary work visa categories.
 
 This data can serve as a valuable tool for investors to analyze labor market trends, assess company growth strategies, and gauge the impact of immigration policies on different sectors and businesses.
 
@@ -30,11 +30,9 @@ import sovai as sov
 df_visa = sov.data("visas/h1b", start_date="2010-01-01", tickers=["MSFT","TSLA"])
 ```
 
-<figure><img src="../../.gitbook/assets/employee_visa_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/employee_visa_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 This dataset encompasses detailed records from labor condition applications, which are indicative of employment patterns within companies that hire foreign workers under various temporary visa categories in the United States. It provides a comprehensive view of job positions, wages, and employment periods.
-
-
 
 ## Data Dictionary
 

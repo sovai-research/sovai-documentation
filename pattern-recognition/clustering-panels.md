@@ -1,8 +1,8 @@
 ---
+icon: circle-nodes
 description: >-
   Clustering specifically designed for multivariate panel clustering of
   financial and time-series data
-icon: circle-nodes
 ---
 
 # Clustering Panels
@@ -11,7 +11,7 @@ icon: circle-nodes
 
 ### Introduction
 
-Can be used to cluster any panel dataset.  It is particularly useful for financial analysts, data scientists, and researchers working with time-series data across multiple entities (e.g., stocks, companies) and variables.
+Can be used to cluster any panel dataset. It is particularly useful for financial analysts, data scientists, and researchers working with time-series data across multiple entities (e.g., stocks, companies) and variables.
 
 #### Initialization
 
@@ -32,7 +32,7 @@ Perform clustering on all features:
 df_cluster = df.cluster()
 ```
 
-<figure><img src="../.gitbook/assets/clustering_panels_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/clustering_panels_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 Feature-Specific Clustering
 
@@ -51,7 +51,7 @@ Get a quick summary of the last 6-months data:
 df.cluster("summary")
 ```
 
-<figure><img src="../.gitbook/assets/clustering_panels_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/clustering_panels_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Visualization Methods
 
@@ -63,9 +63,7 @@ Visualize cluster centroids and distances:
 df.cluster("line_plot")
 ```
 
-<figure><img src="../.gitbook/assets/clustering_panels_3.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/clustering_panels_3 (2).png" alt=""><figcaption></figcaption></figure>
 
 **Scatter Plot**
 
@@ -75,7 +73,7 @@ Create a scatter plot of clustered data:
 df.cluster("scatter_plot")
 ```
 
-<figure><img src="../.gitbook/assets/clustering_panels_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/clustering_panels_4 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Animation Plot
 
@@ -85,7 +83,7 @@ Generate an animated plot of cluster evolution:
 df.cluster("animation_plot")
 ```
 
-<figure><img src="../.gitbook/assets/clustering_panels_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/clustering_panels_5 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Advanced Analysis
 
@@ -97,7 +95,7 @@ Calculate distances between ticker-cluster combinations:
 df_dist = df_cluster.drop(columns=["labels"]).distance(orient="time-series")
 ```
 
-<figure><img src="../.gitbook/assets/clustering_panels_6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/clustering_panels_6 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Examples
 

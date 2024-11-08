@@ -17,7 +17,7 @@ Data is updated monthly, and quarterly as data arrives after market close US-EST
 
 ## Description
 
-This dataset provides a core set of economic indicators that explain over 90% of the variability in most economic outcomes. There are over 250 economic time series features. For there individual explanations, please see the FRED website.&#x20;
+This dataset provides a core set of economic indicators that explain over 90% of the variability in most economic outcomes. There are over 250 economic time series features. For there individual explanations, please see the FRED website.
 
 ## Data Access
 
@@ -28,7 +28,7 @@ import sovai as sov
 df_econ = sov.data("macro/features")
 ```
 
-<figure><img src="../../.gitbook/assets/core_economic_data_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/core_economic_data_1 (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Dictionary
 
