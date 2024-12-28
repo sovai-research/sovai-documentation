@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Sov.ai Data & Screens](README.md)
+* [Data & Screens](README.md)
 
 ## GET STARTED
 
