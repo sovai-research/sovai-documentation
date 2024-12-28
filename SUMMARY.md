@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Investment Data & Screens](README.md)
+* [Sov.ai Data & Screens](README.md)
 
 ## GET STARTED
 

@@ -1,7 +1,7 @@
 ---
 icon: seal-exclamation
 description: >-
-  Chapter 7 and Chapter 11 bankruptcy predictions made easy for over 13,000 US
+  Chapter 7 and Chapter 11 bankruptcy predictions made easy for over 5,000 US
   publicly traded stocks.
 ---
 
