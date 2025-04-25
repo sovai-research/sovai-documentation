@@ -33,6 +33,7 @@
   * [SEC 10K Filings](realtime-datasets/equity-datasets/sec-10k-filings.md)
   * [Short Selling](realtime-datasets/equity-datasets/short-selling.md)
   * [Wikipedia Views](realtime-datasets/equity-datasets/wikipedia-views.md)
+  * [Patents Data](realtime-datasets/equity-datasets/patents-data.md)
 * [Economic Datasets](realtime-datasets/economic-datasets/README.md)
   * [Asset Rotation](realtime-datasets/economic-datasets/asset-rotation.md)
   * [Core Economic Data](realtime-datasets/economic-datasets/core-economic-data.md)
@@ -45,7 +46,6 @@
   * [CFPB Complaints](realtime-datasets/sectorial-datasets/cfpb-complaints.md)
   * [Phrama Clinical Trials](realtime-datasets/sectorial-datasets/phrama-clinical-trials.md)
   * [Request Datasets](realtime-datasets/sectorial-datasets/request-datasets.md)
-  * [Patents Data](realtime-datasets/sectorial-datasets/patents-data.md)
 
 ## Asset Managment
 

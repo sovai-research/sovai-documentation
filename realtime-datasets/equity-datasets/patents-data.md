@@ -1,3 +1,7 @@
+---
+icon: brackets-square
+---
+
 # Patents Data
 
 ## Patent Data
@@ -6,11 +10,11 @@
 Data is updated based on patent office publication schedules (e.g., weekly for USPTO). Check source for specific update frequency.
 {% endhint %}
 
-`Tutorials` are the best documentation — <mark style="color:blue;">`Patent Data Tutorial`</mark> _<- Link to the notebook itself or a dedicated tutorial if available._
+`Tutorials` are the best documentation — <mark style="color:blue;">`Patent Data Tutorial`</mark>&#x20;
 
 
 
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Patent Filings (e.g., USPTO), Company Information</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Company Name Matching/Mapping</td></tr><tr><td><strong>Model Outputs</strong></td><td>Ticker-Mapped Patent Applications, Ticker-Mapped Patent Grants</td></tr></tbody></table>
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Patent Filings (e.g., USPTO), Company Information</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Company Name Matching/Mapping</td></tr><tr><td><strong>Model Outputs</strong></td><td>Ticker-Mapped Patent Applications and Grants</td></tr></tbody></table>
 
 ### Description
 
@@ -106,8 +110,6 @@ _Data based on notebook output for `df_apps`_
 | `drawings_num`   | Number of drawings included in the grant publication              |
 | `file_name`      | Source file path where the data was parsed from                   |
 | `file_date`      | Original filing date of the application leading to the grant      |
-
-_Data based on notebook output for `df_grants`_
 
 ### Use Cases
 
