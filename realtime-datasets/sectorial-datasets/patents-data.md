@@ -1,8 +1,9 @@
-Okay, here is the documentation for the Patent dataset, modeled after the example you provided.
-
------
-
-## icon: document-text description: \>- This section covers the usage of the ticker-mapped Patent Application and Grant dataset.
+```markdown
+---
+icon: document-text
+description: >-
+  This section covers the usage of the ticker-mapped Patent Application and Grant dataset.
+---
 
 # Patent Data
 
@@ -10,15 +11,15 @@ Okay, here is the documentation for the Patent dataset, modeled after the exampl
 Data is updated based on patent office publication schedules (e.g., weekly for USPTO). Check source for specific update frequency.
 {% endhint %}
 
-`Tutorials` are the best documentation — [\<mark style="color:blue;"\>`Patent Data Tutorial`\</mark\>](https://www.google.com/search?q=Patent%2520Data.ipynb) *\<- Link to the notebook itself or a dedicated tutorial if available.*
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Patent Data Tutorial`</mark>](Patent%20Data.ipynb) *<- Link to the notebook itself or a dedicated tutorial if available.*
 
-\<table data-column-title-hidden data-view="cards"\>\<thead\>\<tr\>\<th\>Category\</th\>\<th\>Details\</th\>\</tr\>\</thead\>\<tbody\>\<tr\>\<td\>\<strong\>Input Datasets\</strong\>\</td\>\<td\>Patent Filings (e.g., USPTO), Company Information\</td\>\</tr\>\<tr\>\<td\>\<strong\>Models Used\</strong\>\</td\>\<td\>Parsing, Company Name Matching/Mapping\</td\>\</tr\>\<tr\>\<td\>\<strong\>Model Outputs\</strong\>\</td\>\<td\>Ticker-Mapped Patent Applications, Ticker-Mapped Patent Grants\</td\>\</tr\>\</tbody\>\</table\>
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Patent Filings (e.g., USPTO), Company Information</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Company Name Matching/Mapping</td></tr><tr><td><strong>Model Outputs</strong></td><td>Ticker-Mapped Patent Applications, Ticker-Mapped Patent Grants</td></tr></tbody></table>
 
 ## Description
 
 This dataset provides detailed information on patent applications and grants filed by or assigned to publicly traded companies, mapped to their respective ticker symbols. It includes textual data like titles, abstracts, descriptions, and claims, alongside metadata such as filing/grant dates, classifications (IPC, NAICS), and application/grant IDs.
 
-This data enables analysis of corporate innovation, R\&D activity, technological focus, competitive intelligence, and potential intellectual property value across different companies and sectors.
+This data enables analysis of corporate innovation, R&D activity, technological focus, competitive intelligence, and potential intellectual property value across different companies and sectors.
 
 ## Data Access
 
@@ -32,7 +33,6 @@ df_apps = sov.data("patents/applications", tickers=["AAPL", "AMZN"]) # Example t
 
 # Access Patent Grants
 df_grants = sov.data("patents/grants", tickers=["AAPL", "AMZN"]) # Example tickers
-
 ```
 
 ### Accessing Specific Tickers and Dates
@@ -43,12 +43,12 @@ You can retrieve data for specific tickers and define date ranges:
 # Applications for specific tickers from a start date
 df_specific_apps = sov.data("patents/applications",
                             tickers=["000066.SZ", "AMZN", "AAPL"],
-                            start_date="2014-11-20") #
+                            start_date="2014-11-20") # Example from notebook
 
 # Grants for a specific ticker from a start date
 df_specific_grants = sov.data("patents/grants",
                              tickers=["AMZN"],
-                             start_date="2014-11-20") #
+                             start_date="2014-11-20") # Example from notebook
 ```
 
 ### Data Dictionaries
@@ -114,11 +114,11 @@ df_specific_grants = sov.data("patents/grants",
 
 ## Use Cases
 
-1.  **R\&D Trend Analysis**: Track innovation trends within companies, sectors, or specific technology areas.
+1.  **R&D Trend Analysis**: Track innovation trends within companies, sectors, or specific technology areas.
 2.  **Competitive Intelligence**: Monitor competitors' patenting activities to understand their strategic focus and technological advancements.
 3.  **Innovation Benchmarking**: Compare the volume, quality, and technological focus of patent portfolios across companies.
 4.  **Technology Landscaping**: Map out key technologies and identify white spaces or crowded areas within a specific domain.
-5.  **M\&A Due Diligence**: Assess the intellectual property portfolio of potential acquisition targets.
+5.  **M&A Due Diligence**: Assess the intellectual property portfolio of potential acquisition targets.
 6.  **Investment Analysis**: Use patent data as an indicator of a company's innovation potential and future growth prospects.
 7.  **Litigation Risk Assessment**: Identify potential patent infringement risks by analyzing overlapping claims or technologies.
 8.  **Identifying Key Inventors/Assignees**: Track prolific inventors or shifts in patent ownership.
@@ -126,3 +126,4 @@ df_specific_grants = sov.data("patents/grants",
 10. **Linking Patents to Products**: Understand which patents might underpin key products or services of a company.
 
 This dataset provides a valuable resource for understanding corporate innovation landscapes and intellectual property trends.
+```
