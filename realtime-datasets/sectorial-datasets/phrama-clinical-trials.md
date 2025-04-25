@@ -1,8 +1,8 @@
 ---
-icon: star-sharp-half-stroke
 description: >-
   This section covers a very unique dataset that tags clinical trials with their
   predicted outcome success.
+icon: star-sharp-half-stroke
 ---
 
 # Phrama Clinical Trials
@@ -28,9 +28,9 @@ Achieving an impressive 87% ROC-AUC—the highest among commercially available s
 ```python
 import sovai as sov
 df_clinical = sov.data("trials/predict", full_history=True)
-````
+```
 
-\<figure\>\<img src="../../.gitbook/assets/phrama\_clinical\_trials\_1 (2).png" alt=""\>\<figcaption\>\</figcaption\>\</figure\>
+<figure><img src="../../.gitbook/assets/phrama_clinical_trials_1 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Description Data
 
@@ -39,7 +39,7 @@ import sovai as sov
 df_clinical = sov.data("trials/describe", full_history=True)
 ```
 
-\<figure\>\<img src="../../.gitbook/assets/phrama\_clinical\_trials\_2 (2).png" alt=""\>\<figcaption\>\</figcaption\>\</figure\>
+<figure><img src="../../.gitbook/assets/phrama_clinical_trials_2 (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Accessing Specific Tickers
 
@@ -47,50 +47,50 @@ You can also retrieve data for specific tickers. For example:
 
 ```python
 import sovai as sov
-df_pfizer = sov.data("trials/predict", tickers=["PFE"])
+df_pfizer = sov.data("trials/predict", tickers=["PFE"]) 
 ```
 
 ### Data Dictionary
 
 | Column Name                     | Description                                                                |
-| :------------------------------ | :------------------------------------------------------------------------- |
-| `ticker`                        | Stock ticker symbol of the company                                         |
-| `date`                          | Date the complaint was received                                            |
-| `company`                       | Name of the company the complaint is against                               |
-| `bloomberg_share_id`            | Bloomberg Global Share Class Level Identifier                              |
-| `culpability_score`             | Score indicating the company's culpability in the complaint                |
-| `complaint_score`               | Score based on the severity of the complaint                               |
-| `grievance_score`               | Score based on the grievance level of the complaint                        |
-| `total_risk_rating`             | Overall risk rating combining culpability, complaint, and grievance scores |
-| `product`                       | Financial product related to the complaint                                 |
-| `sub_product`                   | Specific sub-category of the financial product                             |
-| `issue`                         | Main issue of the complaint                                                |
-| `sub_issue`                     | Specific sub-category of the issue                                         |
-| `consumer_complaint_narrative`  | Narrative description of the complaint provided by the consumer            |
-| `company_public_response`       | Public response provided by the company                                    |
-| `state`                         | State where the complaint was filed                                        |
-| `zip_code`                      | ZIP code of the consumer                                                   |
-| `tags`                          | Any tags associated with the complaint (e.g., "Servicemember")             |
-| `consumer_consent_provided`     | Indicates if the consumer provided consent for sharing details             |
-| `submitted_via`                 | Channel through which the complaint was submitted                          |
-| `date_sent_to_company`          | Date the complaint was sent to the company                                 |
-| `company_response_to_consumer`  | Type of response provided by the company to the consumer                   |
-| `timely_response`               | Indicates if the company responded in a timely manner                      |
-| `consumer_disputed`             | Indicates if the consumer disputed the company's response                  |
-| `selected_name`                 | Name used for company matching                                             |
-| `similarity`                    | Similarity score for company name matching                                 |
+| ------------------------------- | -------------------------------------------------------------------------- |
+| ticker                          | Stock ticker symbol of the company                                         |
+| date                            | Date the complaint was received                                            |
+| company                         | Name of the company the complaint is against                               |
+| bloomberg\_share\_id            | Bloomberg Global Share Class Level Identifier                              |
+| culpability\_score              | Score indicating the company's culpability in the complaint                |
+| complaint\_score                | Score based on the severity of the complaint                               |
+| grievance\_score                | Score based on the grievance level of the complaint                        |
+| total\_risk\_rating             | Overall risk rating combining culpability, complaint, and grievance scores |
+| product                         | Financial product related to the complaint                                 |
+| sub\_product                    | Specific sub-category of the financial product                             |
+| issue                           | Main issue of the complaint                                                |
+| sub\_issue                      | Specific sub-category of the issue                                         |
+| consumer\_complaint\_narrative  | Narrative description of the complaint provided by the consumer            |
+| company\_public\_response       | Public response provided by the company                                    |
+| state                           | State where the complaint was filed                                        |
+| zip\_code                       | ZIP code of the consumer                                                   |
+| tags                            | Any tags associated with the complaint (e.g., "Servicemember")             |
+| consumer\_consent\_provided     | Indicates if the consumer provided consent for sharing details             |
+| submitted\_via                  | Channel through which the complaint was submitted                          |
+| date\_sent\_to\_company         | Date the complaint was sent to the company                                 |
+| company\_response\_to\_consumer | Type of response provided by the company to the consumer                   |
+| timely\_response                | Indicates if the company responded in a timely manner                      |
+| consumer\_disputed              | Indicates if the consumer disputed the company's response                  |
+| selected\_name                  | Name used for company matching                                             |
+| similarity                      | Similarity score for company name matching                                 |
 
 ## Use Cases
 
-1.  **Risk Assessment**: Evaluate the risk profile of financial institutions based on complaint data.
-2.  **Consumer Sentiment Analysis**: Analyze consumer sentiment towards different financial products and companies.
-3.  **Regulatory Compliance**: Monitor compliance issues and identify potential regulatory risks.
-4.  **Product Performance Evaluation**: Assess the performance and issues related to specific financial products.
-5.  **Competitive Analysis**: Compare complaint profiles across different financial institutions.
-6.  **Geographic Trend Analysis**: Identify regional trends in financial complaints.
-7.  **Customer Service Improvement**: Identify areas for improvement in customer service based on complaint types and resolutions.
-8.  **ESG Research**: Incorporate complaint data into Environmental, Social, and Governance (ESG) assessments.
-9.  **Fraud Detection**: Identify patterns that might indicate fraudulent activities.
-10. **Policy Impact Assessment**: Evaluate the impact of policy changes on consumer complaints over time.
+1. Risk Assessment: Evaluate the risk profile of financial institutions based on complaint data.
+2. Consumer Sentiment Analysis: Analyze consumer sentiment towards different financial products and companies.
+3. Regulatory Compliance: Monitor compliance issues and identify potential regulatory risks.
+4. Product Performance Evaluation: Assess the performance and issues related to specific financial products.
+5. Competitive Analysis: Compare complaint profiles across different financial institutions.
+6. Geographic Trend Analysis: Identify regional trends in financial complaints.
+7. Customer Service Improvement: Identify areas for improvement in customer service based on complaint types and resolutions.
+8. ESG Research: Incorporate complaint data into Environmental, Social, and Governance (ESG) assessments.
+9. Fraud Detection: Identify patterns that might indicate fraudulent activities.
+10. Policy Impact Assessment: Evaluate the impact of policy changes on consumer complaints over time.
 
 The resulting dataset provides a comprehensive view of consumer complaints in the financial sector, enabling detailed analysis of company performance, consumer issues, and regulatory compliance.
