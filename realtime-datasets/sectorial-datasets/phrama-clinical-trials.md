@@ -1,5 +1,3 @@
-Okay, understood. Here is the documentation for the "Pharma Clinical Trials" dataset, exactly as you provided it:
-
 ---
 icon: star-sharp-half-stroke
 description: >-
