@@ -1,4 +1,3 @@
-```markdown
 ---
 icon: document-text
 description: >-
@@ -126,4 +125,4 @@ df_specific_grants = sov.data("patents/grants",
 10. **Linking Patents to Products**: Understand which patents might underpin key products or services of a company.
 
 This dataset provides a valuable resource for understanding corporate innovation landscapes and intellectual property trends.
-```
+
