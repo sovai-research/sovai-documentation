@@ -11,13 +11,13 @@ icon: rotate
 Monthly allocation estimates for five assets.
 {% endhint %}
 
-`Tutorials` are the best documentation — [<mark style="color:blue;">`Asset Rotation Tutorial Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Asset%20Rotation%20and%20Allocation.ipynb)
-
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Hundreds of economic indicators</td></tr><tr><td>Models Used</td><td>Imputation Models, Machine Learning</td></tr><tr><td>Model Outputs</td><td>Optimal Allocations</td></tr></tbody></table>
-
 {% hint style="success" %}
 Dataset contains five asset series, available from 1959-06-30 onwards.
 {% endhint %}
+
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Asset Rotation Tutorial Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Asset%20Rotation%20and%20Allocation.ipynb)
+
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Hundreds of economic indicators</td></tr><tr><td>Models Used</td><td>Imputation Models, Machine Learning</td></tr><tr><td>Model Outputs</td><td>Optimal Allocations</td></tr></tbody></table>
 
 ## Description
 

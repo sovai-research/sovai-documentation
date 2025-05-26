@@ -11,13 +11,13 @@ icon: users-between-lines
 Data arrives daily or as new trades are being made triggering the processing of the data.
 {% endhint %}
 
-`Tutorials` are the best documentation — [<mark style="color:blue;">`Congressional Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Congressional%20Trading.ipynb)
-
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>House and Senator Filings</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Regex</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Rows</td></tr></tbody></table>
-
 {% hint style="success" %}
 Dataset contains 4000+ tickers, available from 2014-03-01 onwards.
 {% endhint %}
+
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Congressional Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Congressional%20Trading.ipynb)
+
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>House and Senator Filings</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Regex</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Rows</td></tr></tbody></table>
 
 ## Description
 

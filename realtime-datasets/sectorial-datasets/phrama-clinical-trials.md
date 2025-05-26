@@ -11,13 +11,13 @@ icon: prescription
 Data is updated weekly on Fridays as is made available from regulatory filers
 {% endhint %}
 
-`Tutorials` are the best documentation — [<mark style="color:blue;">`Clinical Trials Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Clinical%20Trials.ipynb)
-
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Regulatory Filings; Biochemical Data</td></tr><tr><td><strong>Models Used</strong></td><td>Deep Learning Encoders; Langauge Models</td></tr><tr><td><strong>Model Outputs</strong></td><td>Success prediction; Expected duration</td></tr></tbody></table>
-
 {% hint style="success" %}
 Dataset contains 850+ tickers, available from 1999-11-01 onwards.
 {% endhint %}
+
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Clinical Trials Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Clinical%20Trials.ipynb)
+
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Regulatory Filings; Biochemical Data</td></tr><tr><td><strong>Models Used</strong></td><td>Deep Learning Encoders; Langauge Models</td></tr><tr><td><strong>Model Outputs</strong></td><td>Success prediction; Expected duration</td></tr></tbody></table>
 
 ## Description
 

@@ -11,13 +11,13 @@ icon: users-between-lines
 Data arrives late Friday night 11 pm - 12; the model also retrains weekly.
 {% endhint %}
 
-`Tutorials` are the best documentation — [<mark style="color:blue;">`Earnings Surprise Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Earnings%20Surprise.ipynb)
-
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Public filings, news, analyst reports</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Regex</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Rows</td></tr></tbody></table>
-
 {% hint style="success" %}
 Dataset contains 4330+ tickers, available from 2016-12-30 onwards.
 {% endhint %}
+
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Earnings Surprise Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Earnings%20Surprise.ipynb)
+
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Public filings, news, analyst reports</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Regex</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Rows</td></tr></tbody></table>
 
 ## Description
 

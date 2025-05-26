@@ -11,6 +11,10 @@ icon: newspaper
 Data is updated quarterly as data arrives after market close US-EST time.
 {% endhint %}
 
+{% hint style="success" %}
+* Dataset contains 2000+ tickers, available from 2017-01-01 onwards.
+{% endhint %}
+
 `Tutorials` are the best documentation — [<mark style="color:blue;">`News Sentiment Analaysis Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/News.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>News Scrapers, Public Event Data</td></tr><tr><td><strong>Models Used</strong></td><td>Fuzzy Matching</td></tr><tr><td><strong>Model Outputs</strong></td><td>Sentiment Scores</td></tr></tbody></table>
@@ -24,10 +28,6 @@ This dataset provides comprehensive news sentiment analysis, offering ticker-mat
 It includes metrics on sentiment, tone, polarity, and article count, enabling investors and analysts to gauge public perception and potential market impacts of news.
 
 ## Data Access
-
-{% hint style="success" %}
-* Dataset contains 2000+ tickers, available from 2017-01-01 onwards.
-{% endhint %}
 
 #### Sentiment Data - All Data
 

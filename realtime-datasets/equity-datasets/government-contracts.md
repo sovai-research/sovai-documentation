@@ -12,13 +12,13 @@ icon: file-signature
 Data arrives late Friday night 11 pm - 12 am after market close US-EST time.
 {% endhint %}
 
-`Tutorials` are the best documentation — [<mark style="color:blue;">`Government Contracts Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Government%20Spending.ipynb)
-
-<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Governmental Filings</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Regex, Entity Recognition</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Contracts</td></tr></tbody></table>
-
 {% hint style="success" %}
 Dataset contains 3500+ tickers, available from 2007-10-01 onwards.
 {% endhint %}
+
+`Tutorials` are the best documentation — [<mark style="color:blue;">`Government Contracts Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Government%20Spending.ipynb)
+
+<table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Governmental Filings</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Regex, Entity Recognition</td></tr><tr><td><strong>Model Outputs</strong></td><td>Standardized Contracts</td></tr></tbody></table>
 
 ## Description
 
