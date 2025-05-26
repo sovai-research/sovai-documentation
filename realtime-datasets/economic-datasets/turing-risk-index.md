@@ -7,8 +7,14 @@ description: >-
 
 # 🏳️ Turing Risk Index
 
+
+
 {% hint style="info" %}
 Daily index arrive between 11 pm - 4 am before market open in the US.
+{% endhint %}
+
+{% hint style="success" %}
+Dataset contains 50+ risk indices, available from 1960-01-01 onwards.
 {% endhint %}
 
 `Tutorials` — [<mark style="color:blue;">`Business, Political, and Market Risk Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Turing%20Risk%20Index.ipynb)

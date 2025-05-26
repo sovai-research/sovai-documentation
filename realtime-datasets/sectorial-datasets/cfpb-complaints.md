@@ -15,6 +15,10 @@ Data is updated weekly as data arrives after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>CFPB Filings</td></tr><tr><td><strong>Models Used</strong></td><td>LLMs, Parsing, Risk Scoring</td></tr><tr><td><strong>Model Outputs</strong></td><td>CFPB Risk Scores</td></tr></tbody></table>
 
+{% hint style="success" %}
+Dataset contains 1000+ tickers, available from 2011-12-01 onwards.
+{% endhint %}
+
 ## Description
 
 This dataset provides detailed information on consumer complaints filed against financial institutions, mapped to company ticker symbols. It includes data on complaint types, company responses, and resolution status, along with derived risk scores.&#x20;

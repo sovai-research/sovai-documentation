@@ -1,8 +1,8 @@
 ---
-icon: water
 description: >-
   Various dataset that could help with the assesment of security liquidity to
   inform trading decisions.
+icon: water
 ---
 
 # Liquidity Data
@@ -16,6 +16,10 @@ Data is updated weekly as data arrives after market close US-EST time.
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Public Data from Financial Intermediaries</td></tr><tr><td><strong>Models Used</strong></td><td>Aggregate Calculations</td></tr><tr><td><strong>Model Outputs</strong></td><td>Price Improvement, Market Opportunity</td></tr></tbody></table>
 
 ***
+
+{% hint style="success" %}
+Dataset contains 10,800+ tickers, available from 2022-11-25 onwards.
+{% endhint %}
 
 ## Description
 

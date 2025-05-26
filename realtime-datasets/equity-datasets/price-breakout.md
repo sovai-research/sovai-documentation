@@ -1,8 +1,8 @@
 ---
-icon: chart-line-up
 description: >-
   A dataset with daily updated predictions of price breaking upwards for US
   Equities.
+icon: chart-line-up
 ---
 
 # Price Breakout
@@ -14,6 +14,10 @@ Daily predictions arrive between 11 pm - 4 am before market open in the US for 1
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Price Breakout Prediction Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Breakout%20Prediction.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td>Input Datasets</td><td>Historical Stock Prices, Trading Volumes, Technical Indicators, Order Book.</td></tr><tr><td>Models Used</td><td>Classification Algorithms, Regression Models, Conformal Predictors</td></tr><tr><td>Model Outputs</td><td>Price Movement Predictions, Probability Scores, Confidence Intervals</td></tr></tbody></table>
+
+{% hint style="success" %}
+Dataset contains 5400+ tickers, available from 2022-03-10 onwards.
+{% endhint %}
 
 ## Description
 

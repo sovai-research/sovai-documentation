@@ -16,7 +16,11 @@ Data is updated based on patent office publication schedules (e.g., weekly for U
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Patent Filings (e.g., USPTO), Company Information</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Company Name Matching/Mapping</td></tr><tr><td><strong>Model Outputs</strong></td><td>Ticker-Mapped Patent Applications and Grants</td></tr></tbody></table>
 
-### Description
+{% hint style="success" %}
+Dataset contains 3200+ tickers, available from 2006-01-12 onwards.
+{% endhint %}
+
+## Description
 
 This dataset provides detailed information on patent applications and grants filed by or assigned to publicly traded companies, mapped to their respective ticker symbols. It includes textual data like titles, abstracts, descriptions, and claims, alongside metadata such as filing/grant dates, classifications (IPC, NAICS), and application/grant IDs.
 

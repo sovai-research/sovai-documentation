@@ -1,8 +1,8 @@
 ---
-icon: apartment
 description: >-
   Developed a core economic dataset that explain more than 90% of the
-  variability in most economic outcomes. Forthcoming, December 2024
+  variability in most economic outcomes. Forthcoming, December 2025
+icon: apartment
 ---
 
 # Core Economic Data

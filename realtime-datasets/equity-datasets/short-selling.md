@@ -1,8 +1,8 @@
 ---
-icon: sort-down
 description: >-
   This section covers the usage of various short-selling datasets for risk
   analysis.
+icon: sort-down
 ---
 
 # Short Selling
@@ -16,6 +16,10 @@ Data is updated weekly as data arrives after market close US-EST time.
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Financial Intermediaries, NASDAQ, NYSE, CME</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing Techniques</td></tr><tr><td><strong>Model Outputs</strong></td><td>Predictions, Volume</td></tr></tbody></table>
 
 ***
+
+{% hint style="success" %}
+Dataset contains 5981+ tickers, available from 1998-01-02 onwards.
+{% endhint %}
 
 ## Description
 
@@ -32,14 +36,14 @@ The Over-Shorted dataset provides information on short interest and potentially 
 #### Latest Data
 
 ```python
-import sov as sov
+import sovai as sov
 df_over_shorted = sov.data("short/over_shorted")
 ```
 
 #### All Data
 
 ```python
-import sov as sov
+import sovai as sov
 df_over_shorted = sov.data("short/over_shorted", full_history=True)
 ```
 
@@ -50,14 +54,14 @@ The Short Volume dataset offers information on the short selling volume for spec
 #### Latest Data
 
 ```python
-import sov as sov
+import sovai as sov
 df_short_volume = sov.data("short/volume")
 ```
 
 #### All Data
 
 ```python
-import sov as sov
+import sovai as sov
 df_short_volume = sov.data("short/volume", full_history=True)
 ```
 

@@ -1,14 +1,18 @@
 ---
-icon: seal-exclamation
 description: >-
   Chapter 7 and Chapter 11 bankruptcy predictions made easy for over 5,000 US
   publicly traded stocks.
+icon: seal-exclamation
 ---
 
 # Bankruptcy Predictions
 
 {% hint style="info" %}
 Monthly corporate bankruptcy predictions arrive the **2nd of every month**_._
+{% endhint %}
+
+{% hint style="success" %}
+Dataset contains 4762+ tickers, available from 1998-03-31 onwards.
 {% endhint %}
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Corporate Bankruptcy Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Bankruptcy%20Prediction.ipynb)

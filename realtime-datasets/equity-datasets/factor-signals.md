@@ -1,8 +1,8 @@
 ---
-icon: wave-square
 description: >-
   A financial factor dataset for in-depth company analysis and investment
   strategies.
+icon: wave-square
 ---
 
 # Factor Signals
@@ -14,6 +14,10 @@ Data is updated weekly as data arrives after market close US-EST time.
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Factor Signals Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Factor%20Model.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Filings, Financial Data</td></tr><tr><td><strong>Models Used</strong></td><td>OLS Regression</td></tr><tr><td><strong>Model Outputs</strong></td><td>Factors, Coefficients, Standard Errors</td></tr></tbody></table>
+
+{% hint style="success" %}
+Dataset contains 6400+ tickers, available from 1998-01-09 onwards.
+{% endhint %}
 
 ## Description
 

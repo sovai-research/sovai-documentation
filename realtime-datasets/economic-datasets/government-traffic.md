@@ -1,11 +1,15 @@
 ---
-icon: traffic-light-slow
 description: >-
   This dataset provides insights into web traffic patterns for various U.S.
   government agencies and domains.
+icon: traffic-light-slow
 ---
 
 # Government Traffic
+
+{% hint style="success" %}
+Dataset contains 2600+ government domains, available from 2017-04-25 onwards.
+{% endhint %}
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Government Traffic Analysis Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Government%20Internet.ipynb)
 

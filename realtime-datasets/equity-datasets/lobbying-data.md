@@ -1,8 +1,8 @@
 ---
-icon: microblog
 description: >-
   A ticker matched lobbying data to see fine-grained corporate lobbying
   behaviour.
+icon: microblog
 ---
 
 # Lobbying Data
@@ -14,6 +14,10 @@ Data is updated weekly as data arrives after market close US-EST time.
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Lobbying Data Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Lobbying%20Analysis.ipynb)
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>Lobbying Filings</td></tr><tr><td><strong>Models Used</strong></td><td>Parsing, Scraping</td></tr><tr><td><strong>Model Outputs</strong></td><td>Lobbying Data</td></tr></tbody></table>
+
+{% hint style="success" %}
+Dataset contains 3000+ tickers, available from 2007-07-31 onwards.
+{% endhint %}
 
 ## Description
 
@@ -30,7 +34,7 @@ It offers investors, researchers, and policymakers valuable insights into corpor
 The Lobbying dataset provides detailed information on lobbying activities, including client information, spending, and lobbying issues for various companies.
 
 <pre class="language-python"><code class="lang-python"><strong>import sovai as sov
-</strong><strong>df_lobbying = sov.data("lobbying/public")
+</strong><strong>df_lobbying = sov.data("lobbying")
 </strong></code></pre>
 
 #### Accessing Specific Tickers
@@ -38,7 +42,7 @@ The Lobbying dataset provides detailed information on lobbying activities, inclu
 You can also retrieve data for specific tickers. For example:
 
 ```python
-df_ticker_lobbying = sov.data("lobbying/public", tickers=["WFC", "EXPGY"])
+df_ticker_lobbying = sov.data("lobbying", tickers=["WFC", "EXPGY"])
 ```
 
 This documentation provides a clear guide on how to access the dataset, and can be easily extended or modified as needed for additional details.

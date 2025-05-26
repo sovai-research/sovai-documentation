@@ -1,8 +1,8 @@
 ---
-icon: abacus
 description: >-
   Standardized financial accounting data across multiple US publicly traded
   firms.
+icon: abacus
 ---
 
 # Accounting Data
@@ -13,6 +13,10 @@ This dataset is derived from public filings, so we cannot guarantee its quality.
 
 {% hint style="info" %}
 Daily index data is updated before market opens in the US ET time.
+{% endhint %}
+
+{% hint style="success" %}
+Dataset contains 5250+ tickers, available from 1994-03-11 onwards.
 {% endhint %}
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Accounting Data Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Accounting%20Data.ipynb)

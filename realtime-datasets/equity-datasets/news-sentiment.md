@@ -1,8 +1,8 @@
 ---
-icon: newspaper
 description: >-
   Two types of news datasets have been developed, one is ticker-matched, and the
   next is theme-matched.
+icon: newspaper
 ---
 
 # News Sentiment
@@ -15,6 +15,8 @@ Data is updated quarterly as data arrives after market close US-EST time.
 
 <table data-column-title-hidden data-view="cards"><thead><tr><th>Category</th><th>Details</th></tr></thead><tbody><tr><td><strong>Input Datasets</strong></td><td>News Scrapers, Public Event Data</td></tr><tr><td><strong>Models Used</strong></td><td>Fuzzy Matching</td></tr><tr><td><strong>Model Outputs</strong></td><td>Sentiment Scores</td></tr></tbody></table>
 
+
+
 ## Description
 
 This dataset provides comprehensive news sentiment analysis, offering ticker-matched and theme-matched data on various aspects of news coverage.
@@ -22,6 +24,10 @@ This dataset provides comprehensive news sentiment analysis, offering ticker-mat
 It includes metrics on sentiment, tone, polarity, and article count, enabling investors and analysts to gauge public perception and potential market impacts of news.
 
 ## Data Access
+
+{% hint style="success" %}
+* Dataset contains 2000+ tickers, available from 2017-01-01 onwards.
+{% endhint %}
 
 #### Sentiment Data - All Data
 

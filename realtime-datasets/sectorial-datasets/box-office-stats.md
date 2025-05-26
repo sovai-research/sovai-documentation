@@ -1,13 +1,17 @@
 ---
-icon: camera-movie
 description: >-
   This dataset contains information about movie producers, their movies, and the
   corresponding box office performance.
+icon: camera-movie
 ---
 
 # Box Office Stats
 
 `Tutorials` are the best documentation — [<mark style="color:blue;">`Box Office Movie Analysis Tutorial`</mark>](https://colab.research.google.com/github/sovai-research/sovai-public/blob/main/notebooks/datasets/Movies%20Box%20Office.ipynb)
+
+{% hint style="success" %}
+Dataset contains 100+ tickers, available from 1997-07-01 onwards.
+{% endhint %}
 
 ## Description
 
