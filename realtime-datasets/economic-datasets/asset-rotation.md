@@ -47,6 +47,18 @@ import sovai as sov
 df_allocate = sov.data("allocation/all")
 ```
 
+## Data Dictionary
+
+| Column          | Type   | Description                  |
+| --------------- | ------ | ---------------------------- |
+| date            | date   | Month end date               |
+| segment         | string | `past` or `future`           |
+| bonds\_w        | float  | Bonds allocation (0–1)       |
+| equities\_w     | float  | Equities allocation (0–1)    |
+| commodities\_w  | float  | Commodities allocation (0–1) |
+| dollar\_w       | float  | USD allocation (0–1)         |
+| real\_estate\_w | float  | Real estate allocation (0–1) |
+
 ## Plot Access
 
 #### Line Plot
