@@ -1,0 +1,5291 @@
+{
+  "normalized_schema_version": "1.0.0",
+  "source": "producer-contracts",
+  "producer_versions": {
+    "manifest_version": "1.0.0",
+    "index_version": "1.0.0"
+  },
+  "datasets": [
+    {
+      "endpoint": "accounting",
+      "pipeline": "corporate_risk_fraud_red_flags",
+      "serving_bucket": "sovai-corporate-risk-fraud-red-flags-enam",
+      "column_count": 22,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "average",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "industry_adj_avg",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "piotroski_score",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "altman_z_score",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "graham_number",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "lynch_fair_value",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "yacktman_frr",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ortiz_liquidity",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tangibility",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "age",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "oshaughnessy_1",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "oshaughnessy_2",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "oshaughnessy_3",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "beneish_m_score",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "erp5",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sloan_ratio",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ohlson_score",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "dechow_equity_duration",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "kaplan_zingales_index",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": "accounting"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "accounting/weekly",
+      "pipeline": "accounting_values",
+      "serving_bucket": "sovai-accounting-values-enam",
+      "column_count": 84,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "cash_short_term",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "operating_working_capital",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_nonoperating_assets",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_operating_assets",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "accounts_receivable",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "cash_equiv_usd",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "cash_equivalents",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "current_assets",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "current_investments",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "intangible_assets",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "inventory_amount",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "non_current_assets",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "non_current_investments",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "property_plant_equipment_net",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tax_assets",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_assets",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_investments",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "accum_other_comp_income",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "adjusted_parent_equity",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "book_equity_value",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "equity_usd",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "retained_earnings",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_equity",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "accounts_payable",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "bank_deposits",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "current_debt",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "current_liabilities",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "debt_usd",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "deferred_revenue",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "non_current_debt",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "non_current_liabilities",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tax_liabilities",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_debt",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_liabilities",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "capital_expenditures",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "depreciation_amortization",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_cash_acquisitions_disposals",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_cash_flow",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_cash_flow_business",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_cash_flow_common",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_cash_flow_debt",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_cash_flow_dividends",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_cash_flow_financing",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_cash_flow_fx",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_cash_flow_investing",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_cash_flow_operating",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "operating_accruals",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "operating_cash_flow",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "stock_based_compensation",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_accruals",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "cost_of_revenue",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "dividends_total",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "interest_expense",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "operating_expenses",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "preferred_dividends",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "research_development_expenses",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "selling_general_admin_expenses",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tax_expenses",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "cash_operating_profit",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "comprehensive_net_income",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "consolidated_income",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ebit",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ebit_usd",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "gross_profit",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_income",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_income_common_stock",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_income_common_stock_usd",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_income_discontinued_ops",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_income_excluding_discontinued",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "net_income_non_controlling_int",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "operating_income",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "revenue_usd",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_operating_net_income",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_revenue",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tangible_assets",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "working_capital",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "free_cash_flow",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "invested_capital",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "earnings_before_tax",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ebitda",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "enterprise_value",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "clinical/trials",
+      "pipeline": "clinical_trials",
+      "serving_bucket": "sovai-clinical-trials-enam",
+      "column_count": 78,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "source",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "subsidiary",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sponsor",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "trial_id",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "official_title",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sponsor_study_id",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "brief_title",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "lead_sponsor",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "lead_sponsor_name",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sponsor_type",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "lead_sponsor_type",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "phase_category",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "study_type",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "enrollment_count",
+          "dtype": "Int64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "number_of_locations",
+          "dtype": "Int64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "healthy_volunteers",
+          "dtype": "Boolean",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "enrollment_type",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "study_size_category",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "condition_keywords",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_condition",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "intervention_type",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_intervention",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "intervention_name",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "intervention_arm_group_labels",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "intervention_description",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "has_data_monitoring_committee",
+          "dtype": "Boolean",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "responsible_party_investigator_affiliation",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "responsible_party_investigator_title",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "responsible_party_investigator_name",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "first_posted_date",
+          "dtype": "Datetime[ns]",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "last_update_posted_date",
+          "dtype": "Datetime[ns]",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "start_date",
+          "dtype": "Datetime[ns]",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "study_completion_date",
+          "dtype": "Datetime[ns]",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_completion_date",
+          "dtype": "Datetime[ns]",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "study_locations_city",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "study_locations_country",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "study_locations_geopoint",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "study_locations_facility",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "study_locations_zip",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "study_locations_state",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "standard_age_groups",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sex",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "minimum_age",
+          "dtype": "Int64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "maximum_age",
+          "dtype": "Int64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "overall_status",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "status_category",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "status_verified_date",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_outcomes_measures",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_outcomes_timeframes",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_outcomes_descriptions",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "secondary_outcomes_measures",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "secondary_outcomes_timeframes",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "secondary_outcomes_descriptions",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "has_results",
+          "dtype": "Boolean",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "conditions",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "brief_summary",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "detailed_description",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "masking",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "allocation",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "intervention_model",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_purpose",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "has_expanded_access",
+          "dtype": "Boolean",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "study_duration_days",
+          "dtype": "Int64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "trial_duration",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "references_type",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "references_citation",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "references_pmid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "collaborators_name",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "collaborators_class",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ipd_sharing",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "success_prediction",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "economic_effect",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "duration_prediction",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "success_composite",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "class",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "complaints/private",
+      "pipeline": "consumer_financial_protection",
+      "serving_bucket": "sovai-consumer-financial-protection-enam",
+      "column_count": 26,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "company",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "bloomberg_share_id",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "culpability_score",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "complaint_score",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "grievance_score",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_risk_rating",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "product",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sub_product",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "issue",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sub_issue",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "consumer_complaint_narrative",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "company_public_response",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "state",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "zip_code",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tags",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "consumer_consent_provided",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "submitted_via",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date_sent_to_company",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "company_response_to_consumer",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "timely_response",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "consumer_disputed",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "selected_name",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "similarity",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "complaints/public",
+      "pipeline": "consumer_financial_protection",
+      "serving_bucket": "sovai-consumer-financial-protection-enam",
+      "column_count": 26,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "company",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "bloomberg_share_id",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "culpability_score",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "complaint_score",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "grievance_score",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_risk_rating",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "product",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sub_product",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "issue",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sub_issue",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "consumer_complaint_narrative",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "company_public_response",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "state",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "zip_code",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tags",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "consumer_consent_provided",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "submitted_via",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date_sent_to_company",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "company_response_to_consumer",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "timely_response",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "consumer_disputed",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "selected_name",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "similarity",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "events",
+      "pipeline": "corporate_risk_fraud_red_flags",
+      "serving_bucket": "sovai-corporate-risk-fraud-red-flags-enam",
+      "column_count": 44,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "average",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "industry_adj_avg",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "accountantchange",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "agreementtermination",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "assetacquisitioncompletion",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "attorneynoticereceipt",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "bankruptcy",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "controlchanges",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "creditenhancementchange",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "definitiveagreement",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "delistingnotice",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "directorofficerchanges",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "distributionfailure",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ethicsamendments",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "exitcosts",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "financialexhibits",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "financialobligationcreation",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "impairments",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "incorporationamendments",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "minesafetyreports",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "nonreliancestatement",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "obligationtriggerevents",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "operationsresults",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "otherevents",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "regfddisclosure",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "schedule13dfiling",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "schedule13gfiling",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "securitiesactupdate",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "securityholdermodifications",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "servicertrusteechange",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "shareholdernominations",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "shellstatuschange",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tenderofferstatement",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tradingsuspension",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "unregisteredequitysales",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "votesubmission",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "acquisitions",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "mergers",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "spinoffs",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "split",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tickerchange",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": "events"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "insider/trading",
+      "pipeline": "insider",
+      "serving_bucket": "sovai-insider-enam",
+      "column_count": 72,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "market_impact",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "market_impact_percentage",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "percentage_shares",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "transaction_value",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "transaction_shares",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "days_to_file",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "row_number",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "cumulative_market_impact",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "relative_transaction_size",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "holding_period",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_to_purchase_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "holding_period_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_to_purchase_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "derivative_nonderivative_value_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "long_term_alignment_ratio_relativesize_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "relative_transaction_size_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "derivative_nonderivative_impact_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tenpercent_nintypercent_impactperc_net_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "none_to_manager_shares_net_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tenpercent_nintypercent_percshares_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "direct_indirect_value_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "direct_indirect_insiderscore_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "director_officer_impactperc_net_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "director_officer_shares_net_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "director_officer_occurrences_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "both_to_all_value_net_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "both_to_all_percshares_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "none_to_manager_percshares_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_purchase_ratio_impactperc_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_purchase_ratio_insiderscore_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "willing_acquisitions_ratio_occurrences_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "liquidity_situation_ratio_impact_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "liquidity_situation_ratio_percshares_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_impactperc_director_to_officer_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_shares_director_to_officer_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_impactperc_director_to_officer_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_value_director_to_officer_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_impact_ten_ninety_net_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_percshares_ten_ninety_net_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_impact_ten_ninety_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_insiderscore_ten_ninety_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_impact_direct_to_indirect_net_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_percshares_direct_to_indirect_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_impactperc_direct_to_indirect_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_relativesize_direct_to_indirect_abs_ratio",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "row_number_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "derivative_nonderivative_value_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "derivative_nonderivative_occurrences_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tenpercent_nintypercent_impact_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tenpercent_nintypercent_percshares_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tenpercent_nintypercent_value_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "tenpercent_nintypercent_percshares_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "direct_indirect_percshares_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "director_officer_impact_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "director_officer_percshares_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "both_to_all_impact_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "both_to_all_percshares_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "none_to_manager_percshares_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_purchase_ratio_value_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "willing_acquisitions_ratio_occurrences_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "long_term_alignment_ratio_occurrences_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "liquidity_situation_ratio_value_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_relativesize_director_to_officer_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_value_ten_ninety_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_impact_ten_ninety_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_occurrences_ten_ninety_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_impact_direct_to_indirect_net_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sale_press_occurrences_direct_to_indirect_abs_ratio_pert",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "flow_prediction",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "lobbying",
+      "pipeline": "lobbying",
+      "serving_bucket": "sovai-lobbying-enam",
+      "column_count": 42,
+      "columns": [
+        {
+          "name": "subsidiary",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "similarity",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "source",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "filing_id",
+          "dtype": null,
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "client",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "client_description",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "spend",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "transaction_type",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "filing_type",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "lobby_description",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "issue_codes",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "government_entity_details",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "quarter",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "effective_date",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "termination_date",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "client_state",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "client_country",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "client_id",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "government_lobby",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "performing_own_lobbying",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "registrant_dt_updated",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "registrant_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "registrant_address",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "registrant_id",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "registrant_description",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "registrant_contact_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "registrant_house_registrant_id",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "registrant_contact_telephone",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "lobbyist_full_names",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "lobbyist_ids",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "previous_goverment_positions",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "lobbyist_new_statuses",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "client_url",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "registrant_url",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "filing_url",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "unique_id",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date_time",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": null,
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker_partitioned",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date_partitioned",
+          "dtype": null,
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": "lobbying"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "misstatement",
+      "pipeline": "corporate_risk_fraud_red_flags",
+      "serving_bucket": "sovai-corporate-risk-fraud-red-flags-enam",
+      "column_count": 28,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[us]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "average",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "industry_adj_avg",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "misstatmentper_neg",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "misstatmentper_pos",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "cashneq",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ppnenet",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "sbcomp",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "revenue",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "retearn",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "payables",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "opinc",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "opex",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "netinc",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ncfo",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ncfi",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "liabilitiesnc",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "liabilitiesc",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "intexp",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "intangibles",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "fcf",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ebitda",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "depamor",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "deferredrev",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "assetsnc",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "assetsc",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": "misstatements"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "movies/boxoffice",
+      "pipeline": "movies",
+      "serving_bucket": "sovai-movies-enam",
+      "column_count": 15,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "title",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "distributor",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "gross",
+          "dtype": "Int64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "percent_yd",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "percent_lw",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "theaters",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "per_theater",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_gross",
+          "dtype": "Int64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "days_in_release",
+          "dtype": "Int64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "parent company",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "distributor address",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "distributorwebsite",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "release_date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": false,
+        "has_date_path": false,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "over_shorted",
+      "pipeline": "short_selling",
+      "serving_bucket": "sovai-short-selling-enam",
+      "column_count": 12,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "over_shorted",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "over_shorted_chg",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "short_interest",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "number_of_shares",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "short_percentage",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "short_prediction",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "days_to_cover",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "market_cap",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_revenue",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "volume",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "patents/applications",
+      "pipeline": "patents",
+      "serving_bucket": "sovai-patents-enam",
+      "column_count": 23,
+      "columns": [
+        {
+          "name": "application_id",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "org_name",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Date",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "source",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "subsidiary",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "title",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "abstract",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "description",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "claims",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "country",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "location",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ipc3",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "naics",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "app_type",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "kind",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "us_series_code",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "claims_num",
+          "dtype": "Int64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "drawings_num",
+          "dtype": "Int64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "publication_id",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "file_name",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "file_date",
+          "dtype": "Date",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "patents/grants",
+      "pipeline": "patents",
+      "serving_bucket": "sovai-patents-enam",
+      "column_count": 24,
+      "columns": [
+        {
+          "name": "grant_id",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "org_name",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Date",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "source",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "subsidiary",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "application_id",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "title",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "abstract",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "description",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "claims",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "country",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "location",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ipc3",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "naics",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "app_type",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "kind",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "us_series_code",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "grant_length",
+          "dtype": "Int64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "claims_num",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "drawings_num",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "file_name",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "file_date",
+          "dtype": "Date",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "risks",
+      "pipeline": "corporate_risk_fraud_red_flags",
+      "serving_bucket": "sovai-corporate-risk-fraud-red-flags-enam",
+      "column_count": 11,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "accounting",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "accounting_ind_adjs",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "misstatement",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "misstatement_ind_adjs",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "events",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "events_ind_adjs",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "risk",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "risk_ind_adjs",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": "risks"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "spending/awards",
+      "pipeline": "government",
+      "serving_bucket": "sovai-government-enam",
+      "column_count": 24,
+      "columns": [
+        {
+          "name": "names",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "subsidiary",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "similarity",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "source",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "contract_award_unique_key",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "potential_total_value_of_award",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_federal_action_obligation",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "obligation_value_difference",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "performance_duration",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "awards_past_year",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "transactions_per_award",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "prime_award_base_transaction_description",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "period_of_performance_start_date",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "period_of_performance_current_end_date",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "period_of_performance_potential_end_date",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "extension_days_available",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "time_to_start_performance",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "modification_number",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "last_modified_date",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_uei",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker_partitioned",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date_partitioned",
+          "dtype": null,
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": "awards"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "spending/compensation",
+      "pipeline": "government",
+      "serving_bucket": "sovai-government-enam",
+      "column_count": 17,
+      "columns": [
+        {
+          "name": "recipient_uei",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "source",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_parent_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "highly_compensated_officer_1_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "highly_compensated_officer_1_amount",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "highly_compensated_officer_2_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "highly_compensated_officer_2_amount",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "highly_compensated_officer_3_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "highly_compensated_officer_3_amount",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "highly_compensated_officer_4_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "highly_compensated_officer_4_amount",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "highly_compensated_officer_5_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "highly_compensated_officer_5_amount",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker_partitioned",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date_partitioned",
+          "dtype": null,
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": "compensation"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "spending/competition",
+      "pipeline": "government",
+      "serving_bucket": "sovai-government-enam",
+      "column_count": 8,
+      "columns": [
+        {
+          "name": "source",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "contract_award_unique_key",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "extent_competed",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "number_of_offers_received",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "solicitation_procedures",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker_partitioned",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date_partitioned",
+          "dtype": null,
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": "competition"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "spending/contracts",
+      "pipeline": "government",
+      "serving_bucket": "sovai-government-enam",
+      "column_count": 13,
+      "columns": [
+        {
+          "name": "source",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "contract_award_unique_key",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "awarding_agency_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "awarding_sub_agency_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "solicitation_date",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "solicitation_procedures",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "type_of_contract_pricing",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "award_type",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "number_of_offers_received",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "usaspending_permalink",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker_partitioned",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date_partitioned",
+          "dtype": null,
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": "contract"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "spending/entities",
+      "pipeline": "government",
+      "serving_bucket": "sovai-government-enam",
+      "column_count": 10,
+      "columns": [
+        {
+          "name": "recipient_uei",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_parent_uei",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_parent_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "subsidiary",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "names",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "similarity",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "source",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker_partitioned",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": false,
+        "has_year": false,
+        "folder": "entities"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "spending/location",
+      "pipeline": "government",
+      "serving_bucket": "sovai-government-enam",
+      "column_count": 19,
+      "columns": [
+        {
+          "name": "action_date",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "source",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "contract_award_unique_key",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_country_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_address_line_1",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_city_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_county_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_state_code",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_state_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recipient_zip_4_code",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_place_of_performance_country_code",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_place_of_performance_country_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_place_of_performance_city_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_place_of_performance_county_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_place_of_performance_state_code",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_place_of_performance_state_name",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "primary_place_of_performance_zip_4",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker_partitioned",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": false,
+        "has_year": false,
+        "folder": "location"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "spending/product",
+      "pipeline": "government",
+      "serving_bucket": "sovai-government-enam",
+      "column_count": 12,
+      "columns": [
+        {
+          "name": "source",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "contract_award_unique_key",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "product_or_service_code_description",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "naics_code",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "naics_description",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "country_of_product_or_service_origin",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "place_of_manufacture",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "epa_designated_product",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "recovered_materials_sustainability",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker_partitioned",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date_partitioned",
+          "dtype": null,
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": "product"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "spending/transactions",
+      "pipeline": "government",
+      "serving_bucket": "sovai-government-enam",
+      "column_count": 9,
+      "columns": [
+        {
+          "name": "source",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "contract_transaction_unique_key",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "federal_action_obligation",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "transaction_description",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "contract_award_unique_key",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "last_modified_date",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": null,
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "ticker_partitioned",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date_partitioned",
+          "dtype": null,
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": "transactions"
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "visas/h1b",
+      "pipeline": "foreign_employment",
+      "serving_bucket": "sovai-foreign-employment-enam",
+      "column_count": 44,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "public ticker, or the literal 'PRIVATE' for unmatched rows",
+          "unit": ""
+        },
+        {
+          "name": "subsidiary_name",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "employer_name",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "similarity",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "match confidence in [0, 1]; PRIVATE fallback rows carry ~1.0",
+          "unit": ""
+        },
+        {
+          "name": "source",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "case_number",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "case_status",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "decision_date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "visa_class",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "begin_date",
+          "dtype": "Datetime[ns]",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "end_date",
+          "dtype": "Datetime[ns]",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "employer_address1",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "employer_city",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "employer_state",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "employer_postal_code",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "soc_code",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "soc_title",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "job_title",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "wage_rate_of_pay_from",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "wage_rate_of_pay_to",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "wage_unit_of_pay",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "full_time_position",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "worksite_address2",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "worksite_state",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "prevailing_wage",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "pw_unit_of_pay",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "pw_survey_name",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "pw_other_source",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "pw_oes_year",
+          "dtype": "Float32",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "pw_survey_publisher",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "naics_code",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "unique_id",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "wage_potential_increase",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "predicted_pay",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "visa_name",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_worker_positions",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "new_employment",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "continued_employment",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "change_previous_employment",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "new_concurrent_employment",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "change_employer",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "amended_petition",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "volume",
+      "pipeline": "short_selling",
+      "serving_bucket": "sovai-short-selling-enam",
+      "column_count": 8,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Date",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "short_volume",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "total_volume",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "short_volume_ratio_exchange",
+          "dtype": "Float64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "retail_short_ratio",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "institutional_short_ratio",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "market_maker_short_ratio",
+          "dtype": "Float64",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    },
+    {
+      "endpoint": "wikipedia/views",
+      "pipeline": "wikipedia",
+      "serving_bucket": "sovai-wikipedia-enam",
+      "column_count": 12,
+      "columns": [
+        {
+          "name": "ticker",
+          "dtype": "String",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "date",
+          "dtype": "Datetime[ns]",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "views",
+          "dtype": "Int64",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "relative_views",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "alpha_short",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "beta_short",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "alpha_long",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "beta_long",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "long_short_alpha",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "long_short_beta",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "search_pressure",
+          "dtype": "Float32",
+          "nullable": false,
+          "description": "",
+          "unit": ""
+        },
+        {
+          "name": "seid",
+          "dtype": "String",
+          "nullable": true,
+          "description": "",
+          "unit": ""
+        }
+      ],
+      "provenance": {
+        "has_ticker_path": true,
+        "has_date_path": true,
+        "has_year": false,
+        "folder": null
+      },
+      "freshness": {
+        "verdict": "unknown",
+        "cadence": null,
+        "watermark": null,
+        "note": "populated from the live per-bucket manifest once a producer export runs"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+name: Catalog Drift
+
+# Fails the build if the generated dataset-catalog pages, the per-dataset schema
+# pages, or the SUMMARY.md "Data Catalog" block have drifted from a fresh render
+# of the committed served catalog (scripts/catalog.json) — the same
+# generated-artifact-consistency pattern as self-cleaning-new's
+# docs/PIPELINES.md test. Stale docs become a red build, not a discovery.
+#
+# This job does NOT rebuild scripts/catalog.json: that derivation needs the
+# producer repo's Python env (self-cleaning-new) or the live
+# sovai-catalog/index.json, and is refreshed by a maintainer running
+# `python scripts/build_catalog.py`. Here we only assert the committed pages
+# match a fresh render of the committed catalog snapshot — which needs nothing
+# but the Python standard library.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/catalog.json'
+      - 'scripts/gen_catalog_docs.py'
+      - 'realtime-datasets/dataset-catalog.md'
+      - 'realtime-datasets/schema/**'
+      - 'SUMMARY.md'
+      - '.github/workflows/catalog-drift.yml'
+  pull_request:
+    paths:
+      - 'scripts/catalog.json'
+      - 'scripts/gen_catalog_docs.py'
+      - 'realtime-datasets/dataset-catalog.md'
+      - 'realtime-datasets/schema/**'
+      - 'SUMMARY.md'
+      - '.github/workflows/catalog-drift.yml'
+
+jobs:
+  catalog-docs-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Catalog docs are a fresh render of scripts/catalog.json
+        run: python scripts/gen_catalog_docs.py --check
