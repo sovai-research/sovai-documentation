@@ -1,0 +1,54 @@
+name: workflow-lint
+
+# Guardrail for the org's Actions budget (GitHub Free: 2,000 private Linux
+# minutes/month shared by every repo; exhausted 2026-09-28 and 2026-10-05).
+# Runs only when a workflow file changes, on the 1-core ubuntu-slim runner.
+#   - actionlint: blocking (the "too old to run" action-runtime warnings are
+#     excluded; bump those actions separately).
+#   - ghalint policy job_timeout_minutes_is_required: blocking. A job without
+#     timeout-minutes gets GitHub's 6-hour default -- one hung job can burn a
+#     month of minutes. Other ghalint policies (SHA pinning, etc.) are not
+#     enforced here yet.
+#   - zizmor: advisory only (security findings are reported, not gated).
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/**"]
+  pull_request:
+    paths: [".github/workflows/**"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: actionlint + timeout policy (+ zizmor advisory)
+    runs-on: ubuntu-slim
+    timeout-minutes: 5
+    env:
+      GHALINT_VERSION: "1.5.6"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v5
+      - name: actionlint
+        run: uvx --from actionlint-py==1.7.12 actionlint -shellcheck= -ignore 'too old to run'
+      - name: every job sets timeout-minutes (ghalint job_timeout_minutes_is_required)
+        run: |
+          curl -sSfL -o "$RUNNER_TEMP/ghalint.tgz" \
+            "https://github.com/suzuki-shunsuke/ghalint/releases/download/v${GHALINT_VERSION}/ghalint_${GHALINT_VERSION}_linux_amd64.tar.gz"
+          tar -xzf "$RUNNER_TEMP/ghalint.tgz" -C "$RUNNER_TEMP" ghalint
+          out="$("$RUNNER_TEMP/ghalint" run 2>&1 | sed 's/\x1b\[[0-9;]*m//g' || true)"
+          if grep job_timeout_minutes_is_required <<<"$out"; then
+            echo "::error::a job has no timeout-minutes; GitHub's default is 6 hours"
+            exit 1
+          fi
+          echo "OK: every job sets timeout-minutes"
+      - name: zizmor (advisory)
+        continue-on-error: true
+        run: uvx zizmor==1.30.1 --offline --format github .github/workflows
