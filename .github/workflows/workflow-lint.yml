@@ -37,7 +37,7 @@ jobs:
           persist-credentials: false
       - uses: astral-sh/setup-uv@v5
       - name: actionlint
-        run: uvx --from actionlint-py==1.7.12 actionlint -shellcheck= -ignore 'too old to run'
+        run: uvx --from actionlint-py==1.7.12.25 actionlint -shellcheck= -ignore 'too old to run'
       - name: every job sets timeout-minutes (ghalint job_timeout_minutes_is_required)
         run: |
           curl -sSfL -o "$RUNNER_TEMP/ghalint.tgz" \
